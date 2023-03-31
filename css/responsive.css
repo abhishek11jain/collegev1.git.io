@@ -470,157 +470,45 @@
         font-size: 12px !important;
     }
 
+    /* ================================================  UNIVERSITY & COLLEGES PAGE  ================================================ */
     
-
-
-
-
-
-
-    .university-section #UniversitySection .text h6 {
-        white-space: nowrap; 
-        width: 95%; 
-        overflow: hidden;
-        text-overflow: ellipsis; 
+    .notification-section .title h6{
+        font-size: 10px;
     }
-    .university-section #UniversitySection .text h6 a {
-        font-size: 11px !important;
+    .notification-section p{
+        font-size: 10px;
     }
-    .university-section #UniversitySection .text a {
-        font-size: 9px !important;
-    }
-    .university-section #UniversitySection .image {
-        width: 52px !important;
-        height: 52px !important;
-    }
-    .university-section .content .row{
-        align-items: center;
-    }
-    .study-section #StudySection .sub-information .right-data .text h6,
-    .study-section #StudySection .sub-information .left-data .text h6{
+
+    .list-section .filter .header h6,
+    .list-section .filter .header a{
         font-size: 10px !important;
     }
-    .study-section #StudySection .sub-information .right-data .text p,
-    .study-section #StudySection .sub-information .left-data .text p{
-        font-size: 9px !important;
-    }
-    .onload-popup .grid-system{
-        display: none !important;
-    }
-    .list-section .header-filter .stream .title h6, 
-    .list-section .header-filter .course .title h6, 
-    .list-section .header-filter .sort .title h6, 
-    .list-section .header-filter .state .title h6 {
-        font-size: 11px !important;
-    }
-    .list-section .header-filter .stream .buttons .btn, 
-    .list-section .header-filter .course .buttons .btn, 
-    .list-section .header-filter .sort .buttons .btn, 
-    .list-section .header-filter .state .buttons .btn {
-        font-size: 10px !important;
-    }
-    .list-section .header-filter .sort .sorting span {
-        font-size: 10px !important;
-    }
-    .list-section .infromation-data .data .main-image {
-        height: 18ch !important;
-    }   
-    .list-section .infromation-data .details .name a {
-        font-size: 10px !important;
-    } 
-    .list-section .infromation-data .main-buttons .btn {
+    .list-section .infromation-data .links a{
         font-size: 9px;
     }
-    .list-section .infromation-data .main-buttons .btn-label {
-        width: 36px !important;
-        padding: 8px 11px !important;
+    .list-section .infromation-data .main-buttons .btn{
+        padding: 2px;
+        font-size: 9px;
     }
-    .list-section .infromation-data .bottom-area .buttons .btn {
-        font-size: 10px !important;
-        margin-top: 0 !important;
-        padding: 2px 15px 2px 15px !important;
+    .list-section .infromation-data .details .fees-structure .fees-1, 
+    .list-section .infromation-data .details .fees-structure .fees-2, 
+    .list-section .infromation-data .details .fees-structure .rating
+    {
+        padding: 8px;
     }
-
-    /* ========================= */
-
-    .banner-text-section{
-        height: 19ch !important;
-    }
-    .banner-text-section .search {
-        padding: 30px !important;
-    }
-    .banner-text-section .search h6{
-        font-size: 20px !important
-    }
-    .banner-text-section .search .form-control{
-        padding: 10px !important;
-        padding-left: 4em !important;
-    }
-    .banner-text-section .search .fa {
-        font-size: 18px !important;
-    }
-    .banner-text-section .search .links span {
-        font-size: 10px !important;
-        padding: 4px !important;
-    }
-    .exam-category {
-        padding: 1em 0  !important;
-    }
-    .exam-category .box .title h6, 
-    .exam-category .news .title h6 {
-        font-size: 13px !important;
-    }
-    .exam-category .box .title p{
+    .list-section .infromation-data .details .fees-structure .fees-1 a h6, 
+    .list-section .infromation-data .details .fees-structure .fees-2 a h6, 
+    .list-section .infromation-data .details .fees-structure .rating a h6
+    {
         font-size: 10px !important;
     }
-    .exam-category .news .news-detail h6 {
-        width: 140px !important;
+    .list-section .infromation-data .details .fees-structure .fees-1 p, 
+    .list-section .infromation-data .details .fees-structure .fees-2 p, 
+    .list-section .infromation-data .details .fees-structure .rating p
+    {
+        font-size: 6px !important;
     }
-    .exam-category .articel .content-box .image{
-        height: 15ch !important;
-    }
-    .exam-category .mb-width{
-        width: 85% !important;
-    }
-    .exam-category .slider-title .bade-buttons{
-        overflow: auto !important;
-        white-space: nowrap !important;
-        width: 100% !important;
-    } 
-    .exam-category .box .para p,
-    .exam-category .box .para ul li,
-    .exam-category .box .para h6,
-    .exam-category .box .para table td,
-    .exam-category .box .para table tr,
-    .exam-category .box .para table th{
-        font-size: 13px !important;
-    }
-    .exam-category .box .para .table-responsive{
-        overflow: auto;
-        white-space: nowrap;
-    }      
-
-
-    /* News Page */
-    .news-section .slider-side .carousel-item,
-    .news-section .news-details .image {
-        height: 40ch !important;
-    }
-    .news-section .slider-side .carousel-caption h3 a{
-        font-size: 15px !important;  
-    }
-    .news-section .slider-side .carousel-caption p{
-        font-size: 10px !important;  
-    }
-    .news-section .slider-side .carousel-caption .btn{
-        font-size: 10px !important;
-    }   
-    .news-section .news-side .image {
-        height: 15ch !important;
-    } 
-    .news-section .news-side .author a, .news-section .news-side .author p{
-        font-size: 8px !important;
-    }    
+   
 }
 
 /* IPAD LANDSCAPE */
@@ -705,127 +593,64 @@
         font-size: 12px !important;
     }
 
-
-
-
-
-
-
-
-
-    .list-section .header-filter .stream .title h6, 
-    .list-section .header-filter .course .title h6, 
-    .list-section .header-filter .sort .title h6, 
-    .list-section .header-filter .state .title h6 {
-        font-size: 11px !important;
+    /* ================================================  UNIVERSITY & COLLEGES PAGE  ================================================ */
+            
+    .notification-section .title h6{
+        font-size: 8px;
     }
-    .list-section .header-filter .stream .buttons .btn, 
-    .list-section .header-filter .course .buttons .btn, 
-    .list-section .header-filter .sort .buttons .btn, 
-    .list-section .header-filter .state .buttons .btn {
-        font-size: 10px !important;
+    .notification-section p{
+        font-size: 8px;
     }
-    .list-section .header-filter .sort .sorting span {
-        font-size: 10px !important;
+
+    .list-section .filter .header h6,
+    .list-section .filter .header a{
+        font-size: 8px !important;
     }
-    .list-section .infromation-data .data .main-image {
-        height: 18ch !important;
-    }   
-    .list-section .infromation-data .details .name a {
-        font-size: 10px !important;
-    } 
-    .list-section .infromation-data .main-buttons .btn {
+    .list-section .header-filter .sort .sorting span{
+        font-size: 8px;
+    }
+    .list-section .header-filter .sort .sorting .active{
+        font-size: 8px;
+    }
+    .list-section .infromation-data .details .name p{
+        font-size: 8px;
+    }
+    .list-section .infromation-data .links{
+        margin-top: 10px;
+    }
+    .list-section .infromation-data .links a{
         font-size: 9px;
     }
-    .list-section .infromation-data .main-buttons .btn-label {
-        width: 36px !important;
-        padding: 8px 11px !important;
+    .list-section .infromation-data .main-buttons .btn{
+        padding: 2px;
+        font-size: 9px;
     }
-    .list-section .infromation-data .bottom-area .buttons .btn {
+    .list-section .infromation-data .details .college-name, 
+    .list-section .infromation-data .details .fees-structure{
+        justify-content: center;
+    }
+    .list-section .infromation-data .details .fees-structure .fees-1, 
+    .list-section .infromation-data .details .fees-structure .fees-2, 
+    .list-section .infromation-data .details .fees-structure .rating
+    {
+        padding: 8px;
+    }
+    .list-section .infromation-data .details .fees-structure .fees-1 a h6, 
+    .list-section .infromation-data .details .fees-structure .fees-2 a h6, 
+    .list-section .infromation-data .details .fees-structure .rating a h6
+    {
         font-size: 10px !important;
-        margin-top: 0 !important;
-        padding: 2px 15px 2px 15px !important;
     }
-/* =========================================== */
+    .list-section .infromation-data .details .fees-structure .fees-1 p, 
+    .list-section .infromation-data .details .fees-structure .fees-2 p, 
+    .list-section .infromation-data .details .fees-structure .rating p
+    {
+        font-size: 6px !important;
+    }
 
-    .banner-text-section{
-        height: 19ch !important;
-    }
-    .banner-text-section .search {
-        padding: 30px !important;
-    }
-    .banner-text-section .search h6{
-        font-size: 20px !important
-    }
-    .banner-text-section .search .form-control{
-        padding: 10px !important;
-        padding-left: 4em !important;
-    }
-    .banner-text-section .search .fa {
-        font-size: 18px !important;
-    }
-    .banner-text-section .search .links span {
-        font-size: 10px !important;
-        padding: 4px !important;
-    }
-    .exam-category {
-        padding: 1em 0  !important;
-    }
-    .exam-category .box .title h6, 
-    .exam-category .news .title h6 {
-        font-size: 13px !important;
-    }
-    .exam-category .box .title p{
-        font-size: 10px !important;
-    }
-    .exam-category .news .news-detail h6 {
-        width: 140px !important;
-    }
-    .exam-category .articel .content-box .image{
-        height: 15ch !important;
-    }
-    .exam-category .mb-width{
-        width: 85% !important;
-    }
-    .exam-category .slider-title .bade-buttons{
-        overflow: auto !important;
-        white-space: nowrap !important;
-        width: 100% !important;
-    }    
-    .exam-category .box .para p,
-    .exam-category .box .para ul li,
-    .exam-category .box .para h6,
-    .exam-category .box .para table td,
-    .exam-category .box .para table tr,
-    .exam-category .box .para table th{
-        font-size: 13px !important;
-    }
-    .exam-category .box .para .table-responsive{
-        overflow: auto;
-        white-space: nowrap;
-    }    
 
-    /* News Page */
-    
-    .news-section .slider-side .carousel-item,
-    .news-section .news-details .image {
-        height: 30ch !important;
-    }
-    .news-section .slider-side .carousel-caption h3 a{
-        font-size: 15px !important;  
-    }
-    .news-section .slider-side .carousel-caption p{
-        font-size: 10px !important;  
-    }
-    .news-section .slider-side .carousel-caption .btn{
-        font-size: 10px !important;
-    }   
-    .news-section .news-side .image {
-        height: 15ch !important;
-    }  
-    .news-section .news-side .author{
-        display: none !important;
-    }
+
+
 }
 
 /* IPAD PORTRAIT */
@@ -948,180 +773,60 @@
     }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-    .onload-popup .grid-system{
-        display: none !important;
+    /* ================================================  UNIVERSITY & COLLEGES PAGE  ================================================ */
+        
+    .notification-section .title h6{
+        font-size: 8px;
     }
-    .list-section .header-filter .stream .title h6, 
-    .list-section .header-filter .course .title h6, 
-    .list-section .header-filter .sort .title h6, 
-    .list-section .header-filter .state .title h6 {
-        font-size: 11px !important;
+    .notification-section p{
+        font-size: 8px;
     }
-    .list-section .header-filter .stream .buttons .btn, 
-    .list-section .header-filter .course .buttons .btn, 
-    .list-section .header-filter .sort .buttons .btn, 
-    .list-section .header-filter .state .buttons .btn {
-        font-size: 10px !important;
-    }
-    .list-section .header-filter .sort .sorting span {
-        font-size: 10px !important;
-    }
-    .list-section .infromation-data .data .main-image {
-        height: 18ch !important;
-    }   
-    .list-section .infromation-data .details .fees-structure h6{
+
+    .list-section .filter .header h6,
+    .list-section .filter .header a{
         font-size: 8px !important;
     }
-    .list-section .infromation-data .details .fees-structure p{
-        font-size: 5px !important;
+    .list-section .header-filter .sort .sorting span{
+        font-size: 8px;
     }
-    .list-section .infromation-data .details .name{
-        white-space: nowrap !important;
-        text-overflow: ellipsis !important;
-        width: 100px !important;
-        overflow: hidden !important;
+    .list-section .header-filter .sort .sorting .active{
+        font-size: 8px;
     }
-    .list-section .infromation-data .college-name img{
-        width: 40px !important;
-    }
-    .list-section .infromation-data .details .name a {
-        font-size: 6px !important;
-    } 
     .list-section .infromation-data .details .name p{
-        font-size: 6px !important;
+        font-size: 8px;
     }
-    .list-section .infromation-data .main-buttons .btn {
+    .list-section .infromation-data .links{
+        margin-top: 10px;
+    }
+    .list-section .infromation-data .links a{
         font-size: 9px;
     }
-    .list-section .infromation-data .main-buttons .btn-label {
-        width: 25px !important;
-        padding: 3px 10px !important;
+    .list-section .infromation-data .main-buttons .btn{
+        padding: 2px;
+        font-size: 9px;
     }
-    .list-section .infromation-data .bottom-area .buttons .btn {
-        font-size: 5px !important;
-        margin-top: 0 !important;
-        padding: 2px 15px 2px 15px !important;
-    }    
-
-    /* ================================     */
-    .banner-text-section{
-        height: 15ch !important;
+    .list-section .infromation-data .details .college-name, 
+    .list-section .infromation-data .details .fees-structure{
+        justify-content: center;
     }
-    .banner-text-section .search {
-        padding: 20px !important;
+    .list-section .infromation-data .details .fees-structure .fees-1, 
+    .list-section .infromation-data .details .fees-structure .fees-2, 
+    .list-section .infromation-data .details .fees-structure .rating
+    {
+        padding: 8px;
     }
-    .banner-text-section .search h6{
-        font-size: 15px !important
+    .list-section .infromation-data .details .fees-structure .fees-1 a h6, 
+    .list-section .infromation-data .details .fees-structure .fees-2 a h6, 
+    .list-section .infromation-data .details .fees-structure .rating a h6
+    {
+        font-size: 10px !important;
     }
-    .banner-text-section .search .form-control::placeholder{
-        font-size: 15px !important;
-    }
-    .banner-text-section .search .form-control{
-        padding: 5px !important;
-        font-size: 15px !important;
-        padding-left: 4em !important;
-    }
-    .banner-text-section .search .fa {
-        font-size: 13px !important;
-        left: 2em !important;
-    }
-    .banner-text-section .search .links span {
-        font-size: 8px !important;
-        padding: 4px !important;
-    }
-    .exam-category {
-        padding: 1em 0  !important;
-    }
-    .exam-category .bade-buttons .btn {
-        font-size: xx-small !important;
-    }
-    .exam-category .box .title h6, 
-    .exam-category .news .title h6 {
-        font-size: 8px !important;
-    }
-    .exam-category .box .title p{
+    .list-section .infromation-data .details .fees-structure .fees-1 p, 
+    .list-section .infromation-data .details .fees-structure .fees-2 p, 
+    .list-section .infromation-data .details .fees-structure .rating p
+    {
         font-size: 6px !important;
     }
-    .exam-category .data .main-data .status span{
-        font-size: 8px !important;
-    }
-    .exam-category .news .news-detail h6 {
-        width: 140px !important;
-    }
-    .exam-category .data .main-data .image {
-        height: 2em !important;
-        width: 2em !important;
-    }
-    .exam-category .data .text h6,
-    .exam-category .data .text p{
-        font-size: 6px !important;
-    }
-    .exam-category .data .bottom-text h6, 
-    .exam-category .data .button-text h6{
-        font-size: 10px !important;
-    }
-    .exam-category .data .button-text .btn{
-        padding: 2px 8px 2px 8px !important;
-        font-size: 10px !important;
-    }
-    .exam-category .articel .content-box .image{
-        height: 13ch !important;
-    }
-    .exam-category .mb-width{
-        width: 70% !important;
-    }
-    .exam-category .slider-title .bade-buttons{
-        overflow: auto !important;
-        white-space: nowrap !important;
-        width: 100% !important;
-    }
-    .exam-category .box .para p,
-    .exam-category .box .para ul li,
-    .exam-category .box .para h6,
-    .exam-category .box .para table td,
-    .exam-category .box .para table tr,
-    .exam-category .box .para table th{
-        font-size: 13px !important;
-    }
-    .exam-category .box .para .table-responsive{
-        overflow: auto;
-        white-space: nowrap;
-    }    
-
-    /* News Page */
-
-    .news-section .slider-side .carousel-item,
-    .news-section .news-details .image {
-        height: 30ch !important;
-    }
-    .news-section .slider-side .carousel-caption h3 a{
-        font-size: 15px !important;  
-    }
-    .news-section .slider-side .carousel-caption p{
-        font-size: 10px !important;  
-    }
-    .news-section .slider-side .carousel-caption .btn{
-        font-size: 10px !important;
-    }   
-    .news-section .news-side .image {
-        height: 10ch !important;
-    }  
-    .news-section .news-side .author{
-        display: none !important;
-    }
-
 }
 
 /* IPAD AIR */
@@ -1243,179 +948,260 @@
         font-size: 12px !important;
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-    .onload-popup .grid-system{
-        display: none !important;
+    /* ================================================  UNIVERSITY & COLLEGES PAGE  ================================================ */
+            
+    .notification-section .title h6{
+        font-size: 8px;
     }
-    .list-section .header-filter .stream .title h6, 
-    .list-section .header-filter .course .title h6, 
-    .list-section .header-filter .sort .title h6, 
-    .list-section .header-filter .state .title h6 {
-        font-size: 11px !important;
+    .notification-section p{
+        font-size: 8px;
     }
-    .list-section .header-filter .stream .buttons .btn, 
-    .list-section .header-filter .course .buttons .btn, 
-    .list-section .header-filter .sort .buttons .btn, 
-    .list-section .header-filter .state .buttons .btn {
-        font-size: 10px !important;
-    }
-    .list-section .header-filter .sort .sorting span {
-        font-size: 10px !important;
-    }
-    .list-section .infromation-data .data .main-image {
-        height: 18ch !important;
-    }   
-    .list-section .infromation-data .details .fees-structure h6{
+
+    .list-section .filter .header h6,
+    .list-section .filter .header a{
         font-size: 8px !important;
     }
-    .list-section .infromation-data .details .fees-structure p{
-        font-size: 5px !important;
+    .list-section .header-filter .sort .sorting span{
+        font-size: 8px;
     }
-    .list-section .infromation-data .details .name{
-        white-space: nowrap !important;
-        text-overflow: ellipsis !important;
-        width: 100px !important;
-        overflow: hidden !important;
+    .list-section .header-filter .sort .sorting .active{
+        font-size: 8px;
     }
-    .list-section .infromation-data .college-name img{
-        width: 40px !important;
-    }
-    .list-section .infromation-data .details .name a {
-        font-size: 6px !important;
-    } 
     .list-section .infromation-data .details .name p{
-        font-size: 6px !important;
+        font-size: 8px;
     }
-    .list-section .infromation-data .main-buttons .btn {
+    .list-section .infromation-data .links{
+        margin-top: 10px;
+    }
+    .list-section .infromation-data .links a{
         font-size: 9px;
     }
-    .list-section .infromation-data .main-buttons .btn-label {
-        width: 25px !important;
-        padding: 3px 10px !important;
+    .list-section .infromation-data .main-buttons .btn{
+        padding: 2px;
+        font-size: 9px;
     }
-    .list-section .infromation-data .bottom-area .buttons .btn {
-        font-size: 5px !important;
-        margin-top: 0 !important;
-        padding: 2px 15px 2px 15px !important;
-    }    
+    .list-section .infromation-data .details .college-name, 
+    .list-section .infromation-data .details .fees-structure{
+        justify-content: center;
+    }
+    .list-section .infromation-data .details .fees-structure .fees-1, 
+    .list-section .infromation-data .details .fees-structure .fees-2, 
+    .list-section .infromation-data .details .fees-structure .rating
+    {
+        padding: 8px;
+    }
+    .list-section .infromation-data .details .fees-structure .fees-1 a h6, 
+    .list-section .infromation-data .details .fees-structure .fees-2 a h6, 
+    .list-section .infromation-data .details .fees-structure .rating a h6
+    {
+        font-size: 10px !important;
+    }
+    .list-section .infromation-data .details .fees-structure .fees-1 p, 
+    .list-section .infromation-data .details .fees-structure .fees-2 p, 
+    .list-section .infromation-data .details .fees-structure .rating p
+    {
+        font-size: 6px !important;
+    }
 
-    /* ================================     */
-    .banner-text-section{
-        height: 15ch !important;
+
+
+
+
+
+
+
+
+
+
+
+}
+
+/* GALAXY FOLD LANDSCAPE */
+@media only screen and (device-width : 717px) and (device-height : 512px) and (orientation: landscape) {
+    .topbar-section{
+        padding: 0 !important;
+        padding-bottom: 10px !important;
     }
-    .banner-text-section .search {
-        padding: 20px !important;
+    .topbar-section .topbar-menus ul li{
+        margin: 0 !important;
     }
-    .banner-text-section .search h6{
-        font-size: 15px !important
+    .topbar-section .topbar-menus ul li a{
+        font-size: 7px !important;
+        padding-left: 15px !important;
     }
-    .banner-text-section .search .form-control::placeholder{
-        font-size: 15px !important;
+
+    /* ------------------ */
+
+    .navbar-section .btn{
+        font-size: 9px !important;
     }
-    .banner-text-section .search .form-control{
-        padding: 5px !important;
-        font-size: 15px !important;
-        padding-left: 4em !important;
+
+    /* ------------------ */
+    
+    .navbar-menu .navbar{
+        padding: 0 !important;
     }
-    .banner-text-section .search .fa {
-        font-size: 13px !important;
-        left: 2em !important;
+    .navbar-menu .menu-name{
+        font-size: 11px !important;
     }
-    .banner-text-section .search .links span {
-        font-size: 8px !important;
-        padding: 4px !important;
+    .navbar-menu .nav-pills a{
+        font-size: 12px !important;
     }
-    .exam-category {
-        padding: 1em 0  !important;
+    .navbar-menu .tab-content h6{
+        font-size: 11px !important;
     }
-    .exam-category .bade-buttons .btn {
-        font-size: xx-small !important;
-    }
-    .exam-category .box .title h6, 
-    .exam-category .news .title h6 {
-        font-size: 8px !important;
-    }
-    .exam-category .box .title p{
-        font-size: 6px !important;
-    }
-    .exam-category .data .main-data .status span{
-        font-size: 8px !important;
-    }
-    .exam-category .news .news-detail h6 {
-        width: 140px !important;
-    }
-    .exam-category .data .main-data .image {
-        height: 2em !important;
-        width: 2em !important;
-    }
-    .exam-category .data .text h6,
-    .exam-category .data .text p{
-        font-size: 6px !important;
-    }
-    .exam-category .data .bottom-text h6, 
-    .exam-category .data .button-text h6{
+    .navbar-menu .tab-content .sub-menu{
         font-size: 10px !important;
     }
-    .exam-category .data .button-text .btn{
-        padding: 2px 8px 2px 8px !important;
-        font-size: 10px !important;
+
+    /* ------------------ */
+
+    
+    .slider-section .carousel-item {
+        height: 44ch !important;
     }
-    .exam-category .articel .content-box .image{
-        height: 13ch !important;
+    .caption-section {
+        padding: 4em !important;
+        margin-top: -19em !important;
     }
-    .exam-category .mb-width{
-        width: 70% !important;
+    .caption-section .text {
+        font-size: 3.5ch;
     }
-    .exam-category .slider-title .bade-buttons{
-        overflow: auto !important;
-        white-space: nowrap !important;
-        width: 100% !important;
-    }
-    .exam-category .box .para p,
-    .exam-category .box .para ul li,
-    .exam-category .box .para h6,
-    .exam-category .box .para table td,
-    .exam-category .box .para table tr,
-    .exam-category .box .para table th{
-        font-size: 13px !important;
-    }
-    .exam-category .box .para .table-responsive{
+
+    /* -------------------------- */
+
+
+    .recent-visit-section .visit-record,
+    .goal-section .visit-record{
         overflow: auto;
         white-space: nowrap;
+    }
+
+    /* -------------------------- */
+
+    .collection-section .absolute-box {
+        padding: 0 0px 0 47px !important;
+    }
+
+    /* -------------------------- */
+
+    .infromation-section .row{
+        align-items: center !important;
+    }
+    .infromation-section #InformationSection .image{
+        height: 40px !important;
+        width: 40px !important;
+    }
+    .infromation-section .text,
+    .university-section .text{
+        margin-top: 0 !important;
+        margin-left: 10px;
+    }
+    .infromation-section .text h6,
+    .university-section .text h6{
+        font-size: 11px !important;
+    }
+
+    /* -------------------------- */
+
+    .place-section #PlaceSection .card {
+        height: 110px !important;
+        width: 100px !important;
+        padding: 9px !important;
+    }
+
+
+    /* -------------------------- */
+
+    .footer-section .title h6 {
+        font-size: 12px !important;
+    }
+    .footer-section .links p {
+        font-size: 6px !important;
+    }
+    .footer-section .mid-footer span {
+        font-size: 8px !important;
+    }
+    .bottom-footer .buttons,
+    .bottom-footer .copyright {
+        text-align: center !important;
+        display: block !important;
+    }
+    .bottom-footer .buttons span h6{
+        font-size: 15px !important;
+        padding-bottom: 1em !important;
     }    
+    .bottom-footer .text p {
+        font-size: 12px !important;
+    }
 
-    /* News Page */
-
-    .news-section .slider-side .carousel-item,
-    .news-section .news-details .image {
-        height: 30ch !important;
+    /* ================================================  UNIVERSITY & COLLEGES PAGE  ================================================ */
+            
+    .notification-section .title h6{
+        font-size: 8px;
     }
-    .news-section .slider-side .carousel-caption h3 a{
-        font-size: 15px !important;  
+    .notification-section p{
+        font-size: 8px;
     }
-    .news-section .slider-side .carousel-caption p{
-        font-size: 10px !important;  
+    .list-section .header-filter .hide-mobile{
+        display: block !important;
     }
-    .news-section .slider-side .carousel-caption .btn{
+    .list-section .filter .header h6,
+    .list-section .filter .header a{
+        font-size: 8px !important;
+    }
+    .list-section .header-filter .sort{
+        padding: 0;
+        padding-bottom: 5px;
+    }
+    .list-section .header-filter .sort .sorting span{
+        font-size: 8px;
+    }
+    .list-section .header-filter .sort .sorting a .fa,
+    .list-section .header-filter .sort .sorting .view .fa {
+        font-size: 5px !important;
+    }
+    .list-section .header-filter .sort .sorting .active{
+        font-size: 7px;
+    }
+    .list-section .infromation-data .details .name p{
+        font-size: 7px;
+    }
+    .list-section .infromation-data .main-image{
+        height: 100px;
+    }
+    .list-section .infromation-data .links{
+        margin-top: 10px;
+    }
+    .list-section .infromation-data .links a{
+        font-size: 9px;
+    }
+    .list-section .infromation-data .main-buttons .btn{
+        padding: 2px;
+        font-size: 9px;
+    }
+    .list-section .infromation-data .details .college-name, 
+    .list-section .infromation-data .details .fees-structure{
+        justify-content: center;
+    }
+    .list-section .infromation-data .details .fees-structure .fees-1, 
+    .list-section .infromation-data .details .fees-structure .fees-2, 
+    .list-section .infromation-data .details .fees-structure .rating
+    {
+        padding: 5px;
+    }
+    .list-section .infromation-data .details .fees-structure .fees-1 a h6, 
+    .list-section .infromation-data .details .fees-structure .fees-2 a h6, 
+    .list-section .infromation-data .details .fees-structure .rating a h6
+    {
         font-size: 10px !important;
-    }   
-    .news-section .news-side .image {
-        height: 10ch !important;
-    }  
-    .news-section .news-side .author{
-        display: none !important;
     }
+    .list-section .infromation-data .details .fees-structure .fees-1 p, 
+    .list-section .infromation-data .details .fees-structure .fees-2 p, 
+    .list-section .infromation-data .details .fees-structure .rating p
+    {
+        font-size: 6px !important;
+    }
+
 
 }

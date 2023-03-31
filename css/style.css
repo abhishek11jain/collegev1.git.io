@@ -1584,7 +1584,7 @@ ul{
     margin-left: 0;
 }
 .list-section .infromation-data .links a{
-    font-size: 14px;
+    font-size: 12px;
     text-align: center;
     width: 100%;
     color: var(--black-primary);
@@ -1597,6 +1597,8 @@ ul{
     background: var(--secondary-color);
     border-color: var(--secondary-color);
     box-shadow: none;
+    font-size: 12px;
+    padding: 4px;
     border-radius: 0;
     transition: 0.3s ease-in-out;
 }
