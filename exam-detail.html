@@ -14,6 +14,7 @@
 
         <!-- Stylesheet Link -->
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
 
         <!-- Font Awasome Intro -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -84,7 +85,7 @@
                             <div class="row">
                                 <div class="col-lg-3 col-sm-3">
                                     <div class="goal justify-content-start">
-                                        <a class="btn btn-primary d-flex" href="#">
+                                        <a class="btn btn-primary d-flex" href="#" onclick="citygoalsearch()" id="goalcity_desktop">
                                             <span>Select Goal</span>
                                             <i class="fa fa-angle-down" aria-hidden="true"></i>
                                         </a>
@@ -324,115 +325,43 @@
                 <!-- Navabr Menus End -->
             </section>
         <!-- Header Section End -->    
-        
+
+
         <!-- Mobile header start -->
-            <div class="mobile-header-section hide-desktop p-relative mobile-header">
+            <div class="mobile-header-section hide-desktop header-design">
                 <div class="container-fluid">
-                    <div class="header d-flex">
-                        <div class="toggle-button">
-                            <a href="#"> <i class="fa fa-bars" aria-hidden="true"></i> </a>
-                        </div>
-                        <div class="logo">
-                            <a href="index.html"> <img src="images/resources/logo.png" alt="" width="150"> </a>
-                        </div>
-                        <div class="search-button">
-                            <a class="nav-link" href="#" onclick="mobileSearch()"><i class="fa fa-search" aria-hidden="true"></i></a>
+                    <div class="header">
+                        <div class="row">
+                            <div class="col-lg-1 col-sm-1 col-1">
+                                <div class="toggle-button">
+                                    <a href="#" class="btn-open first"> <i class="fa fa-bars" aria-hidden="true"></i> </a>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-7 col-sm-7 col-7">
+                                <div class="logo">
+                                    <a href="index.html"> <img src="images/resources/logo.png" alt="" width="150"> </a>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-2 col-sm-2 col-2">
+                                <div class="search-button">
+                                    <a class="nav-link" href="#" onclick="opennotication()"><i class="fa fa-bell" aria-hidden="true"></i> <span class="notification">1</span></a>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-2 col-sm-2 col-2">
+                                <div class="login-button">
+                                    <a class="nav-link" href="#" ><i class="fa fa-user" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
             </div>
-        <!-- Mobile header End -->
+        <!-- Mobile header End -->       
 
-        <!-- Mobile Search Bar -->
-            <section class="mobile-searchbar-section hide-desktop" id="mobileSearchOpen">
-                <div class="row gx-0">
-                    <div class="col-lg-12 col-sm-12 col-12">
-                        <div class="box d-flex">
-                            <div class="back-btn" class="closebtn" onclick="closeMobile()">
-                                <a href="#"> <i class="fa fa-angle-left" aria-hidden="true"></i> </a>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" name="" id="" class="form-control" placeholder="Search..." aria-describedby="helpId">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12 col-sm-12 col-12">
-                        <div class="search-data">
-                            <div class="search-result">
-                                <b>Type 3 or more characters for search results</b>
-                            </div>
-                            <div class="not-found">
-                                <b>No results found</b>
-                            </div>
-                            <div class="result d-flex border-bottom">
-                                <a href="#">Indian Institute of Technology - [IIT]</a>
-                                <p class="mb-0"><i class="fa fa-bolt" aria-hidden="true"></i></p>
-                            </div>
-                            <div class="result d-flex border-bottom">
-                                <a href="#">Indian Institute of Technology - [IIT]</a>
-                                <p class="mb-0"><i class="fa fa-bolt" aria-hidden="true"></i></p>
-                            </div>
-                            <div class="result d-flex border-bottom">
-                                <a href="#">Indian Institute of Technology - [IIT]</a>
-                                <p class="mb-0"><i class="fa fa-bolt" aria-hidden="true"></i></p>
-                            </div>
-                            <div class="result d-flex border-bottom">
-                                <a href="#">Indian Institute of Technology - [IIT]</a>
-                                <p class="mb-0"><i class="fa fa-bolt" aria-hidden="true"></i></p>
-                            </div>
-                            <div class="result d-flex border-bottom">
-                                <a href="#">Indian Institute of Technology - [IIT]</a>
-                                <p class="mb-0"><i class="fa fa-bolt" aria-hidden="true"></i></p>
-                            </div>
-                            <div class="result d-flex border-bottom">
-                                <a href="#">Indian Institute of Technology - [IIT]</a>
-                                <p class="mb-0"><i class="fa fa-bolt" aria-hidden="true"></i></p>
-                            </div>
-                            <div class="result d-flex border-bottom">
-                                <a href="#">Indian Institute of Technology - [IIT]</a>
-                                <p class="mb-0"><i class="fa fa-bolt" aria-hidden="true"></i></p>
-                            </div>
-                            <div class="result d-flex border-bottom">
-                                <a href="#">Indian Institute of Technology - [IIT]</a>
-                                <p class="mb-0"><i class="fa fa-bolt" aria-hidden="true"></i></p>
-                            </div>
-                            <div class="result d-flex border-bottom">
-                                <a href="#">Indian Institute of Technology - [IIT]</a>
-                                <p class="mb-0"><i class="fa fa-bolt" aria-hidden="true"></i></p>
-                            </div>
-                            <div class="result d-flex border-bottom">
-                                <a href="#">Indian Institute of Technology - [IIT]</a>
-                                <p class="mb-0"><i class="fa fa-bolt" aria-hidden="true"></i></p>
-                            </div>
-                            <div class="result d-flex border-bottom">
-                                <a href="#">Indian Institute of Technology - [IIT]</a>
-                                <p class="mb-0"><i class="fa fa-bolt" aria-hidden="true"></i></p>
-                            </div>
-                            <div class="result d-flex border-bottom">
-                                <a href="#">Indian Institute of Technology - [IIT]</a>
-                                <p class="mb-0"><i class="fa fa-bolt" aria-hidden="true"></i></p>
-                            </div>
-                            <div class="result d-flex border-bottom">
-                                <a href="#">Indian Institute of Technology - [IIT]</a>
-                                <p class="mb-0"><i class="fa fa-bolt" aria-hidden="true"></i></p>
-                            </div>
-                            <div class="result d-flex border-bottom">
-                                <a href="#">Indian Institute of Technology - [IIT]</a>
-                                <p class="mb-0"><i class="fa fa-bolt" aria-hidden="true"></i></p>
-                            </div>
-                            <div class="result d-flex border-bottom">
-                                <a href="#">Indian Institute of Technology - [IIT]</a>
-                                <p class="mb-0"><i class="fa fa-bolt" aria-hidden="true"></i></p>
-                            </div>
-                            <div class="result d-flex border-bottom">
-                                <a href="#">Indian Institute of Technology - [IIT]</a>
-                                <p class="mb-0"><i class="fa fa-bolt" aria-hidden="true"></i></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        <!-- Mobile Search Bar -->         
 
         <!-- Breadcrumb Start -->
             <section class="bread-crumb">
@@ -440,23 +369,9 @@
                     <div class="row">
                         <div class="col-lg-12 col-sm-12 col-12">
                             <nav class="breadcrumb mb-0">
-                                <a class="breadcrumb-item sky-color" href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
-                                <span class="breadcrumb-item active" aria-current="page">JEE Mains</span>
+                                <a class="breadcrumb-item" href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+                                <span class="breadcrumb-item active" aria-current="page">Exam</span>
                             </nav>
-                        </div>
-                        <div class="col-lg-12 col-sm-12 col-12">
-                            <div class="heading mb-3">
-                                <h5>List of Top Colleges in India Based on 2023 Ranking</h5>
-                            </div>
-                        </div>
-                        <div class="col-lg-12 col-sm-12 col-12 hide-mobile">
-                            <div class="container">
-                                <div class="hording">
-                                    <div class="image">
-                                        <a href=""> <img src="images/hording_banner/banner_1.jpg" alt="hording-image" class="img-responsive w-100"> </a>
-                                    </div>                            
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -481,7 +396,7 @@
 
         <!-- Exam Category Start -->
             <section class="exam-category">
-                <div class="container">
+                <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="box">
@@ -489,8 +404,7 @@
                                     <h4>JEE Main 2023: Session 2 Exam (Apr 6 -12), Admit Card (Soon)</h4>
                                 </div>
                                 <div class="exam mt-4 mb-4">
-                                    <h6>Exam Date</h6>
-                                    <p>Apr 6, 2023</p>
+                                    <h6>Exam Date (Apr 6, 2023)</h6>
                                 </div>
                                 <div class="user d-flex gap-3">
                                     <div class="image">
@@ -514,29 +428,29 @@
                         <div class="col-lg-12">
                             <div class="box">
                                 <div class="bade-buttons scroll">
-                                    <button class="btn active">Overview <span class="badge badge-primary"></span> </button>
-                                    <button class="btn">Exam Date <span class="badge badge-primary"></span> </button>
-                                    <button class="btn">Eligibility Criteria <span class="badge badge-primary"></span> </button>
-                                    <button class="btn">Application Form <span class="badge badge-primary"></span> </button>
-                                    <button class="btn">Admit Card <span class="badge badge-primary"></span> </button>
-                                    <button class="btn">Exam Centres <span class="badge badge-primary"></span> </button>
-                                    <button class="btn">Exam Pattern<span class="badge badge-primary"></span> </button>
-                                    <button class="btn">Syllabus <span class="badge badge-primary"></span> </button>
-                                    <button class="btn">Result <span class="badge badge-primary"></span> </button>
-                                    <button class="btn">Cut Off <span class="badge badge-primary"></span> </button>
-                                    <button class="btn">Counselling <span class="badge badge-primary"></span> </button>
-                                    <button class="btn">Books <span class="badge badge-primary"></span> </button>
-                                    <button class="btn">Previous Year Question Papers <span class="badge badge-primary"></span> </button>
-                                    <button class="btn">Mock Tests <span class="badge badge-primary"></span> </button>
-                                    <button class="btn">Answer Key<span class="badge badge-primary"></span> </button>
-                                    <button class="btn">Paper Analysis <span class="badge badge-primary"></span> </button>
-                                    <button class="btn">Preparation <span class="badge badge-primary"></span> </button>
-                                    <button class="btn">Marks vs Rank<span class="badge badge-primary"></span> </button>
-                                    <button class="btn">Rank Predictor <span class="badge badge-primary"></span> </button>
-                                    <button class="btn">Slot Booking <span class="badge badge-primary"></span> </button>
-                                    <button class="btn">Login <span class="badge badge-primary"></span> </button>
-                                    <button class="btn">Topper <span class="badge badge-primary"></span> </button>
-                                    <button class="btn">Response Sheet <span class="badge badge-primary"></span> </button>
+                                    <a href="#" class="btn shadow-sm btn-large badge">Overview </a>
+                                    <a href="#" class="btn shadow-sm btn-large badge">Exam Date </a>
+                                    <a href="#" class="btn shadow-sm btn-large badge">Eligibility Criteria </a>
+                                    <a href="#" class="btn shadow-sm btn-large badge">Application Form </a>
+                                    <a href="#" class="btn shadow-sm btn-large badge">Admit Card </a>
+                                    <a href="#" class="btn shadow-sm btn-large badge">Exam Centres </a>
+                                    <a href="#" class="btn shadow-sm btn-large badge">Exam Pattern</a>
+                                    <a href="#" class="btn shadow-sm btn-large badge">Syllabus </a>
+                                    <a href="#" class="btn shadow-sm btn-large badge">Result </a>
+                                    <a href="#" class="btn shadow-sm btn-large badge">Cut Off </a>
+                                    <a href="#" class="btn shadow-sm btn-large badge">Counselling </a>
+                                    <a href="#" class="btn shadow-sm btn-large badge">Books </a>
+                                    <a href="#" class="btn shadow-sm btn-large badge">Previous Year Question Papers </a>
+                                    <a href="#" class="btn shadow-sm btn-large badge">Mock Tests </a>
+                                    <a href="#" class="btn shadow-sm btn-large badge">Answer Key</a>
+                                    <a href="#" class="btn shadow-sm btn-large badge">Paper Analysis </a>
+                                    <a href="#" class="btn shadow-sm btn-large badge">Preparation </a>
+                                    <a href="#" class="btn shadow-sm btn-large badge">Marks vs Rank</a>
+                                    <a href="#" class="btn shadow-sm btn-large badge">Rank Predictor </a>
+                                    <a href="#" class="btn shadow-sm btn-large badge">Slot Booking </a>
+                                    <a href="#" class="btn shadow-sm btn-large badge">Login </a>
+                                    <a href="#" class="btn shadow-sm btn-large badge">Topper </a>
+                                    <a href="#" class="btn shadow-sm btn-large badge">Response Sheet </a>
                                 </div>
                             </div>
                         </div>
@@ -1022,11 +936,11 @@
                             
                             <div class="tab-section">
                                 <div class="box">
-                                    <div class="v-height">
-                                        <div class="title sticky-top">
-                                            <h6>QUICK LINKS</h6>
-                                        </div>
-                                        <div class="content">
+                                    <div class="title">
+                                        <h6>QUICK LINKS</h6>
+                                    </div>
+                                    <div class="content">
+                                        <div class="v-height">
                                             <ul>
                                                 <li><a href="#">JEE Main Application Form</a></li>
                                                 <li><a href="#">JEE Main Exam Dates</a></li>
@@ -1054,8 +968,9 @@
             </section>
         <!-- Exam Category End -->
 
+
         <!-- Footer section Start -->
-            <section class="footer-section mobile-footer">
+            <section class="footer-section bg-primary">
                 <div class="container-fluid">
                     <div class="top-footer hide-mobile">
                         <div class="row">
@@ -1156,7 +1071,7 @@
                             <h6>Other Links</h6>
                         </div>
                         <div class="row">
-                            <div class="col-lg-3 col-sm-3 hide-desktop d-sm-block">
+                            <div class="col-lg-3 col-sm-3 hide-desktop ">
                                 <div class="image text-center">
                                     <a href="#">
                                         <img src="images/resources/logo black.png" alt="" class="image-responsive" width="200">
@@ -1173,7 +1088,7 @@
                                     <span><a href="#">Terms & Conditions</a></li></span>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-sm-6">
+                            <div class="col-lg-6 col-sm-3">
                                 <div class="links text-end">
                                     <span><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li></span>
                                     <span><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li></span>
@@ -1185,36 +1100,323 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </section>
 
-                    <hr>
-
-                    <div class="bottom-footer">
-                        <div class="row">
-                            <div class="col-lg-6 col-sm-6 col-12 order-lg-1 order-sm-1 order-2">
-                                <div class="copyright d-flex">
-                                    <div class="image hide-mobile">
-                                        <a href="index.html"><img src="images/resources/logo black.png" alt="" class="img-responsive" width="150"></a>
-                                    </div>
-                                    <div class="text">
-                                        <p class="mb-0">&copy; 2023 Searchyourcollege.com All Rights Reserved.</p>
-                                    </div>
+            <section class="bottom-footer bg-gray">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-6 order-lg-1 order-sm-1 order-2">
+                            <div class="copyright d-flex">
+                                <div class="image hide-mobile">
+                                    <a href="index.html"><img src="images/resources/logo black.png" alt="" class="img-responsive" width="150"></a>
+                                </div>
+                                <div class="text">
+                                    <p class="mb-0">&copy; 2023 Searchyourcollege.com All Rights Reserved.</p>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-sm-6 col-12 order-lg-2 order-sm-2 order-1">
-                                <div class="buttons d-flex">
-                                    <span class="hide-mobile"><h6 class="mb-0">Download the Searchyourcollege app on</h6></span>
-                                    <span><img src="images/footer/googleplay.png" alt="" class="image-responsive" width="100"></span>
-                                    <span><img src="images/footer/appstore.png" alt="" class="image-responsive" width="100"></span>
-                                </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-6 order-lg-2 order-sm-2 order-1">
+                            <div class="buttons d-flex">
+                                <span class="hide-mobile"><h6 class="mb-0">Download the Searchyourcollege app on</h6></span>
+                                <span><img src="images/footer/googleplay.png" alt="" class="image-responsive" width="100"></span>
+                                <span><img src="images/footer/appstore.png" alt="" class="image-responsive" width="100"></span>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-        <!-- Footer section End -->
+        <!-- Footer section End -->  
+
+
+        <!-- Notification Bar -->
+            <section class="mobile-notication-section hide-desktop" id="notificationOpen">
+                <div class="row gx-0">
+                    <div class="col-lg-12 col-sm-12 col-12">
+                        <div class="box d-flex">
+                            <div class="back-btn" class="closebtn" onclick="closenotifcation()">
+                                <a href="#"> <i class="fa fa-angle-left" aria-hidden="true"></i> </a>
+                            </div>
+                            <div class="notification">
+                                <h6 class="mb-0">Notifications</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-sm-12 col-12">
+                        <div class="search-data">
+                            <div class="search-result">
+                                <b>Today</b>
+                            </div>
+                            <div class="result d-flex border-bottom gap-3">
+                                <div class="image">
+                                    <a href="#"> <img src="images/slider/slider3.jpg" alt="notification-image" class="img-responsive"> </a>
+                                </div>
+                                <p class="mb-0">
+                                    <a href="#"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti rem aliquam alias totam quo natus ratione sunt amet doloremque illo debitis eveniet, unde veritatis voluptate accusantium ipsa id quasi! Cupiditate temporibus assumenda amet consequatur, eligendi necessitatibus optio vitae voluptatibus, hic veniam minus culpa iusto explicabo fugit animi soluta repudiandae eaque.</a>
+                                </p>
+                            </div>
+                            <div class="result">
+                                <marquee behavior="scroll" direction="up" scrollamount="3" >
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos voluptates ducimus, voluptatem provident eligendi earum autem, expedita modi porro, dolorem ad reiciendis inventore corrupti quo. Quisquam magnam magni at incidunt?
+                                </marquee>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <!-- Notification Bar -->  
+        
+        
+        <!-- Mobile Search Bar -->
+            <section class="mobile-searchbar-section hide-desktop" id="mobileSearchOpen">
+                <div class="row gx-0">
+                    <div class="col-lg-12 col-sm-12 col-12">
+                        <div class="box d-flex">
+                            <div class="back-btn" class="closebtn" onclick="closeMobile()">
+                                <a href="#"> <i class="fa fa-angle-left" aria-hidden="true"></i> </a>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="" id="" class="form-control" placeholder="Search..." aria-describedby="helpId">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-sm-12 col-12">
+                        <div class="search-data">
+                            <div class="search-result">
+                                <b>Type 3 or more characters for search results</b>
+                            </div>
+                            <div class="not-found">
+                                <b>No results found</b>
+                            </div>
+                            <div class="result d-flex border-bottom">
+                                <a href="#">Indian Institute of Technology - [IIT]</a>
+                                <p class="mb-0"><i class="fa fa-bolt" aria-hidden="true"></i></p>
+                            </div>
+                            <div class="result d-flex border-bottom">
+                                <a href="#">Indian Institute of Technology - [IIT]</a>
+                                <p class="mb-0"><i class="fa fa-bolt" aria-hidden="true"></i></p>
+                            </div>
+                            <div class="result d-flex border-bottom">
+                                <a href="#">Indian Institute of Technology - [IIT]</a>
+                                <p class="mb-0"><i class="fa fa-bolt" aria-hidden="true"></i></p>
+                            </div>
+                            <div class="result d-flex border-bottom">
+                                <a href="#">Indian Institute of Technology - [IIT]</a>
+                                <p class="mb-0"><i class="fa fa-bolt" aria-hidden="true"></i></p>
+                            </div>
+                            <div class="result d-flex border-bottom">
+                                <a href="#">Indian Institute of Technology - [IIT]</a>
+                                <p class="mb-0"><i class="fa fa-bolt" aria-hidden="true"></i></p>
+                            </div>
+                            <div class="result d-flex border-bottom">
+                                <a href="#">Indian Institute of Technology - [IIT]</a>
+                                <p class="mb-0"><i class="fa fa-bolt" aria-hidden="true"></i></p>
+                            </div>
+                            <div class="result d-flex border-bottom">
+                                <a href="#">Indian Institute of Technology - [IIT]</a>
+                                <p class="mb-0"><i class="fa fa-bolt" aria-hidden="true"></i></p>
+                            </div>
+                            <div class="result d-flex border-bottom">
+                                <a href="#">Indian Institute of Technology - [IIT]</a>
+                                <p class="mb-0"><i class="fa fa-bolt" aria-hidden="true"></i></p>
+                            </div>
+                            <div class="result d-flex border-bottom">
+                                <a href="#">Indian Institute of Technology - [IIT]</a>
+                                <p class="mb-0"><i class="fa fa-bolt" aria-hidden="true"></i></p>
+                            </div>
+                            <div class="result d-flex border-bottom">
+                                <a href="#">Indian Institute of Technology - [IIT]</a>
+                                <p class="mb-0"><i class="fa fa-bolt" aria-hidden="true"></i></p>
+                            </div>
+                            <div class="result d-flex border-bottom">
+                                <a href="#">Indian Institute of Technology - [IIT]</a>
+                                <p class="mb-0"><i class="fa fa-bolt" aria-hidden="true"></i></p>
+                            </div>
+                            <div class="result d-flex border-bottom">
+                                <a href="#">Indian Institute of Technology - [IIT]</a>
+                                <p class="mb-0"><i class="fa fa-bolt" aria-hidden="true"></i></p>
+                            </div>
+                            <div class="result d-flex border-bottom">
+                                <a href="#">Indian Institute of Technology - [IIT]</a>
+                                <p class="mb-0"><i class="fa fa-bolt" aria-hidden="true"></i></p>
+                            </div>
+                            <div class="result d-flex border-bottom">
+                                <a href="#">Indian Institute of Technology - [IIT]</a>
+                                <p class="mb-0"><i class="fa fa-bolt" aria-hidden="true"></i></p>
+                            </div>
+                            <div class="result d-flex border-bottom">
+                                <a href="#">Indian Institute of Technology - [IIT]</a>
+                                <p class="mb-0"><i class="fa fa-bolt" aria-hidden="true"></i></p>
+                            </div>
+                            <div class="result d-flex border-bottom">
+                                <a href="#">Indian Institute of Technology - [IIT]</a>
+                                <p class="mb-0"><i class="fa fa-bolt" aria-hidden="true"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <!-- Mobile Search Bar --> 
+
+
+        <!-- Mobile City / Goal -->
+            <section class="mobile-goal-city-section" id="goalcity">
+                <div class="row gx-0">
+                    <div class="col-lg-12 col-sm-12 col-12">
+                        <div class="goal-header-section">
+                            <div class="box d-flex">
+                                <div class="back-btn">
+                                    <a href="#" class="closebtn" onclick="closeMcitygoalsearch()"> <i class="fa fa-angle-left" aria-hidden="true"></i> </a>
+                                </div>
+                                <div class="text">
+                                    <p class="mb-0">Welcomne To Searchyourcollege</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-sm-12 col-12">
+                        <div class="search-data">
+                            <div class="chat">
+                                <div class="left-side">
+                                    <div class="msg d-flex gap-2 align-item-center">
+                                        <div class="image">
+                                            <img src="https://i.pinimg.com/originals/be/61/38/be6138527adcaf0bc42d6bd0339b25b0.png" alt="calling">
+                                        </div>
+                                        <div class="message">
+                                            <p>
+                                                <span class="badge">Welcome to Searchyour college</span>
+                                            </p>
+                                            <p>
+                                                <span class="badge">How Can I Assist You ? </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="right-side">
+                                    <div class="msg d-flex gap-2 align-item-center flex-row-reverse">
+                                        <div class="image">
+                                            <img src="https://i.pinimg.com/originals/be/61/38/be6138527adcaf0bc42d6bd0339b25b0.png" alt="calling">
+                                        </div>
+                                        <div class="message">
+                                            <p>
+                                                <span class="badge">Can you Suggest me about B.Tech Colleges</span>
+                                            </p>
+                                            <p>
+                                                <span class="badge">In Jaipur</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="left-side">
+                                    <div class="msg d-flex gap-2 align-item-center">
+                                        <div class="image">
+                                            <img src="https://i.pinimg.com/originals/be/61/38/be6138527adcaf0bc42d6bd0339b25b0.png" alt="calling">
+                                        </div>
+                                        <div class="message">
+                                            <p>
+                                                <span class="badge">Welcome to Searchyour college</span>
+                                            </p>
+                                            <p>
+                                                <span class="badge">How Can I Assist You ? </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="right-side">
+                                    <div class="msg d-flex gap-2 align-item-center flex-row-reverse">
+                                        <div class="image">
+                                            <img src="https://i.pinimg.com/originals/be/61/38/be6138527adcaf0bc42d6bd0339b25b0.png" alt="calling">
+                                        </div>
+                                        <div class="message">
+                                            <p>
+                                                <span class="badge">Can you Suggest me about B.Tech Colleges</span>
+                                            </p>
+                                            <p>
+                                                <span class="badge">In Jaipur</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="left-side">
+                                    <div class="msg d-flex gap-2 align-item-center">
+                                        <div class="image">
+                                            <img src="https://i.pinimg.com/originals/be/61/38/be6138527adcaf0bc42d6bd0339b25b0.png" alt="calling">
+                                        </div>
+                                        <div class="message">
+                                            <p>
+                                                <span class="badge">Welcome to Searchyour college</span>
+                                            </p>
+                                            <p>
+                                                <span class="badge">How Can I Assist You ? </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="right-side">
+                                    <div class="msg d-flex gap-2 align-item-center flex-row-reverse">
+                                        <div class="image">
+                                            <img src="https://i.pinimg.com/originals/be/61/38/be6138527adcaf0bc42d6bd0339b25b0.png" alt="calling">
+                                        </div>
+                                        <div class="message">
+                                            <p>
+                                                <span class="badge">Can you Suggest me about B.Tech Colleges</span>
+                                            </p>
+                                            <p>
+                                                <span class="badge">In Jaipur</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="left-side">
+                                    <div class="msg d-flex gap-2 align-item-center">
+                                        <div class="image">
+                                            <img src="https://i.pinimg.com/originals/be/61/38/be6138527adcaf0bc42d6bd0339b25b0.png" alt="calling">
+                                        </div>
+                                        <div class="message">
+                                            <p>
+                                                <span class="badge">Welcome to Searchyour college</span>
+                                            </p>
+                                            <p>
+                                                <span class="badge">How Can I Assist You ? </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="right-side">
+                                    <div class="msg d-flex gap-2 align-item-center flex-row-reverse">
+                                        <div class="image">
+                                            <img src="https://i.pinimg.com/originals/be/61/38/be6138527adcaf0bc42d6bd0339b25b0.png" alt="calling">
+                                        </div>
+                                        <div class="message">
+                                            <p>
+                                                <span class="badge">Can you Suggest me about B.Tech Colleges</span>
+                                            </p>
+                                            <p>
+                                                <span class="badge">In Jaipur</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-sm-12 col-12">
+                        <div class="chating-box  fixed-bottom">
+                            <div class="form-group">
+                                <input type="text" name="" id="" class="form-control" placeholder="Write your message here" aria-describedby="helpId">
+                            </div>
+                            <div class="send-btn">
+                                <h6><i class="fa fa-paper-plane" aria-hidden="true"></i></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <!-- Mobile City / Goal -->  
+
 
         <!-- Searchbar Start -->
-            <div class="overlay-searchbox hide-mobile">
+            <div class="overlay-searchbox">
                 <div id="mySearchbar" class="searchbar">
                     <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
                     <div class="searchbar-content">
@@ -1407,16 +1609,529 @@
                     </div> -->
                 </div>
             </div>
-        <!-- Searchbar End -->        
+        <!-- Searchbar End -->           
         
+
+        <!-- Mobile bootom Icon Section -->
+            <section class="mobile-icon shadow-lg hide-desktop fixed-bottom ">
+                <div class="container-fluid">
+                    <div class="icons d-flex gap-3 justify-content-evenly">
+                        <div class="exam">
+                            <a href="exam.html"> <i class="fa fa-book" aria-hidden="true"></i> <br>Exams </a>
+                        </div>
+                        <div class="course">
+                            <a href="#"> <i class="fa fa-leanpub" aria-hidden="true"></i> <br>Courses </a>
+                        </div>
+                        <div class="home">
+                            <a href="index.html"> <i class="fa fa-home" aria-hidden="true"></i> <br>Home </a>
+                        </div>
+                        <div class="news">
+                            <a href="news.html"> <i class="fa fa-newspaper-o" aria-hidden="true"></i> <br>News </a>
+                        </div>
+                        <div class="colleges">
+                            <a href="university.html"> <i class="fa fa-graduation-cap" aria-hidden="true"></i> <br>Universities </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <!-- Mobile bootom Icon Section -->
+
+
+        <!-- Mobile Sidebar Start -->
+            <section class="mobile-sidebar">
+                <div class="sidebar first" data-menu-name="first">
+                    <div class="header bg-primary">
+
+                    </div>
+
+                    <div class="heading">
+                        <h6 class="mb-0"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Explore Category</h6>
+                    </div>
+                    <ul>
+                        <li class="has-submenu">
+                            <a href="#" data-submenu="engineering"> <img src="images/goals/engineering.png" alt="engineering" width="20"> <span>Engineering</span></a>
+
+                            <div id="engineering" class="submenu">
+                                <div class="submenu-header">
+                                    <a href="#" data-submenu-close="engineering">Back</a>
+                                </div>
+
+                                <label>Engineering</label>
+
+                                <ul>
+                                    <li class="has-submenu">
+                                        <a href="#" data-submenu="software">Software Engineering</a>
+                                        <div id="software" class="submenu">
+                                            <div class="submenu-header">
+                                                <a href="#" data-submenu-close="software">Back</a>
+                                            </div>
+                                            <label>Software Engineering</label>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+
+                                    <li class="has-submenu">
+                                        <a href="#" data-submenu="mechenical">Mechenical Engineering</a>
+                                        <div id="mechenical" class="submenu">
+                                            <div class="submenu-header">
+                                                <a href="#" data-submenu-close="mechenical">Back</a>
+                                            </div>
+                                            <label>Mechenical Engineering</label>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+
+                                    <li class="has-submenu">
+                                        <a href="#" data-submenu="civil">Civil Engineering</a>
+                                        <div id="civil" class="submenu">
+                                            <div class="submenu-header">
+                                                <a href="#" data-submenu-close="civil">Back</a>
+                                            </div>
+                                            <label>Civil Engineering</label>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="has-submenu">
+                            <a href="#" data-submenu="medical"><img src="images/goals/medical.png" alt="medical" width="20"> <span>Medical</span></a>
+                            <div id="medical" class="submenu">
+                                <div class="submenu-header">
+                                    <a href="#" data-submenu-close="medical">Back</a>
+                                </div>
+                                <label>Medical</label>
+                                <ul>
+                                    <li class="has-submenu">
+                                        <a href="#" data-submenu="mbbs">MBBS</a>
+                                        <div id="mbbs" class="submenu">
+                                            <div class="submenu-header">
+                                                <a href="#" data-submenu-close="mbbs">Back</a>
+                                            </div>
+                                            <label>MBBS</label>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+
+                                    <li class="has-submenu">
+                                        <a href="#" data-submenu="pharma">Pharma</a>
+                                        <div id="pharma" class="submenu">
+                                            <div class="submenu-header">
+                                                <a href="#" data-submenu-close="pharma">Back</a>
+                                            </div>
+                                            <label>Pharma</label>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="has-submenu">
+                            <a href="#" data-submenu="managemet"><img src="images/goals/management.png" alt="management" width="20"> <span>Management</span></a>
+                            <div id="managemet" class="submenu">
+                                <div class="submenu-header">
+                                    <a href="#" data-submenu-close="managemet">Back</a>
+                                </div>
+                                <label>Management</label>
+                                <ul>
+                                    <li class="has-submenu">
+                                        <a href="#" data-submenu="bba">BBA</a>
+                                        <div id="bba" class="submenu">
+                                            <div class="submenu-header">
+                                                <a href="#" data-submenu-close="bba">Back</a>
+                                            </div>
+                                            <label>BBA</label>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+
+                                    <li class="has-submenu">
+                                        <a href="#" data-submenu="mba">MBA</a>
+                                        <div id="mba" class="submenu">
+                                            <div class="submenu-header">
+                                                <a href="#" data-submenu-close="mba">Back</a>
+                                            </div>
+                                            <label>MBA</label>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>      
+
+                        <li class="has-submenu">
+                            <a href="#" data-submenu="commerce"><img src="images/goals/commerce.png" alt="commerce" width="20"> <span>Commerce</span></a>
+                            <div id="commerce" class="submenu">
+                                <div class="submenu-header">
+                                    <a href="#" data-submenu-close="commerce">Back</a>
+                                </div>
+                                <label>Commerce</label>
+                                <ul>
+                                    <li class="has-submenu">
+                                        <a href="#" data-submenu="ca">CA</a>
+                                        <div id="ca" class="submenu">
+                                            <div class="submenu-header">
+                                                <a href="#" data-submenu-close="ca">Back</a>
+                                            </div>
+                                            <label>CA</label>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+
+                                    <li class="has-submenu">
+                                        <a href="#" data-submenu="cfa">CFA</a>
+                                        <div id="cfa" class="submenu">
+                                            <div class="submenu-header">
+                                                <a href="#" data-submenu-close="cfa">Back</a>
+                                            </div>
+                                            <label>CFA</label>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>        
+
+                        <li class="has-submenu">
+                            <a href="#" data-submenu="design"><img src="images/goals/design.png" alt="design" width="20"> <span>Design</span></a>
+                            <div id="design" class="submenu">
+                                <div class="submenu-header">
+                                    <a href="#" data-submenu-close="design">Back</a>
+                                </div>
+                                <label>Design</label>
+                                <ul>
+                                    <li class="has-submenu">
+                                        <a href="#" data-submenu="graphics">Graphics</a>
+                                        <div id="graphics" class="submenu">
+                                            <div class="submenu-header">
+                                                <a href="#" data-submenu-close="graphics">Back</a>
+                                            </div>
+                                            <label>Graphics</label>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+
+                                    <li class="has-submenu">
+                                        <a href="#" data-submenu="fashion">Fashion</a>
+                                        <div id="fashion" class="submenu">
+                                            <div class="submenu-header">
+                                                <a href="#" data-submenu-close="fashion">Back</a>
+                                            </div>
+                                            <label>Fashion</label>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>     
+                        
+                        <li class="has-submenu">
+                            <a href="#" data-submenu="arts"><img src="images/goals/arts.png" alt="arts" width="20"> <span>Arts</span></a>
+                            <div id="arts" class="submenu">
+                                <div class="submenu-header">
+                                    <a href="#" data-submenu-close="arts">Back</a>
+                                </div>
+                                <label>Arts</label>
+                                <ul>
+                                    <li class="has-submenu">
+                                        <a href="#" data-submenu="ba">BA</a>
+                                        <div id="ba" class="submenu">
+                                            <div class="submenu-header">
+                                                <a href="#" data-submenu-close="ba">Back</a>
+                                            </div>
+                                            <label>BA</label>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+
+                                    <li class="has-submenu">
+                                        <a href="#" data-submenu="ma">MA</a>
+                                        <div id="ma" class="submenu">
+                                            <div class="submenu-header">
+                                                <a href="#" data-submenu-close="ma">Back</a>
+                                            </div>
+                                            <label>MA</label>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>                           
+                    </ul>
+
+                    <div class="heading">
+                        <h6 class="mb-0"><i class="fa fa-link" aria-hidden="true"></i> Useful Links</h6>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#">About Searchyourcollege</a>
+                        </li>  
+                        <li>
+                            <a href="#">Top Universities & Colleges</a>
+                        </li>
+                        <li>
+                            <a href="#">Top Courses</a>
+                        </li>  
+                        <li>
+                            <a href="#">Exam</a>
+                        </li>  
+                        <li>
+                            <a href="#">Study Abroad</a>
+                        </li>                          
+                        <li>
+                            <a href="#">Reviews</a>
+                        </li>  
+                        <li>
+                            <a href="#">News</a>
+                        </li>  
+                        <li>
+                            <a href="#">Admission 2023</a>
+                        </li>  
+                        <li>
+                            <a href="#">Advertising</a>
+                        </li> 
+                        <li>
+                            <a href="#">Careers</a>
+                        </li> 
+                        <li>
+                            <a href="#">Ask a question</a>
+                        </li>  
+                        <li>
+                            <a href="#">Terms & Condition</a>
+                        </li>  
+                        <li>
+                            <a href="#">Privacy Policy</a>
+                        </li> 
+                        <li>
+                            <a href="#">Contact Us</a>
+                        </li>   
+                    </ul>                    
+                </div>
+            </section>
+            <div class="sidebar-overlay"></div>
+        <!-- Mobile Sidebar End -->       
+
 
         <!-- Bootstrap JavaScript Libraries -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-        <!-- Script Link -->
-        <script src="js/script.js"></script>
+        <!-- Jquery CDN -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>    
 
-        <!-- Searchbar Script -->
+        <!-- Script Js -->
+        <script src="js/script.js"></script>   
+
+        <!-- Desktop Searchbar Script -->
         <script>
             function openSearch() {
             document.getElementById("mySearchbar").style.display = "block";
@@ -1425,7 +2140,22 @@
             function closeSearch() {
             document.getElementById("mySearchbar").style.display = "none";
             }
-        </script>     
+        </script>   
+
+        <!-- ------------------ -->
+
+        <!-- Notification Script -->
+        <script>
+            function opennotication() {
+            document.getElementById("notificationOpen").style.display = "block";
+            }
+            
+            function closenotifcation() {
+            document.getElementById("notificationOpen").style.display = "none";
+            }
+        </script>          
+
+        <!-- ------------------ -->
 
         <!-- Mobile Searchbar Script -->
         <script>
@@ -1436,7 +2166,54 @@
             function closeMobile() {
             document.getElementById("mobileSearchOpen").style.display = "none";
             }
-        </script>    
+        </script>   
+
+        <!-- ------------------ -->
+
+        <!-- Goal / City Script -->
+        <script>
+            function citygoalsearch() {
+            document.getElementById("goalcity").style.display = "block";
+            document.getElementById("goalcity_desktop").style.display = "block";            
+            }
+            
+            function closeMcitygoalsearch() {
+            document.getElementById("goalcity").style.display = "none";
+            document.getElementById("goalcity_desktop").style.display = "none";            
+            }
+        </script> 
+
+        <!-- ------------------ -->
+
+        <!-- Mobile Sidebar -->
+        <script>
+            $(function() {
+            $('.sidebar').each(function () {
+                $(this).sidebar({
+                opened: function (el) {
+                    console.log(el.attr('data-menu-name') + ' side menu opened')
+                },
+                closed: function (el) {
+                    console.log(el.attr('data-menu-name') + ' side menu closed')
+                }
+                })
+            })
+
+            $('.sidebar-overlay').on('click', function () {
+                $('.sidebar.opened').each(function () {
+                $(this).data('sidebar').close()
+                })
+            });
+
+            $('.btn-open.first').on('click', function () {
+                $('.sidebar.first').data('sidebar').open();
+            });
+
+            $('.btn-open.second').on('click', function () {
+                $('.sidebar.second').data('sidebar').open();
+            });
+            });
+        </script>       
        
 
     </body>

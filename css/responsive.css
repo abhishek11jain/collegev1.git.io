@@ -1,7 +1,6 @@
 :root{
     --font-theme : 'PT Sans', sans-serif;
     --primary-color : #234e70;
-    --second-color  :#f1dac4;
     --black-primary : #000000;
     --black-secondary : #000000a1;
     --black-transparent : #00000057;
@@ -44,6 +43,9 @@
             padding: 15px 0;
             z-index: 2;
         }
+        .mobile-header-section .logo{
+            text-align: center;
+        }
         .mobile-header-section .toggle-button{
             margin-right: 20px;
         }
@@ -55,7 +57,7 @@
         .mobile-header-section .toggle-button a,
         .mobile-header-section .search-button a{
             color: var(--white-primary);
-            font-size: 15px;
+            font-size: 20px;
         }
     /* Mobile Header */
 
@@ -373,9 +375,75 @@
             padding: 2px;
             font-size: 10px;
         }
+
+
+    /* ================================================  EXAM PAGE  ================================================ */
+
+        .exam-category .category .box,
+        .exam-category .box, .exam-category .news{
+            border-radius: 0 !important;
+        }    
+        .exam-category .row>*{
+            padding-left: 0%;
+            padding-right: 0%;
+        }
+        .exam-category .data{
+            margin: 10px;
+        }
+        .exam-category .data .main-data .title h6{
+            font-size: 13px;
+            white-space: nowrap !important;
+            text-overflow: ellipsis !important;
+            width: 100px !important;
+            overflow: hidden !important;
+        }
+        .exam-category .data .main-data .title p{
+            font-size: 10px;
+        }  
+        .exam-category .news{
+            margin-top: 1em;
+            margin-bottom: 0;
+        }
+        .exam-category .accordion-button{
+            font-size: 12px;
+        }
+        .exam-category .accordion-header p{
+            font-size: 11px;
+        }
+        .exam-category .accordion-body p{
+            font-size: 13px;
+        }      
+        .exam-category .title h4,
+        .exam-category .exam h6{
+            font-size: 13px;
+            font-weight: 600;
+        }
+        .exam-category .box .user{
+            display: block !important;
+        }
+        .exam-category .box .text,
+        .exam-category .box .share{
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .exam-category .box .text p{
+            font-size: 16px;
+        }
+        .exam-category .box .user .alert-btn .btn{
+            font-size: 10px;
+        }
+        .exam-category .table-responsive{
+            white-space: nowrap;
+            overflow: auto;
+        }
+
+
     /* ================================================  NEWS PAGE  ================================================ */
 
-
+        .news-section .row{
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        }
         .news-section .slider-side .carousel-item, 
         .news-section .news-details .image{
             height: 30ch !important;
@@ -383,24 +451,24 @@
         .news-section .slider-side .carousel-caption h3 a {
             font-size: 13px !important;
         }
+        .news-section .news-details .author-detail .text a{
+            font-size: 12px;
+        }
         .news-section .slider-side .carousel-caption p ,
         .news-section .slider-side .carousel-caption .btn{
             font-size: 9px !important;
         }
-        .news-section .news-details .author{
-            align-items: center;
+        .news-section .news-side .author{
+            display: none !important;
         }
-        .news-section .news-details .author-detail{
-            padding: 10px 0 10px 0;
-        }
-        .news-section .news-details .author-detail a{
-            font-size: 12px;
-            color: var(--primary-color);
-        }
-        .news-section .news-details .author-date p{
-            font-size: 12px;
-        }
-    }
+        .news-section .news-details .author-date{
+            margin-left: auto;
+        }     
+        .news-section .news-details .author a,
+        .news-section .news-details .author p{
+            font-size: 10px;
+        }             
+}
 
 
 /* ANY DESKTOP DEVICE */
@@ -508,6 +576,63 @@
     {
         font-size: 6px !important;
     }
+
+    /* ================================================  EXAM & EXAM DETAIL  ================================================ */
+
+    .exam-category .data .main-data .title h6{
+        font-size: 11px;
+        white-space: nowrap !important;
+        text-overflow: ellipsis !important;
+        width: 80px !important;
+        overflow: hidden !important;
+    }   
+    .exam-category .data .main-data .title p{
+        font-size: 9px;
+    } 
+    .exam-category .news .news-detail h6{
+        font-size: 11px;
+        width: 130px;
+    }
+    .exam-category .data .bottom-text h6 a, 
+    .exam-category .data .button-text h6 a{
+        font-size: 10px;
+    }
+    .exam-category .data .button-text .btn {
+        font-size: 10px;
+        padding: 3px 10px 3px 10px;
+    }
+    .exam-category .box .para .table-responsive {
+        overflow: auto;
+        white-space: nowrap;
+    }
+    .exam-category .box .para .table-responsive {
+        overflow: auto;
+        white-space: nowrap;
+    }
+
+
+
+
+    /* ================================================  NEWS PAGE  ================================================ */
+
+    .news-section .row{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .news-section .slider-side .carousel-item, 
+    .news-section .news-details .image{
+        height: 30ch !important;
+    }
+    .news-section .slider-side .carousel-caption h3 a {
+        font-size: 13px !important;
+    }
+    .news-section .slider-side .carousel-caption p ,
+    .news-section .slider-side .carousel-caption .btn{
+        font-size: 9px !important;
+    }
+    .news-section .news-side .author{
+        display: none !important;
+    }    
    
 }
 
@@ -648,9 +773,68 @@
         font-size: 6px !important;
     }
 
+    /* ================================================  EXAM & EXAM DETAIL  ================================================ */
 
+    .exam-category .data .main-data .title h6{
+        font-size: 11px;
+        white-space: nowrap !important;
+        text-overflow: ellipsis !important;
+        width: 80px !important;
+        overflow: hidden !important;
+    }   
+    .exam-category .data .main-data .title p{
+        font-size: 9px;
+    } 
+    .exam-category .news .news-detail h6{
+        font-size: 11px;
+        width: 130px;
+    }
+    .exam-category .data .bottom-text h6 a, 
+    .exam-category .data .button-text h6 a{
+        font-size: 10px;
+    }
+    .exam-category .data .button-text .btn {
+        font-size: 10px;
+        padding: 3px 10px 3px 10px;
+    }
+    .exam-category .box p {
+        font-size: 10px !important;
+    }
+    .exam-category .box .user .alert-btn .btn{
+        font-size: 10px;
+    }
+    .exam-category .box .para ul li{
+        font-size: 10px;
+    }
+    .exam-category .table-responsive{
+        white-space: nowrap;
+        overflow: auto;
+    }
+    .exam-category .tab-section .nav-tabs .nav-item .show .nav-link, 
+    .exam-category .tab-section .nav-tabs .nav-link{
+        font-size: 12px;
+    }
 
+    /* ================================================  NEWS PAGE  ================================================ */
 
+    .news-section .row{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .news-section .slider-side .carousel-item, 
+    .news-section .news-details .image{
+        height: 30ch !important;
+    }
+    .news-section .slider-side .carousel-caption h3 a {
+        font-size: 13px !important;
+    }
+    .news-section .slider-side .carousel-caption p ,
+    .news-section .slider-side .carousel-caption .btn{
+        font-size: 9px !important;
+    }
+    .news-section .news-side .author{
+        display: none !important;
+    }
 }
 
 /* IPAD PORTRAIT */
@@ -827,6 +1011,69 @@
     {
         font-size: 6px !important;
     }
+
+    /* ================================================  EXAM & EXAM DETAIL  ================================================ */
+
+    .exam-category .data .main-data .title h6{
+        font-size: 13px;
+        white-space: nowrap !important;
+        text-overflow: ellipsis !important;
+        width: 80px !important;
+        overflow: hidden !important;
+    }   
+    .exam-category .data .main-data .title p{
+        font-size: 10px;
+    } 
+    .exam-category .box p {
+        font-size: 10px !important;
+    }
+    .exam-category .box .user .alert-btn .btn{
+        font-size: 10px;
+    }
+    .exam-category .box .para ul li{
+        font-size: 10px;
+    }
+    .exam-category .table-responsive{
+        white-space: nowrap;
+        overflow: auto;
+    }
+    .exam-category .tab-section .nav-tabs .nav-item .show .nav-link, 
+    .exam-category .tab-section .nav-tabs .nav-link{
+        font-size: 12px;
+    }
+
+    /* ================================================  NEWS PAGE  ================================================ */
+
+    .news-section .row{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .news-section .slider-side .carousel-item, 
+    .news-section .news-details .image{
+        height: 30ch !important;
+    }
+    .news-section .slider-side .carousel-caption h3 a {
+        font-size: 13px !important;
+    }
+    .news-section .slider-side .carousel-caption p ,
+    .news-section .slider-side .carousel-caption .btn{
+        font-size: 9px !important;
+    }
+    .news-section .news-side .author{
+        display: none !important;
+    }  
+    .news-section .news-side .text h6{
+        margin-bottom: 0;
+    }
+    .news-section .news-side .text a{
+        font-size: 8px;
+    }
+    .news-section .news-side .text {
+        padding: 6px;
+    }
+    .news-section .news-side .image{
+        height: 8ch ;
+    }  
 }
 
 /* IPAD AIR */
@@ -1003,205 +1250,79 @@
         font-size: 6px !important;
     }
 
+    /* ================================================  EXAM & EXAM DETAIL  ================================================ */
 
-
-
-
-
-
-
-
-
-
-
-}
-
-/* GALAXY FOLD LANDSCAPE */
-@media only screen and (device-width : 717px) and (device-height : 512px) and (orientation: landscape) {
-    .topbar-section{
-        padding: 0 !important;
-        padding-bottom: 10px !important;
+    .exam-category .data .main-data .title h6{
+        font-size: 11px;
+        white-space: nowrap !important;
+        text-overflow: ellipsis !important;
+        width: 80px !important;
+        overflow: hidden !important;
+    }   
+    .exam-category .data .main-data .title p{
+        font-size: 9px;
+    } 
+    .exam-category .news .news-detail h6{
+        font-size: 11px;
+        width: 130px;
     }
-    .topbar-section .topbar-menus ul li{
-        margin: 0 !important;
+    .exam-category .data .bottom-text h6 a, 
+    .exam-category .data .button-text h6 a{
+        font-size: 10px;
     }
-    .topbar-section .topbar-menus ul li a{
-        font-size: 7px !important;
-        padding-left: 15px !important;
+    .exam-category .data .button-text .btn {
+        font-size: 10px;
+        padding: 3px 10px 3px 10px;
+    }
+    .exam-category .box p {
+        font-size: 10px !important;
+    }
+    .exam-category .box .user .alert-btn .btn{
+        font-size: 10px;
+    }
+    .exam-category .box .para ul li{
+        font-size: 10px;
+    }
+    .exam-category .table-responsive{
+        white-space: nowrap;
+        overflow: auto;
+    }
+    .exam-category .tab-section .nav-tabs .nav-item .show .nav-link, 
+    .exam-category .tab-section .nav-tabs .nav-link{
+        font-size: 12px;
     }
 
-    /* ------------------ */
 
-    .navbar-section .btn{
+    /* ================================================  NEWS PAGE  ================================================ */
+
+    .news-section .row{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .news-section .slider-side .carousel-item, 
+    .news-section .news-details .image{
+        height: 30ch !important;
+    }
+    .news-section .slider-side .carousel-caption h3 a {
+        font-size: 13px !important;
+    }
+    .news-section .slider-side .carousel-caption p ,
+    .news-section .slider-side .carousel-caption .btn{
         font-size: 9px !important;
     }
-
-    /* ------------------ */
-    
-    .navbar-menu .navbar{
-        padding: 0 !important;
+    .news-section .news-side .author{
+        display: none !important;
+    }  
+    .news-section .news-side .text h6{
+        margin-bottom: 0;
     }
-    .navbar-menu .menu-name{
-        font-size: 11px !important;
+    .news-section .news-side .text a{
+        font-size: 8px;
     }
-    .navbar-menu .nav-pills a{
-        font-size: 12px !important;
+    .news-section .news-side .text {
+        padding: 6px;
     }
-    .navbar-menu .tab-content h6{
-        font-size: 11px !important;
-    }
-    .navbar-menu .tab-content .sub-menu{
-        font-size: 10px !important;
-    }
-
-    /* ------------------ */
-
-    
-    .slider-section .carousel-item {
-        height: 44ch !important;
-    }
-    .caption-section {
-        padding: 4em !important;
-        margin-top: -19em !important;
-    }
-    .caption-section .text {
-        font-size: 3.5ch;
-    }
-
-    /* -------------------------- */
-
-
-    .recent-visit-section .visit-record,
-    .goal-section .visit-record{
-        overflow: auto;
-        white-space: nowrap;
-    }
-
-    /* -------------------------- */
-
-    .collection-section .absolute-box {
-        padding: 0 0px 0 47px !important;
-    }
-
-    /* -------------------------- */
-
-    .infromation-section .row{
-        align-items: center !important;
-    }
-    .infromation-section #InformationSection .image{
-        height: 40px !important;
-        width: 40px !important;
-    }
-    .infromation-section .text,
-    .university-section .text{
-        margin-top: 0 !important;
-        margin-left: 10px;
-    }
-    .infromation-section .text h6,
-    .university-section .text h6{
-        font-size: 11px !important;
-    }
-
-    /* -------------------------- */
-
-    .place-section #PlaceSection .card {
-        height: 110px !important;
-        width: 100px !important;
-        padding: 9px !important;
-    }
-
-
-    /* -------------------------- */
-
-    .footer-section .title h6 {
-        font-size: 12px !important;
-    }
-    .footer-section .links p {
-        font-size: 6px !important;
-    }
-    .footer-section .mid-footer span {
-        font-size: 8px !important;
-    }
-    .bottom-footer .buttons,
-    .bottom-footer .copyright {
-        text-align: center !important;
-        display: block !important;
-    }
-    .bottom-footer .buttons span h6{
-        font-size: 15px !important;
-        padding-bottom: 1em !important;
+    .news-section .news-side .image{
+        height: 8ch ;
     }    
-    .bottom-footer .text p {
-        font-size: 12px !important;
-    }
-
-    /* ================================================  UNIVERSITY & COLLEGES PAGE  ================================================ */
-            
-    .notification-section .title h6{
-        font-size: 8px;
-    }
-    .notification-section p{
-        font-size: 8px;
-    }
-    .list-section .header-filter .hide-mobile{
-        display: block !important;
-    }
-    .list-section .filter .header h6,
-    .list-section .filter .header a{
-        font-size: 8px !important;
-    }
-    .list-section .header-filter .sort{
-        padding: 0;
-        padding-bottom: 5px;
-    }
-    .list-section .header-filter .sort .sorting span{
-        font-size: 8px;
-    }
-    .list-section .header-filter .sort .sorting a .fa,
-    .list-section .header-filter .sort .sorting .view .fa {
-        font-size: 5px !important;
-    }
-    .list-section .header-filter .sort .sorting .active{
-        font-size: 7px;
-    }
-    .list-section .infromation-data .details .name p{
-        font-size: 7px;
-    }
-    .list-section .infromation-data .main-image{
-        height: 100px;
-    }
-    .list-section .infromation-data .links{
-        margin-top: 10px;
-    }
-    .list-section .infromation-data .links a{
-        font-size: 9px;
-    }
-    .list-section .infromation-data .main-buttons .btn{
-        padding: 2px;
-        font-size: 9px;
-    }
-    .list-section .infromation-data .details .college-name, 
-    .list-section .infromation-data .details .fees-structure{
-        justify-content: center;
-    }
-    .list-section .infromation-data .details .fees-structure .fees-1, 
-    .list-section .infromation-data .details .fees-structure .fees-2, 
-    .list-section .infromation-data .details .fees-structure .rating
-    {
-        padding: 5px;
-    }
-    .list-section .infromation-data .details .fees-structure .fees-1 a h6, 
-    .list-section .infromation-data .details .fees-structure .fees-2 a h6, 
-    .list-section .infromation-data .details .fees-structure .rating a h6
-    {
-        font-size: 10px !important;
-    }
-    .list-section .infromation-data .details .fees-structure .fees-1 p, 
-    .list-section .infromation-data .details .fees-structure .fees-2 p, 
-    .list-section .infromation-data .details .fees-structure .rating p
-    {
-        font-size: 6px !important;
-    }
-
-
 }
