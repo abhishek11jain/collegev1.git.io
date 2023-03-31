@@ -63,7 +63,7 @@ ul{
 .bg-white{
     background: var(--white-primary);
 }
-.bg-gray{
+.light-gray{
     background: var(--gray-light);
 }
 .bg-primary{
@@ -71,6 +71,12 @@ ul{
 }
 .bg-secondary{
     background: var(--secondary-color) !important;
+}
+.bread-crumb{
+    padding: 1em;
+}
+.bread-crumb a{
+    color: var(--secondary-color);
 }
 
 /* Topbar Section */
@@ -420,7 +426,8 @@ ul{
 .top-course-section,
 .place-section,
 .exam-section,
-.study-section{
+.study-section,
+.exam-category{
     padding: 0.5em 0 2em;
 }
 .goal-section .visit-record img{
@@ -1392,6 +1399,212 @@ ul{
 
 
 
+/* ================================================  UNIVERSITY & COLLEGES PAGE  ================================================ */
+
+
+.notification-section{
+    padding-bottom: 1em;
+}
+.notification-section .content{
+    padding: 15px;
+    background: var(--white-primary);
+}
+.notification-section .title{
+    margin-top: 0;
+}
+.notification-section .title h6{
+    font-size: 14px;
+}
+.notification-section .sky-color{
+    color: var(--primary-color);
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+}
+.notification-section .sky-color:hover{
+    color: var(--black-primary);
+}
+.list-section {
+    padding-bottom: 1em;
+}
+.list-section .filter{
+    background: var(--white-primary);
+}
+.list-section .filter .header{
+    padding: 10px;
+    align-items: center;
+}
+.list-section .filter .title{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.list-section .filter .title h6{
+    font-size: 12px;
+}
+.list-section .filter .default{
+    margin-left: auto;
+}
+.list-section .filter .default a{
+    font-size: 12px;
+    color: var(--secondary-color);
+}
+.list-section .filter .accordion-item,
+.list-section .filter .accordion-button{
+    border: none;
+    border-radius: 0;
+}
+.list-section .filter .accordion-button{
+    background: var(--gray-light);
+    color: var(--black-primary);
+    font-size: 13px;
+    padding: 12px;
+}
+.list-section .filter .accordion-body{
+    padding: 10px;
+}
+.list-section .filter .accordion {
+    --bs-accordion-btn-icon-width: .75rem;
+    color: var(--black-primary);
+}
+.list-section .filter .form-control{
+    border-radius: 0%;
+    font-size: 12px;
+    border-color: var(--gray-light);
+}
+.list-section .filter .form-control::placeholder{
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.list-section .filter .checkbox-data{
+    height: 15ch;
+    overflow: auto;
+}
+.list-section .filter .h-none{
+    height: auto !important;
+}
+.list-section .filter .checkbox-data::-webkit-scrollbar,
+.list-section .header-filter .sort .buttons .dropdown-menu::-webkit-scrollbar {
+    width: 3px;
+}
+.list-section .filter .checkbox-data::-webkit-scrollbar-thumb,
+.list-section .header-filter .sort .buttons .dropdown-menu::-webkit-scrollbar-thumb {
+    background-color: var(--official-gray);
+}
+.list-section .filter .checkbox-data .form-check{
+    font-size: 11px;
+    min-height: 0.2rem;
+}
+.list-section .filter .checkbox-data .form-check-label{
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+.list-section .filter .checkbox-data .form-check-label:hover{
+    color: var(--secondary-color);
+    font-weight: 500;
+}
+.list-section .header-filter .sort{
+    padding: 8px;
+    background: var(--white-primary);
+    align-items: center;
+}
+.list-section .header-filter .sort .sorting{
+    margin-left: auto;
+}
+.list-section .header-filter .sort .sorting span{
+    font-size: 13px;
+    padding-right: 15px;
+}
+.list-section .header-filter .sort .sorting a{
+    transition: 0.3s ease-in-out;
+    color: var(--black-primary);
+}
+.list-section .header-filter .sort .sorting a:hover{
+    color: var(--secondary-color);
+}
+.list-section .header-filter .sort .sorting a .fa{
+    font-size: xx-small ;
+}
+.list-section .header-filter .sort .sorting .view .fa{
+    font-size: 13px !important;
+}
+.list-section .header-filter .sort .sorting .active{
+    color: var(--secondary-color);
+    font-size: 14px;
+    font-weight: 600;
+}
+.list-section .infromation-data .college-data {
+    margin-bottom: 0.6em;
+    padding: 10px;
+    background: var(--white-primary);
+}
+.list-section .infromation-data .college-data .row{
+    align-items: center;
+}
+.list-section .infromation-data .main-image{
+    height: 100px;
+    width: 100%;
+}
+.list-section .infromation-data .main-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.list-section .infromation-data .details .college-name,
+.list-section .infromation-data .details .fees-structure{
+    align-items: center;
+    justify-content: start;
+}
+.list-section .infromation-data .details .name a{
+    font-size: 13px;
+    color: var(--primary-color);
+    transition: 0.3s ease-in-out;
+    font-weight: 500;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;    
+}
+.list-section .infromation-data .details .name a:hover{
+    color: var(--secondary-color);
+}
+.list-section .infromation-data .details .name p{
+    font-size: 11px;
+}
+.list-section .infromation-data .details .fees-structure a{
+    color: var(--secondary-color);
+}
+.list-section .infromation-data .details .fees-structure p{
+    font-size: 8px;
+}
+.list-section .infromation-data .details .fees-structure .fees-1,
+.list-section .infromation-data .details .fees-structure .fees-2,
+.list-section .infromation-data .details .fees-structure .rating{
+    padding: 10px;
+}
+.list-section .infromation-data .links a:first-child{
+    margin-left: 0;
+}
+.list-section .infromation-data .links a{
+    font-size: 14px;
+    text-align: center;
+    width: 100%;
+    color: var(--black-primary);
+    background: var(--gray-light);
+    padding: 5px;
+}
+.list-section .infromation-data .main-buttons .btn{
+    width: 100%;
+    margin-top: 10px;
+    background: var(--secondary-color);
+    border-color: var(--secondary-color);
+    box-shadow: none;
+    border-radius: 0;
+    transition: 0.3s ease-in-out;
+}
+.list-section .infromation-data .main-buttons .btn:hover{
+    background: var(--white-primary);
+    color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
 /* ================================================  NEWS PAGE  ================================================ */
 
 
@@ -1467,6 +1680,8 @@ ul{
 .news-section .title{
     background: var(--gray-light);
     padding: 10px;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
 }
 .news-section .title h6{
     font-size: 15px;
@@ -1482,6 +1697,9 @@ ul{
 .news-section .news-side .author,
 .news-section .news-details .author-detail{
     align-items: center;
+}
+.news-section .news-details .author-detail a{
+    color: var(--primary-color);
 }
 .news-section .news-side .author-image img,
 .news-section .news-details .author-detail img{
@@ -1543,7 +1761,6 @@ ul{
 
 
 .exam-category{
-    padding: 2em;
     background: var(--gray-light);
 }
 .exam-category .box,
@@ -1567,27 +1784,26 @@ ul{
 }
 .exam-category .bade-buttons .btn{
     background: var(--gray-light);
-    border-radius: 30px;
-    margin: 0  0 10px;
+    margin: 0  3px 12px;
     border: none;
     box-shadow: none;
     font-size: small;
 }
 .exam-category .bade-buttons .active{
-    border: 1px solid var(--secondary-color-color);
-    background: var(--theme-light);
-    color: var(--theme-color);
+    border: 1px solid var(--secondary-color);
+    background: var(--secondary-color);
+    color: var(--secondary-color);
 }
 .exam-category .bade-buttons .more{
-    color: var(--theme-color);
+    color: var(--white-primary);
+    background: var(--secondary-color);
     font-size: 13px;
-    background: none;
-    border: none;
     margin: 0 8px 0;
     font-weight: 500;
 }
 .exam-category .news hr{
-    color: lightgray;
+    color: var(--gray-light);
+    margin: 0.5rem !important;
 }
 .exam-category .news .news-data{
     padding-bottom: 1em;
@@ -1612,14 +1828,15 @@ ul{
 }
 .exam-category .news .bottom{
     padding-top: 1em;
-    border-bottom: 1px solid var(--gray-color);
+    border-bottom: 1px solid var(--official-gray);
 }
 .exam-category .news .link .link-data a{
     font-size: 12px;
     transition: 0.3s ease-in-out;
+    color: var(--primary-color);
 }
 .exam-category .news .link .link-data a:hover{
-    color: var(--theme-color);
+    color: var(--secondary-color);
 }
 .exam-category .news .link .link-data .fa{
     margin-left: auto;
@@ -1651,9 +1868,10 @@ ul{
 }
 .exam-category .news .news-detail a{
     transition: 0.3s ease-in-out;
+    color: var(--primary-color);
 }
 .exam-category .news .news-detail a:hover{
-    color: var(--theme-color);
+    color: var(--secondary-color);
 }
 .exam-category .news .news-detail p,
 .exam-category .news .calender{
@@ -1661,12 +1879,12 @@ ul{
 }
 .exam-category .data{
     margin-top: 1em;
-    border: 1px solid lightgray;
+    border: 1px solid var(--gray-light);
     padding: 1em 6px 1em 6px;
     border-radius: 10px;
 }
 .exam-category .data .main-data{
-    align-items: top;
+    align-items: center;
     justify-content: space-around;
 }
 .exam-category .data .main-data .image{
@@ -1682,13 +1900,13 @@ ul{
 }
 .exam-category .data .main-data .status span{
     background: lightgray;
-    color: var(--black-color);
+    color: var(--black-primary);
     font-weight: normal;
 }
 .exam-category .data  .text{
     padding: 10px;
     margin: 15px 10px 0;
-    background: var(--light-gray);
+    background: var(--gray-light);
     align-items: center;
     justify-content: space-around;
 }
@@ -1702,7 +1920,7 @@ ul{
 .exam-category .data  .bottom-text{
     padding: 20px 10px 5px 10px;
     align-items: center;
-    border-bottom: 1px solid var(--light-gray);
+    border-bottom: 1px solid var(--gray-light);
     justify-content: space-between;
 }
 .exam-category .data  .bottom-text h6,
@@ -1713,19 +1931,19 @@ ul{
 .exam-category .data  .button-text{
     padding: 5px 10px 5px 10px;
     align-items: center;
-    border-bottom: 1px solid var(--light-gray);
+    border-bottom: 1px solid var(--gray-light);
     justify-content: space-between;
 }
 .exam-category .data  .button-text .btn{
     box-shadow: none;
-    border: 1px solid var(--theme-color);
-    color: var(--theme-color);
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
     border-radius: 30px;
     font-size: 12px;
     padding: 4px 15px 4px 15px;
 }
 .exam-category .box .more a{
-    color: var(--theme-color);
+    color: var(--secondary-color);
 }
 .exam-category .articel{
     margin-top: 10px;
@@ -1786,8 +2004,8 @@ ul{
 }
 .exam-category .articel .indicator-icon a{
     padding: 4px 10px;
-    background: var(--theme-color);
-    color: var(--white-color);
+    background: var(--secondary-color);
+    color: var(--white-primary);
 }
 .exam-category .articel .indicate{
     align-items: center;
@@ -1795,7 +2013,7 @@ ul{
 }  
 .exam-category .articel .content-box,
 .exam-category .articel .bg-image{
-    border: 1px solid var(--light-gray);
+    border: 1px solid var(--gray-light);
     border-radius: 5px 5px 0 0;
     margin: 0 3px;
 }
@@ -1819,7 +2037,7 @@ ul{
 .exam-category .articel .name a{
     font-size: 14px;
     transition: 0.3s ease-in-out;
-    color: var(--black-color);
+    color: var(--black-primary);
     overflow: hidden;
     text-overflow:ellipsis;
     overflow:hidden;
@@ -1829,7 +2047,7 @@ ul{
     white-space: normal; 
 }
 .exam-category .articel .name a:hover{
-    color: var(--theme-color);
+    color: var(--secondary-color);
 }
 .exam-category .articel .more{
     padding: 10px;
@@ -1849,7 +2067,7 @@ ul{
     border-radius: 50%;
 }
 .exam-category .articel .bg-image .text h6 a{
-    color: var(--black-color);
+    color: var(--black-primary);
     font-weight: normal;
     overflow: hidden;
     text-overflow:ellipsis;
@@ -1864,7 +2082,7 @@ ul{
     font-size: 14px;
 }
 .exam-category .accordion-button:not(.collapsed){
-    background: var(--white-color);
+    background: var(--white-primary);
 }
 .exam-category .accordion-item{
     border: none;
@@ -1875,7 +2093,7 @@ ul{
 }
 .exam-category .accordion-header a{
     font-weight: 500;
-    color: var(--black-color);
+    color: var(--black-primary);
 }
 .exam-category .accordion-header p{
     font-size: 13px;
@@ -1887,13 +2105,13 @@ ul{
     margin-top: 10px;
 }
 .exam-category .accordion-body .read-more{
-    color: var(--theme-color);
+    color: var(--secondary-color);
     font-weight: 500;
 }
 .exam-category .accordion {
     --bs-accordion-btn-icon-width: 0.75rem;
     padding-bottom: 1em;
-    border-bottom: 1px solid var(--light-gray);
+    border-bottom: 1px solid var(--gray-light);
 }
 .exam-category .accordion:last-child{
     padding-bottom: 0 !important;
@@ -1908,7 +2126,6 @@ ul{
 .exam-category .accordion-body .icons span,
 .exam-category .accordion-body .icons span a{
     font-size: 12px;
-    color: var(--dark-bg);
 }
 .exam-category .accordion-body .dropdown-toggle::before{
     display: none;
@@ -1918,7 +2135,6 @@ ul{
 }
 .exam-category .accordion-body .dropdown-item{
     font-size: 12px;
-    color: var(--dark-bg);
 }
 .exam-category .box .scroll{
     overflow: auto;
@@ -1931,7 +2147,7 @@ ul{
 }
 .exam-category .box .scroll::-webkit-scrollbar-thumb,
 .exam-category .tab-section .v-height::-webkit-scrollbar-thumb {
-    background-color: var(--gray-color);
+    background-color: var(--gray-light);
 }
 .exam-category .box .para p{
     text-align: justify;
@@ -1941,7 +2157,7 @@ ul{
     font-weight: 600;
 }
 .exam-category .box .para a{
-    color: var(--theme-color);
+    color: var(--secondary-color);
     font-weight: 400;
     font-size: 13px;
     transition: 0.3s ease-in-out;
@@ -1955,27 +2171,27 @@ ul{
 }
 .exam-category .box .para .base{
     padding: 15px;
-    background: var(--light-gray);
+    background: var(--gray-light);
     margin-top: 1em;
     margin-bottom: 1em;
 }
 .exam-category .box .para .table-content table{
     text-align: center;
     margin-top: 1em;
-    border: 1px solid var(--bg-gray);
+    border: 1px solid var(---secondary-color);
 }
 .exam-category .box .para .table-content table thead{
-    background: var(--light-gray);
+    background: var(--gray-light);
     font-size: 13px;
 }
 .exam-category .box .para .table-content table thead th{
     font-weight: 500;
-    border: 1px solid var(--bg-gray);
+    border: 1px solid var(---secondary-color);
 }
 .exam-category .box .para .table-content table td{
     font-size: 13px;
     padding: 15px;
-    border: 1px solid var(--bg-gray);
+    border: 1px solid var(---secondary-color);
 }
 .exam-category .news-data{
     align-items: center;
@@ -1992,12 +2208,12 @@ ul{
     font-weight: 500;
     width: 100%;
     text-align: center;
-    color: var(--black-color);
+    color: var(--black-primary);
 }
 .exam-category .tab-section .nav-tabs .nav-item.show .nav-link, 
 .exam-category .tab-section .nav-tabs .nav-link.active {
-    color: var(--theme-color);
-    border-bottom: 3px solid var(--theme-color) !important;
+    color: var(--secondary-color);
+    border-bottom: 3px solid var(--secondary-color) !important;
     background: none;
 }
 .exam-category .tab-section .v-height{
@@ -2014,7 +2230,7 @@ ul{
     object-fit: cover;
 }
 .exam-category .tab-section .content a{
-    color: var(--black-color);
+    color: var(--black-primary);
     font-weight: 500;
     font-size: 14px;
     display: -webkit-box;
@@ -2026,10 +2242,10 @@ ul{
     padding-left: 0;
 }
 .exam-category .tab-section .box .sticky-top{
-    background: var(--white-color);
+    background: var(--white-primary);
 }
 .exam-category .tab-section .content ul li{
-    border-bottom: 1px solid var(--gray-color);
+    border-bottom: 1px solid var(--official-gray);
     padding-top: 10px;
     padding-bottom: 10px;
 }

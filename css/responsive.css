@@ -23,6 +23,10 @@
         margin: 4px 5px !important;
     }
     /* Mobile Header */
+        .header-design{
+            position: inherit !important;
+            background: var(--primary-color) !important;
+        }
         .mobile-header-section .notification{
             color: var(--white-primary);
             font-size: 10px;
@@ -349,7 +353,54 @@
             font-size: 18px;
         }
     /* Mobile bootom Icon Section */
-}
+
+
+    /* ================================================  TOP UNIVERSITIES & COLLEGES ================================================ */
+
+        .notification-section p{
+            font-size: 12px;
+        }
+        .list-section .infromation-data .main-image {
+            height: 180px;
+        }
+        .list-section .infromation-data .links{
+            margin-top: 0.5em;
+        }
+        .list-section .infromation-data .links a{
+            font-size: 8px;
+        }
+        .list-section .infromation-data .main-buttons .btn{
+            padding: 2px;
+            font-size: 10px;
+        }
+    /* ================================================  NEWS PAGE  ================================================ */
+
+
+        .news-section .slider-side .carousel-item, 
+        .news-section .news-details .image{
+            height: 30ch !important;
+        }
+        .news-section .slider-side .carousel-caption h3 a {
+            font-size: 13px !important;
+        }
+        .news-section .slider-side .carousel-caption p ,
+        .news-section .slider-side .carousel-caption .btn{
+            font-size: 9px !important;
+        }
+        .news-section .news-details .author{
+            align-items: center;
+        }
+        .news-section .news-details .author-detail{
+            padding: 10px 0 10px 0;
+        }
+        .news-section .news-details .author-detail a{
+            font-size: 12px;
+            color: var(--primary-color);
+        }
+        .news-section .news-details .author-date p{
+            font-size: 12px;
+        }
+    }
 
 
 /* ANY DESKTOP DEVICE */
@@ -419,8 +470,7 @@
         font-size: 12px !important;
     }
 
-
-
+    
 
 
 

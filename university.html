@@ -14,6 +14,7 @@
 
         <!-- Stylesheet Link -->
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
 
         <!-- Font Awasome Intro -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -38,7 +39,7 @@
                             <div class="topbar-menus d-flex">
                                 <div class="text-left">
                                     <ul class="d-flex">
-                                        <li><a href="university.html">Top Universities & Colleges</a></li>
+                                        <li><a href="#">Top Universities & Colleges</a></li>
                                         <li><a href="#">Top Courses</a></li>
                                         <li><a href="exam.html">Exam</a></li>
                                         <li><a href="#">Study Abroad</a></li>
@@ -84,7 +85,7 @@
                             <div class="row">
                                 <div class="col-lg-3 col-sm-3">
                                     <div class="goal justify-content-start">
-                                        <a class="btn btn-primary d-flex" href="#">
+                                        <a class="btn btn-primary d-flex" href="#" onclick="citygoalsearch()" id="goalcity_desktop">
                                             <span>Select Goal</span>
                                             <i class="fa fa-angle-down" aria-hidden="true"></i>
                                         </a>
@@ -323,7 +324,42 @@
                     </section>
                 <!-- Navabr Menus End -->
             </section>
-        <!-- Header Section End -->            
+        <!-- Header Section End -->        
+        
+        <!-- Mobile header start -->
+            <div class="mobile-header-section hide-desktop header-design">
+                <div class="container-fluid">
+                    <div class="header">
+                        <div class="row">
+                            <div class="col-lg-1 col-sm-1 col-1">
+                                <div class="toggle-button">
+                                    <a href="#" class="btn-open first"> <i class="fa fa-bars" aria-hidden="true"></i> </a>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-7 col-sm-7 col-7">
+                                <div class="logo">
+                                    <a href="index.html"> <img src="images/resources/logo.png" alt="" width="150"> </a>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-2 col-sm-2 col-2">
+                                <div class="search-button">
+                                    <a class="nav-link" href="#" onclick="opennotication()"><i class="fa fa-bell" aria-hidden="true"></i> <span class="notification">1</span></a>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-2 col-sm-2 col-2">
+                                <div class="login-button">
+                                    <a class="nav-link" href="#" ><i class="fa fa-user" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- Mobile header End -->            
 
         <!-- Breadcrumb Start -->
             <section class="bread-crumb">
@@ -331,28 +367,15 @@
                     <div class="row">
                         <div class="col-lg-12 col-sm-12 col-12">
                             <nav class="breadcrumb mb-0">
-                                <a class="breadcrumb-item sky-color" href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
-                                <span class="breadcrumb-item active" aria-current="page">Top Univercities & Colleges</span>
+                                <a class="breadcrumb-item" href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+                                <span class="breadcrumb-item active" aria-current="page">Top Universities & Colleges</span>
                             </nav>
-                        </div>
-                        <div class="col-lg-12 col-sm-12 col-12">
-                            <div class="heading mb-3">
-                                <h5>List of Top Colleges in India Based on 2023 Ranking</h5>
-                            </div>
-                        </div>
-                        <div class="col-lg-12 col-sm-12 col-12 hide-mobile">
-                            <div class="container">
-                                <div class="hording">
-                                    <div class="image">
-                                        <a href=""> <img src="images/hording_banner/banner_1.jpg" alt="hording-image" class="img-responsive w-100"> </a>
-                                    </div>                            
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
             </section>
         <!-- Breadcrumb End -->
+
 
         <!-- Notification Section -->
             <section class="notification-section">
@@ -370,6 +393,15 @@
             </section>
         <!-- Notification Section -->
 
+        
+        <!-- Mobile Filter Start -->
+            <section class="mobile-filter">
+                <div class="container-fluid">
+
+                </div>
+            </section>
+        <!-- Mobile Filter End -->
+
 
         <!-- List View Start -->
             <section class="list-section">
@@ -377,7 +409,7 @@
                     <div class="row">
                         <div class="col-lg-3 col-sm-4 col-12 hide-mobile d-sm-block">
                             <!-- Side Filter Start -->
-                                <div class="filter shadow">
+                                <div class="filter shadow-sm">
                                     <div data-sticky>
                                             <!-- Fix-header Start -->
                                             <div class="header d-flex">
@@ -1148,90 +1180,10 @@
                         <div class="col-lg-9 col-sm-8 col-12">
                             <!-- header-filter Start -->
                                 <div class="header-filter">
-                                    <!-- Stream Start -->
-                                        <div class="stream d-flex shadow">
-                                            <div class="title">
-                                                <h6 class="mb-0">Select Strem</h6>
-                                            </div>
-                                            <div class="buttons">
-                                                <a href="#" class="btn"><span class="badge"><i class="fa fa-circle" aria-hidden="true"></i> Management [1758]</span></a>
-                                                <a href="#" class="btn"><span class="badge"><i class="fa fa-circle" aria-hidden="true"></i> Engineering [6039]</span></a>
-                                                <a href="#" class="btn"><span class="badge"><i class="fa fa-circle" aria-hidden="true"></i> Science [6031]</span></a>
-                                                <a href="#" class="btn"><span class="badge"><i class="fa fa-circle" aria-hidden="true"></i> Arts [5237]</span></a>
-                                                <a href="#" class="btn"><span class="badge"><i class="fa fa-circle" aria-hidden="true"></i> Commerce [4648]</span></a>
-                                                <a href="#" class="btn"><span class="badge"><i class="fa fa-circle" aria-hidden="true"></i> Computer Accplication [4488]</span></a>
-                                            </div>
-                                        </div>
-                                    <!-- Stream End -->
-
-                                    <!-- Course Start -->
-                                        <div class="course d-flex shadow mt-2">
-                                            <div class="title">
-                                                <h6 class="mb-0">Select Course</h6>
-                                            </div>
-                                            <div class="buttons">
-                                                <a href="#" class="btn"><span class="badge"><i class="fa fa-circle" aria-hidden="true"></i> MBA / PGDM [1758]</span></a>
-                                                <a href="#" class="btn"><span class="badge"><i class="fa fa-circle" aria-hidden="true"></i> B.Sc [6039]</span></a>
-                                                <a href="#" class="btn"><span class="badge"><i class="fa fa-circle" aria-hidden="true"></i> B.Com [6031]</span></a>
-                                                <a href="#" class="btn"><span class="badge"><i class="fa fa-circle" aria-hidden="true"></i> BA [5237]</span></a>
-                                                <a href="#" class="btn"><span class="badge"><i class="fa fa-circle" aria-hidden="true"></i> BE / B.Tech [4648]</span></a>
-                                                <a href="#" class="btn"><span class="badge"><i class="fa fa-circle" aria-hidden="true"></i> BBA / BBM [4488]</span></a>
-                                                <a href="#" class="btn"><span class="badge"><i class="fa fa-circle" aria-hidden="true"></i> M.Sc [4488]</span></a>
-                                                <a href="#" class="btn"><span class="badge"><i class="fa fa-circle" aria-hidden="true"></i> BCA [4488]</span></a>
-                                            </div>
-                                        </div>
-                                    <!-- Course End -->
-
-                                    <!-- State Start -->
-                                        <div class="hide-desktop d-sm-block">
-                                            <div class="state d-flex shadow mt-2">
-                                                <div class="title">
-                                                    <h6 class="mb-0">Select State</h6>
-                                                </div>
-                                                <div class="buttons">
-                                                    <a href="#" class="btn"><span class="badge"><i class="fa fa-circle" aria-hidden="true"></i> Rajasthan [12583]</span></a>
-                                                    <a href="#" class="btn"><span class="badge"><i class="fa fa-circle" aria-hidden="true"></i> Maharastra [12583]</span></a>
-                                                    <a href="#" class="btn"><span class="badge"><i class="fa fa-circle" aria-hidden="true"></i> Karnataka [12583]</span></a>
-                                                    <a href="#" class="btn"><span class="badge"><i class="fa fa-circle" aria-hidden="true"></i> Tamil Nadu [12583]</span></a>
-                                                    <a href="#" class="btn"><span class="badge"><i class="fa fa-circle" aria-hidden="true"></i> Uttar Pradesh [12583]</span></a>
-                                                    <a href="#" class="btn"><span class="badge"><i class="fa fa-circle" aria-hidden="true"></i> Delhi NCR [12583]</span></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    <!-- State End -->
 
                                     <!-- Soting Start -->
                                         <div class="hide-mobile">
-                                            <div class="sort d-flex shadow mt-2">
-                                                <div class="buttons">
-                                                    <a href="#" class="btn"><span class="badge"><i class="fa fa-circle" aria-hidden="true"></i> Maharastra [1758]</span></a>
-                                                    <a href="#" class="btn"><span class="badge"><i class="fa fa-circle" aria-hidden="true"></i> Tamil Nadu [6039]</span></a>
-                                                    <button class="more dropdown-toggle" type="button" id="triggerId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                        32 More
-                                                    </button>
-                                                    <div class="dropdown-menu p-2" aria-labelledby="triggerId">
-                                                        <a href="#" class="btn"><span class="badge"><i class="fa fa-circle" aria-hidden="true"></i> Uttar Pradesh [1758]</span></a>
-                                                        <a href="#" class="btn"><span class="badge"><i class="fa fa-circle" aria-hidden="true"></i> Karnataka [1758]</span></a>
-                                                        <a href="#" class="btn"><span class="badge"><i class="fa fa-circle" aria-hidden="true"></i> Delhi NCR [1758]</span></a>
-                                                        <a href="#" class="btn"><span class="badge"><i class="fa fa-circle" aria-hidden="true"></i> Kerala [1758]</span></a>
-                                                        <a href="#" class="btn"><span class="badge"><i class="fa fa-circle" aria-hidden="true"></i> Gujrat [1758]</span></a>
-                                                        <a href="#" class="btn"><span class="badge"><i class="fa fa-circle" aria-hidden="true"></i> West Bengal [1758]</span></a>
-                                                        <a href="#" class="btn"><span class="badge"><i class="fa fa-circle" aria-hidden="true"></i> Harriyana [1758]</span></a>
-                                                        <a href="#" class="btn"><span class="badge"><i class="fa fa-circle" aria-hidden="true"></i> Madhya Pradesh [1758]</span></a>
-                                                        <a href="#" class="btn"><span class="badge"><i class="fa fa-circle" aria-hidden="true"></i> Punjab [1758]</span></a>
-                                                        <a href="#" class="btn"><span class="badge"><i class="fa fa-circle" aria-hidden="true"></i> Rajasthan [1758]</span></a>
-                                                        <a href="#" class="btn"><span class="badge"><i class="fa fa-circle" aria-hidden="true"></i> Uttar Pradesh [1758]</span></a>
-                                                        <a href="#" class="btn"><span class="badge"><i class="fa fa-circle" aria-hidden="true"></i> Karnataka [1758]</span></a>
-                                                        <a href="#" class="btn"><span class="badge"><i class="fa fa-circle" aria-hidden="true"></i> Delhi NCR [1758]</span></a>
-                                                        <a href="#" class="btn"><span class="badge"><i class="fa fa-circle" aria-hidden="true"></i> Kerala [1758]</span></a>
-                                                        <a href="#" class="btn"><span class="badge"><i class="fa fa-circle" aria-hidden="true"></i> Gujrat [1758]</span></a>
-                                                        <a href="#" class="btn"><span class="badge"><i class="fa fa-circle" aria-hidden="true"></i> West Bengal [1758]</span></a>
-                                                        <a href="#" class="btn"><span class="badge"><i class="fa fa-circle" aria-hidden="true"></i> Harriyana [1758]</span></a>
-                                                        <a href="#" class="btn"><span class="badge"><i class="fa fa-circle" aria-hidden="true"></i> Madhya Pradesh [1758]</span></a>
-                                                        <a href="#" class="btn"><span class="badge"><i class="fa fa-circle" aria-hidden="true"></i> Punjab [1758]</span></a>
-                                                        <a href="#" class="btn"><span class="badge"><i class="fa fa-circle" aria-hidden="true"></i> Rajasthan [1758]</span></a>
-                                                    </div>
-                                                </div>
+                                            <div class="sort d-flex shadow-sm">
                                                 <div class="sorting">
                                                     <span><b>Sort By</b></span>
                                                     <span><a href="#"  class="active">Popularity <i class="fa fa-sort-amount-asc" aria-hidden="true"></i></a></span>
@@ -1250,152 +1202,96 @@
                                         <div class="infromation-data mt-2 ">
                                             <div class="college-data">
                                                 <div class="row">
-                                                    <div class="col-lg-3 col-sm-4 col-12">
-                                                        <div class="data card">
-                                                            <a href="#">
-                                                                <div class="main-image">
-                                                                    <div class="overlay"></div>
-                                                                    <div class="overlay-data">
-                                                                        <a href="#"><i class="fa fa-picture-o" aria-hidden="true"></i> 15</a>
-                                                                        <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i> 3</a>
-                                                                    </div>
-                                                                </div>
-                                                            </a>
+                                                    <div class="col-lg-2 col-sm-5 col-12">
+                                                        <div class="main-image">
+                                                            <img src="https://www.careerindia.com/img/600x40/2018/02/1-ladyshriramcollegeforwomen-1517989921.jpg" alt="college-image" class="img-responsive img-thumbnail">
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-9 col-sm-8 col-12">
-                                                        <div class="row">
-                                                            <div class="col-lg-9 col-sm-8 col-12">
-                                                                <div class="details">
-                                                                    <div class="college-name d-flex">
-                                                                        <div class="image">
-                                                                            <a href="#"><img src="https://i.pinimg.com/736x/5f/7a/ff/5f7aff7fcf3ebcfaf8038b480a5b51c8.jpg" class="img-responsive" width="60"  data-toggle="tooltip" data-placement="top" title="IIM Bangalore - Indian Institute of Management"></a>
-                                                                        </div>
-                                                                        <div class="name">
-                                                                            <a href="#">IIM Bangalore - Indian Institute of Management, Banglore</a>
-                                                                            <p class="mb-0">Bangalore, Karnataka | AICTE, UGC Approved</p>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="fees-structure d-flex">
-                                                                        <div class="fees-1">
-                                                                            <a href="#"> <h6 class="mb-1">₹ 2,45,000</h6></a>
-                                                                            <p class="mb-0">MBA / PGDM - Total Fees</p>
-                                                                        </div>
-                                                                        <div class="fees-2">
-                                                                            <a href="#"> <h6 class="mb-1">₹ 2,90,000</h6></a>
-                                                                            <p class="mb-0">Executive MBA - Total Fees</p>
-                                                                        </div>
-                                                                        <div class="rating">
-                                                                            <a href="#"> <h6 class="mb-1">9.1 / 10</h6></a>
-                                                                            <p class="mb-0">Based on 73 User Reviews</p>
-                                                                        </div>
-                                                                    </div>
+                                                    <div class="col-lg-5 col-sm-7 col-12">
+                                                        <div class="details">
+                                                            <div class="college-name d-flex">
+                                                                <div class="image">
+                                                                    <a href="#"><img src="https://i.pinimg.com/736x/5f/7a/ff/5f7aff7fcf3ebcfaf8038b480a5b51c8.jpg" class="img-responsive" width="60"  data-toggle="tooltip" data-placement="top" title="IIM Bangalore - Indian Institute of Management"></a>
+                                                                </div>
+                                                                <div class="name">
+                                                                    <a href="#">IIM Bangalore - Indian Institute of Management, Banglore</a>
+                                                                    <p class="mb-0">Bangalore, Karnataka | AICTE, UGC Approved</p>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-lg-3 col-sm-4 col-12 order-lg-1 order-sm-1 order-2">
-                                                                <div class="main-buttons">
-                                                                    <button type="button" class="btn apply-btn text-center d-flex">
-                                                                        <span class="btn-label"><i class="fa fa-arrow-right" aria-hidden="true"></i></span> 
-                                                                        <span class="name">Apply</span>
-                                                                    </button>
-                                                                    <button type="button" class="btn download-btn text-center d-flex">
-                                                                        <span class="btn-label"><i class="fa fa-download" aria-hidden="true"></i></span> 
-                                                                        <span class="name">Brochure</span>
-                                                                    </button>
-                                                                    <button type="button" class="btn compare-btn text-center d-flex">
-                                                                        <span class="btn-label"><i class="fa fa-exchange" aria-hidden="true"></i></span> 
-                                                                        <span class="name">Compare</span>
-                                                                    </button>
+                                                            <div class="fees-structure d-flex">
+                                                                <div class="fees-1">
+                                                                    <a href="#"> <h6 class="mb-1"><i class="fa fa-inr" aria-hidden="true"></i> 2,45,000</h6></a>
+                                                                    <p class="mb-0">MBA / PGDM - Total Fees</p>
+                                                                </div>
+                                                                <div class="fees-2">
+                                                                    <a href="#"> <h6 class="mb-1"><i class="fa fa-inr" aria-hidden="true"></i> 2,90,000</h6></a>
+                                                                    <p class="mb-0">Executive MBA - Total Fees</p>
+                                                                </div>
+                                                                <div class="rating">
+                                                                    <a href="#"> <h6 class="mb-1">9.1 / 10</h6></a>
+                                                                    <p class="mb-0">Based on 73 User Reviews</p>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-lg-12 col-sm-12 col-12 order-lg-2 order-sm-2 order-1">
-                                                                <div class="bottom-area">
-                                                                    <div class="buttons">
-                                                                        <a class="btn" href="#"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Addmission 2023</a>
-                                                                        <a class="btn" href="#"><i class="fa fa-star-o" aria-hidden="true"></i> Reviews</a>
-                                                                        <a class="btn" href="#"><i class="fa fa-id-card-o" aria-hidden="true"></i> Course & Fees</a>
-                                                                    </div>
-                                                                    <div class="rating mt-3 d-flex">
-                                                                        <span><img src="https://cdn-icons-png.flaticon.com/512/861/861687.png" width="20"> <a href="#"> <span class="theme-color">#1</span> out of 50 Financial Express</a></span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-5 col-sm-12 col-12">
+                                                        <div class="links d-flex gap-2">
+                                                            <a href="#"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Addmission 2023</a>
+                                                            <a href="#"><i class="fa fa-star-o" aria-hidden="true"></i> Reviews</a>
+                                                            <a href="#"><i class="fa fa-id-card-o" aria-hidden="true"></i> Course & Fees</a>
+                                                        </div>
+                                                        <div class="main-buttons d-flex gap-2">
+                                                            <button class="btn btn-primary shadow-sm" href="#" role="button">Apply</button>
+                                                            <button class="btn btn-primary shadow-sm" href="#" role="button">Brochure</button>
+                                                            <button class="btn btn-primary shadow-sm" href="#" role="button">Compare</button>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="college-data">
                                                 <div class="row">
-                                                    <div class="col-lg-3 col-sm-4 col-12">
-                                                        <div class="data card">
-                                                            <a href="#">
-                                                                <div class="main-image">
-                                                                    <div class="overlay"></div>
-                                                                    <div class="overlay-data">
-                                                                        <a href="#"><i class="fa fa-picture-o" aria-hidden="true"></i> 15</a>
-                                                                        <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i> 3</a>
-                                                                    </div>
-                                                                </div>
-                                                            </a>
+                                                    <div class="col-lg-2 col-sm-2 col-12">
+                                                        <div class="main-image">
+                                                            <img src="https://www.careerindia.com/img/600x40/2018/02/1-ladyshriramcollegeforwomen-1517989921.jpg" alt="college-image" class="img-responsive img-thumbnail">
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-9 col-sm-8 col-12">
-                                                        <div class="row">
-                                                            <div class="col-lg-9 col-sm-8 col-12">
-                                                                <div class="details">
-                                                                    <div class="college-name d-flex">
-                                                                        <div class="image">
-                                                                            <a href="#"><img src="https://i.pinimg.com/736x/5f/7a/ff/5f7aff7fcf3ebcfaf8038b480a5b51c8.jpg" class="img-responsive" width="60"  data-toggle="tooltip" data-placement="top" title="IIM Bangalore - Indian Institute of Management"></a>
-                                                                        </div>
-                                                                        <div class="name">
-                                                                            <a href="#">IIM Bangalore - Indian Institute of Management, Banglore</a>
-                                                                            <p class="mb-0">Bangalore, Karnataka | AICTE, UGC Approved</p>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="fees-structure d-flex">
-                                                                        <div class="fees-1">
-                                                                            <a href="#"> <h6 class="mb-1">₹ 2,45,000</h6></a>
-                                                                            <p class="mb-0">MBA / PGDM - Total Fees</p>
-                                                                        </div>
-                                                                        <div class="fees-2">
-                                                                            <a href="#"> <h6 class="mb-1">₹ 2,90,000</h6></a>
-                                                                            <p class="mb-0">Executive MBA - Total Fees</p>
-                                                                        </div>
-                                                                        <div class="rating">
-                                                                            <a href="#"> <h6 class="mb-1">9.1 / 10</h6></a>
-                                                                            <p class="mb-0">Based on 73 User Reviews</p>
-                                                                        </div>
-                                                                    </div>
+                                                    <div class="col-lg-5 col-sm-5 col-12">
+                                                        <div class="details">
+                                                            <div class="college-name d-flex">
+                                                                <div class="image">
+                                                                    <a href="#"><img src="https://i.pinimg.com/736x/5f/7a/ff/5f7aff7fcf3ebcfaf8038b480a5b51c8.jpg" class="img-responsive" width="60"  data-toggle="tooltip" data-placement="top" title="IIM Bangalore - Indian Institute of Management"></a>
+                                                                </div>
+                                                                <div class="name">
+                                                                    <a href="#">IIM Bangalore - Indian Institute of Management, Banglore</a>
+                                                                    <p class="mb-0">Bangalore, Karnataka | AICTE, UGC Approved</p>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-lg-3 col-sm-4 col-12 order-lg-1 order-sm-1 order-2">
-                                                                <div class="main-buttons">
-                                                                    <button type="button" class="btn apply-btn text-center d-flex">
-                                                                        <span class="btn-label"><i class="fa fa-arrow-right" aria-hidden="true"></i></span> 
-                                                                        <span class="name">Apply</span>
-                                                                    </button>
-                                                                    <button type="button" class="btn download-btn text-center d-flex">
-                                                                        <span class="btn-label"><i class="fa fa-download" aria-hidden="true"></i></span> 
-                                                                        <span class="name">Brochure</span>
-                                                                    </button>
-                                                                    <button type="button" class="btn compare-btn text-center d-flex">
-                                                                        <span class="btn-label"><i class="fa fa-exchange" aria-hidden="true"></i></span> 
-                                                                        <span class="name">Compare</span>
-                                                                    </button>
+                                                            <div class="fees-structure d-flex">
+                                                                <div class="fees-1">
+                                                                    <a href="#"> <h6 class="mb-1"><i class="fa fa-inr" aria-hidden="true"></i> 2,45,000</h6></a>
+                                                                    <p class="mb-0">MBA / PGDM - Total Fees</p>
+                                                                </div>
+                                                                <div class="fees-2">
+                                                                    <a href="#"> <h6 class="mb-1"><i class="fa fa-inr" aria-hidden="true"></i> 2,90,000</h6></a>
+                                                                    <p class="mb-0">Executive MBA - Total Fees</p>
+                                                                </div>
+                                                                <div class="rating">
+                                                                    <a href="#"> <h6 class="mb-1">9.1 / 10</h6></a>
+                                                                    <p class="mb-0">Based on 73 User Reviews</p>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-lg-12 col-sm-12 col-12 order-lg-2 order-sm-2 order-1">
-                                                                <div class="bottom-area">
-                                                                    <div class="buttons">
-                                                                        <a class="btn" href="#"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Addmission 2023</a>
-                                                                        <a class="btn" href="#"><i class="fa fa-star-o" aria-hidden="true"></i> Reviews</a>
-                                                                        <a class="btn" href="#"><i class="fa fa-id-card-o" aria-hidden="true"></i> Course & Fees</a>
-                                                                    </div>
-                                                                    <div class="rating mt-3 d-flex">
-                                                                        <span><img src="https://cdn-icons-png.flaticon.com/512/861/861687.png" width="20"> <a href="#"> <span class="theme-color">#1</span> out of 50 Financial Express</a></span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-5 col-sm-5 col-12">
+                                                        <div class="links d-flex gap-2">
+                                                            <a href="#"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Addmission 2023</a>
+                                                            <a href="#"><i class="fa fa-star-o" aria-hidden="true"></i> Reviews</a>
+                                                            <a href="#"><i class="fa fa-id-card-o" aria-hidden="true"></i> Course & Fees</a>
+                                                        </div>
+                                                        <div class="main-buttons d-flex gap-2">
+                                                            <button class="btn btn-primary shadow-sm" href="#" role="button">Apply</button>
+                                                            <button class="btn btn-primary shadow-sm" href="#" role="button">Brochure</button>
+                                                            <button class="btn btn-primary shadow-sm" href="#" role="button">Compare</button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1409,20 +1305,9 @@
                 </div>
             </section>
         <!-- List View End -->  
-        
-        
-        <!-- Mobile-Shorting Start -->
-            <div class="hide-desktop d-sm-block">
-                <section class="mobile-sorting-section shadow fixed-bottom d-flex">
-                    <a href="#" class="btn text-uppercase"><i class="fa fa-sort" aria-hidden="true"></i> Sort</a>
-                    <a href="#" class="btn text-uppercase"><i class="fa fa-filter" aria-hidden="true"></i> Filter</a>
-                </section>
-            </div>
-        <!-- Mobile-Shorting End -->
-
 
         <!-- Footer section Start -->
-            <section class="footer-section mobile-footer">
+            <section class="footer-section bg-primary">
                 <div class="container-fluid">
                     <div class="top-footer hide-mobile">
                         <div class="row">
@@ -1523,7 +1408,7 @@
                             <h6>Other Links</h6>
                         </div>
                         <div class="row">
-                            <div class="col-lg-3 col-sm-3 hide-desktop d-sm-block">
+                            <div class="col-lg-3 col-sm-3 hide-desktop ">
                                 <div class="image text-center">
                                     <a href="#">
                                         <img src="images/resources/logo black.png" alt="" class="image-responsive" width="200">
@@ -1540,7 +1425,7 @@
                                     <span><a href="#">Terms & Conditions</a></li></span>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-sm-6">
+                            <div class="col-lg-6 col-sm-3">
                                 <div class="links text-end">
                                     <span><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li></span>
                                     <span><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li></span>
@@ -1552,38 +1437,1120 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </section>
 
-                    <hr>
-
-                    <div class="bottom-footer">
-                        <div class="row">
-                            <div class="col-lg-6 col-sm-6 col-12 order-lg-1 order-sm-1 order-2">
-                                <div class="copyright d-flex">
-                                    <div class="image hide-mobile">
-                                        <a href="index.html"><img src="images/resources/logo black.png" alt="" class="img-responsive" width="150"></a>
-                                    </div>
-                                    <div class="text">
-                                        <p class="mb-0">&copy; 2023 Searchyourcollege.com All Rights Reserved.</p>
-                                    </div>
+            <section class="bottom-footer bg-gray">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-6 order-lg-1 order-sm-1 order-2">
+                            <div class="copyright d-flex">
+                                <div class="image hide-mobile">
+                                    <a href="index.html"><img src="images/resources/logo black.png" alt="" class="img-responsive" width="150"></a>
+                                </div>
+                                <div class="text">
+                                    <p class="mb-0">&copy; 2023 Searchyourcollege.com All Rights Reserved.</p>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-sm-6 col-12 order-lg-2 order-sm-2 order-1">
-                                <div class="buttons d-flex">
-                                    <span class="hide-mobile"><h6 class="mb-0">Download the Searchyourcollege app on</h6></span>
-                                    <span><img src="images/footer/googleplay.png" alt="" class="image-responsive" width="100"></span>
-                                    <span><img src="images/footer/appstore.png" alt="" class="image-responsive" width="100"></span>
-                                </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-6 order-lg-2 order-sm-2 order-1">
+                            <div class="buttons d-flex">
+                                <span class="hide-mobile"><h6 class="mb-0">Download the Searchyourcollege app on</h6></span>
+                                <span><img src="images/footer/googleplay.png" alt="" class="image-responsive" width="100"></span>
+                                <span><img src="images/footer/appstore.png" alt="" class="image-responsive" width="100"></span>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-        <!-- Footer section End -->   
+        <!-- Footer section End -->  
+
+
+        <!-- Notification Bar -->
+            <section class="mobile-notication-section hide-desktop" id="notificationOpen">
+                <div class="row gx-0">
+                    <div class="col-lg-12 col-sm-12 col-12">
+                        <div class="box d-flex">
+                            <div class="back-btn" class="closebtn" onclick="closenotifcation()">
+                                <a href="#"> <i class="fa fa-angle-left" aria-hidden="true"></i> </a>
+                            </div>
+                            <div class="notification">
+                                <h6 class="mb-0">Notifications</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-sm-12 col-12">
+                        <div class="search-data">
+                            <div class="search-result">
+                                <b>Today</b>
+                            </div>
+                            <div class="result d-flex border-bottom gap-3">
+                                <div class="image">
+                                    <a href="#"> <img src="images/slider/slider3.jpg" alt="notification-image" class="img-responsive"> </a>
+                                </div>
+                                <p class="mb-0">
+                                    <a href="#"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti rem aliquam alias totam quo natus ratione sunt amet doloremque illo debitis eveniet, unde veritatis voluptate accusantium ipsa id quasi! Cupiditate temporibus assumenda amet consequatur, eligendi necessitatibus optio vitae voluptatibus, hic veniam minus culpa iusto explicabo fugit animi soluta repudiandae eaque.</a>
+                                </p>
+                            </div>
+                            <div class="result">
+                                <marquee behavior="scroll" direction="up" scrollamount="3" >
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos voluptates ducimus, voluptatem provident eligendi earum autem, expedita modi porro, dolorem ad reiciendis inventore corrupti quo. Quisquam magnam magni at incidunt?
+                                </marquee>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <!-- Notification Bar -->         
+
+
+        <!-- Mobile Search Bar -->
+            <section class="mobile-searchbar-section hide-desktop" id="mobileSearchOpen">
+                <div class="row gx-0">
+                    <div class="col-lg-12 col-sm-12 col-12">
+                        <div class="box d-flex">
+                            <div class="back-btn" class="closebtn" onclick="closeMobile()">
+                                <a href="#"> <i class="fa fa-angle-left" aria-hidden="true"></i> </a>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="" id="" class="form-control" placeholder="Search..." aria-describedby="helpId">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-sm-12 col-12">
+                        <div class="search-data">
+                            <div class="search-result">
+                                <b>Type 3 or more characters for search results</b>
+                            </div>
+                            <div class="not-found">
+                                <b>No results found</b>
+                            </div>
+                            <div class="result d-flex border-bottom">
+                                <a href="#">Indian Institute of Technology - [IIT]</a>
+                                <p class="mb-0"><i class="fa fa-bolt" aria-hidden="true"></i></p>
+                            </div>
+                            <div class="result d-flex border-bottom">
+                                <a href="#">Indian Institute of Technology - [IIT]</a>
+                                <p class="mb-0"><i class="fa fa-bolt" aria-hidden="true"></i></p>
+                            </div>
+                            <div class="result d-flex border-bottom">
+                                <a href="#">Indian Institute of Technology - [IIT]</a>
+                                <p class="mb-0"><i class="fa fa-bolt" aria-hidden="true"></i></p>
+                            </div>
+                            <div class="result d-flex border-bottom">
+                                <a href="#">Indian Institute of Technology - [IIT]</a>
+                                <p class="mb-0"><i class="fa fa-bolt" aria-hidden="true"></i></p>
+                            </div>
+                            <div class="result d-flex border-bottom">
+                                <a href="#">Indian Institute of Technology - [IIT]</a>
+                                <p class="mb-0"><i class="fa fa-bolt" aria-hidden="true"></i></p>
+                            </div>
+                            <div class="result d-flex border-bottom">
+                                <a href="#">Indian Institute of Technology - [IIT]</a>
+                                <p class="mb-0"><i class="fa fa-bolt" aria-hidden="true"></i></p>
+                            </div>
+                            <div class="result d-flex border-bottom">
+                                <a href="#">Indian Institute of Technology - [IIT]</a>
+                                <p class="mb-0"><i class="fa fa-bolt" aria-hidden="true"></i></p>
+                            </div>
+                            <div class="result d-flex border-bottom">
+                                <a href="#">Indian Institute of Technology - [IIT]</a>
+                                <p class="mb-0"><i class="fa fa-bolt" aria-hidden="true"></i></p>
+                            </div>
+                            <div class="result d-flex border-bottom">
+                                <a href="#">Indian Institute of Technology - [IIT]</a>
+                                <p class="mb-0"><i class="fa fa-bolt" aria-hidden="true"></i></p>
+                            </div>
+                            <div class="result d-flex border-bottom">
+                                <a href="#">Indian Institute of Technology - [IIT]</a>
+                                <p class="mb-0"><i class="fa fa-bolt" aria-hidden="true"></i></p>
+                            </div>
+                            <div class="result d-flex border-bottom">
+                                <a href="#">Indian Institute of Technology - [IIT]</a>
+                                <p class="mb-0"><i class="fa fa-bolt" aria-hidden="true"></i></p>
+                            </div>
+                            <div class="result d-flex border-bottom">
+                                <a href="#">Indian Institute of Technology - [IIT]</a>
+                                <p class="mb-0"><i class="fa fa-bolt" aria-hidden="true"></i></p>
+                            </div>
+                            <div class="result d-flex border-bottom">
+                                <a href="#">Indian Institute of Technology - [IIT]</a>
+                                <p class="mb-0"><i class="fa fa-bolt" aria-hidden="true"></i></p>
+                            </div>
+                            <div class="result d-flex border-bottom">
+                                <a href="#">Indian Institute of Technology - [IIT]</a>
+                                <p class="mb-0"><i class="fa fa-bolt" aria-hidden="true"></i></p>
+                            </div>
+                            <div class="result d-flex border-bottom">
+                                <a href="#">Indian Institute of Technology - [IIT]</a>
+                                <p class="mb-0"><i class="fa fa-bolt" aria-hidden="true"></i></p>
+                            </div>
+                            <div class="result d-flex border-bottom">
+                                <a href="#">Indian Institute of Technology - [IIT]</a>
+                                <p class="mb-0"><i class="fa fa-bolt" aria-hidden="true"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <!-- Mobile Search Bar -->
+        
+
+        <!-- Mobile City / Goal -->
+            <section class="mobile-goal-city-section" id="goalcity">
+                <div class="row gx-0">
+                    <div class="col-lg-12 col-sm-12 col-12">
+                        <div class="goal-header-section">
+                            <div class="box d-flex">
+                                <div class="back-btn">
+                                    <a href="#" class="closebtn" onclick="closeMcitygoalsearch()"> <i class="fa fa-angle-left" aria-hidden="true"></i> </a>
+                                </div>
+                                <div class="text">
+                                    <p class="mb-0">Welcomne To Searchyourcollege</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-sm-12 col-12">
+                        <div class="search-data">
+                            <div class="chat">
+                                <div class="left-side">
+                                    <div class="msg d-flex gap-2 align-item-center">
+                                        <div class="image">
+                                            <img src="https://i.pinimg.com/originals/be/61/38/be6138527adcaf0bc42d6bd0339b25b0.png" alt="calling">
+                                        </div>
+                                        <div class="message">
+                                            <p>
+                                                <span class="badge">Welcome to Searchyour college</span>
+                                            </p>
+                                            <p>
+                                                <span class="badge">How Can I Assist You ? </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="right-side">
+                                    <div class="msg d-flex gap-2 align-item-center flex-row-reverse">
+                                        <div class="image">
+                                            <img src="https://i.pinimg.com/originals/be/61/38/be6138527adcaf0bc42d6bd0339b25b0.png" alt="calling">
+                                        </div>
+                                        <div class="message">
+                                            <p>
+                                                <span class="badge">Can you Suggest me about B.Tech Colleges</span>
+                                            </p>
+                                            <p>
+                                                <span class="badge">In Jaipur</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="left-side">
+                                    <div class="msg d-flex gap-2 align-item-center">
+                                        <div class="image">
+                                            <img src="https://i.pinimg.com/originals/be/61/38/be6138527adcaf0bc42d6bd0339b25b0.png" alt="calling">
+                                        </div>
+                                        <div class="message">
+                                            <p>
+                                                <span class="badge">Welcome to Searchyour college</span>
+                                            </p>
+                                            <p>
+                                                <span class="badge">How Can I Assist You ? </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="right-side">
+                                    <div class="msg d-flex gap-2 align-item-center flex-row-reverse">
+                                        <div class="image">
+                                            <img src="https://i.pinimg.com/originals/be/61/38/be6138527adcaf0bc42d6bd0339b25b0.png" alt="calling">
+                                        </div>
+                                        <div class="message">
+                                            <p>
+                                                <span class="badge">Can you Suggest me about B.Tech Colleges</span>
+                                            </p>
+                                            <p>
+                                                <span class="badge">In Jaipur</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="left-side">
+                                    <div class="msg d-flex gap-2 align-item-center">
+                                        <div class="image">
+                                            <img src="https://i.pinimg.com/originals/be/61/38/be6138527adcaf0bc42d6bd0339b25b0.png" alt="calling">
+                                        </div>
+                                        <div class="message">
+                                            <p>
+                                                <span class="badge">Welcome to Searchyour college</span>
+                                            </p>
+                                            <p>
+                                                <span class="badge">How Can I Assist You ? </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="right-side">
+                                    <div class="msg d-flex gap-2 align-item-center flex-row-reverse">
+                                        <div class="image">
+                                            <img src="https://i.pinimg.com/originals/be/61/38/be6138527adcaf0bc42d6bd0339b25b0.png" alt="calling">
+                                        </div>
+                                        <div class="message">
+                                            <p>
+                                                <span class="badge">Can you Suggest me about B.Tech Colleges</span>
+                                            </p>
+                                            <p>
+                                                <span class="badge">In Jaipur</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="left-side">
+                                    <div class="msg d-flex gap-2 align-item-center">
+                                        <div class="image">
+                                            <img src="https://i.pinimg.com/originals/be/61/38/be6138527adcaf0bc42d6bd0339b25b0.png" alt="calling">
+                                        </div>
+                                        <div class="message">
+                                            <p>
+                                                <span class="badge">Welcome to Searchyour college</span>
+                                            </p>
+                                            <p>
+                                                <span class="badge">How Can I Assist You ? </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="right-side">
+                                    <div class="msg d-flex gap-2 align-item-center flex-row-reverse">
+                                        <div class="image">
+                                            <img src="https://i.pinimg.com/originals/be/61/38/be6138527adcaf0bc42d6bd0339b25b0.png" alt="calling">
+                                        </div>
+                                        <div class="message">
+                                            <p>
+                                                <span class="badge">Can you Suggest me about B.Tech Colleges</span>
+                                            </p>
+                                            <p>
+                                                <span class="badge">In Jaipur</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-sm-12 col-12">
+                        <div class="chating-box  fixed-bottom">
+                            <div class="form-group">
+                                <input type="text" name="" id="" class="form-control" placeholder="Write your message here" aria-describedby="helpId">
+                            </div>
+                            <div class="send-btn">
+                                <h6><i class="fa fa-paper-plane" aria-hidden="true"></i></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <!-- Mobile City / Goal -->  
+
+
+        <!-- Searchbar Start -->
+            <div class="overlay-searchbox">
+                <div id="mySearchbar" class="searchbar">
+                    <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+                    <div class="searchbar-content">
+                        <form action="#">
+                            <input type="text" placeholder="Search for Colleges, Exams, News and more" name="search">
+                        </form>
+                    </div>
+                    <div class="content">
+                        <h6>TRENDING SEARCHES</h6>
+                        <p class="mb-0">Type 3 or more characters for search results</p>
+                        <p class="mb-0">No Result Found</p>
+                        <ul>
+                            <li><a href="#">Upcoming Exams</a></li>
+                            <li><a href="#">"IIT" in Colleges</a></li>
+                            <li><a href="#">"CAT" in Exams</a></li>
+                            <li><a href="#">"CAT Cutoff" in News</a></li>
+                            <li><a href="#">"MBA Colleges" in Delhi/NCR</a></li>
+                            <li><a href="#">"MCA Colleges" in Delhi/NCR</a></li>
+                        </ul>
+                    </div>
+                    <!-- <div class="search-data">
+                        <div class="data d-flex">
+                            <div class="image">
+                                <span><img src="https://dummyimage.com/70x70/ccc/000" alt="College-image" width="60"></span>
+                                <span><a href="#">Exam Expert Institute, New Delhi, India</a></span>                      
+                            </div>
+                            <div class="institute d-flex">
+                                <span><img src="https://dummyimage.com/70x70/ccc/000" alt="College-image" width="30"></span>
+                                <span><p class="mb-0">Institute</p></span>
+                            </div>
+                        </div>
+                        <div class="data d-flex">
+                            <div class="image">
+                                <span><img src="https://dummyimage.com/70x70/ccc/000" alt="College-image" width="60"></span>
+                                <span><a href="#">Exam Expert Institute, New Delhi, India</a></span>                      
+                            </div>
+                            <div class="institute d-flex">
+                                <span><img src="https://dummyimage.com/70x70/ccc/000" alt="College-image" width="30"></span>
+                                <span><p class="mb-0">Institute</p></span>
+                            </div>
+                        </div>
+                        <div class="data d-flex">
+                            <div class="image">
+                                <span><img src="https://dummyimage.com/70x70/ccc/000" alt="College-image" width="60"></span>
+                                <span><a href="#">Exam Expert Institute, New Delhi, India</a></span>                      
+                            </div>
+                            <div class="institute d-flex">
+                                <span><img src="https://dummyimage.com/70x70/ccc/000" alt="College-image" width="30"></span>
+                                <span><p class="mb-0">Institute</p></span>
+                            </div>
+                        </div>
+                        <div class="data d-flex">
+                            <div class="image">
+                                <span><img src="https://dummyimage.com/70x70/ccc/000" alt="College-image" width="60"></span>
+                                <span><a href="#">Exam Expert Institute, New Delhi, India</a></span>                      
+                            </div>
+                            <div class="institute d-flex">
+                                <span><img src="https://dummyimage.com/70x70/ccc/000" alt="College-image" width="30"></span>
+                                <span><p class="mb-0">Institute</p></span>
+                            </div>
+                        </div>
+                        <div class="data d-flex">
+                            <div class="image">
+                                <span><img src="https://dummyimage.com/70x70/ccc/000" alt="College-image" width="60"></span>
+                                <span><a href="#">Exam Expert Institute, New Delhi, India</a></span>                      
+                            </div>
+                            <div class="institute d-flex">
+                                <span><img src="https://dummyimage.com/70x70/ccc/000" alt="College-image" width="30"></span>
+                                <span><p class="mb-0">Institute</p></span>
+                            </div>
+                        </div>
+                        <div class="data d-flex">
+                            <div class="image">
+                                <span><img src="https://dummyimage.com/70x70/ccc/000" alt="College-image" width="60"></span>
+                                <span><a href="#">Exam Expert Institute, New Delhi, India</a></span>                      
+                            </div>
+                            <div class="institute d-flex">
+                                <span><img src="https://dummyimage.com/70x70/ccc/000" alt="College-image" width="30"></span>
+                                <span><p class="mb-0">Institute</p></span>
+                            </div>
+                        </div>
+                        <div class="data d-flex">
+                            <div class="image">
+                                <span><img src="https://dummyimage.com/70x70/ccc/000" alt="College-image" width="60"></span>
+                                <span><a href="#">Exam Expert Institute, New Delhi, India</a></span>                      
+                            </div>
+                            <div class="institute d-flex">
+                                <span><img src="https://dummyimage.com/70x70/ccc/000" alt="College-image" width="30"></span>
+                                <span><p class="mb-0">Institute</p></span>
+                            </div>
+                        </div>
+                        <div class="data d-flex">
+                            <div class="image">
+                                <span><img src="https://dummyimage.com/70x70/ccc/000" alt="College-image" width="60"></span>
+                                <span><a href="#">Exam Expert Institute, New Delhi, India</a></span>                      
+                            </div>
+                            <div class="institute d-flex">
+                                <span><img src="https://dummyimage.com/70x70/ccc/000" alt="College-image" width="30"></span>
+                                <span><p class="mb-0">Institute</p></span>
+                            </div>
+                        </div>
+                        <div class="data d-flex">
+                            <div class="image">
+                                <span><img src="https://dummyimage.com/70x70/ccc/000" alt="College-image" width="60"></span>
+                                <span><a href="#">Exam Expert Institute, New Delhi, India</a></span>                      
+                            </div>
+                            <div class="institute d-flex">
+                                <span><img src="https://dummyimage.com/70x70/ccc/000" alt="College-image" width="30"></span>
+                                <span><p class="mb-0">Institute</p></span>
+                            </div>
+                        </div>
+                        <div class="data d-flex">
+                            <div class="image">
+                                <span><img src="https://dummyimage.com/70x70/ccc/000" alt="College-image" width="60"></span>
+                                <span><a href="#">Exam Expert Institute, New Delhi, India</a></span>                      
+                            </div>
+                            <div class="institute d-flex">
+                                <span><img src="https://dummyimage.com/70x70/ccc/000" alt="College-image" width="30"></span>
+                                <span><p class="mb-0">Institute</p></span>
+                            </div>
+                        </div>
+                        <div class="data d-flex">
+                            <div class="image">
+                                <span><img src="https://dummyimage.com/70x70/ccc/000" alt="College-image" width="60"></span>
+                                <span><a href="#">Exam Expert Institute, New Delhi, India</a></span>                      
+                            </div>
+                            <div class="institute d-flex">
+                                <span><img src="https://dummyimage.com/70x70/ccc/000" alt="College-image" width="30"></span>
+                                <span><p class="mb-0">Institute</p></span>
+                            </div>
+                        </div>
+                        <div class="data d-flex">
+                            <div class="image">
+                                <span><img src="https://dummyimage.com/70x70/ccc/000" alt="College-image" width="60"></span>
+                                <span><a href="#">Exam Expert Institute, New Delhi, India</a></span>                      
+                            </div>
+                            <div class="institute d-flex">
+                                <span><img src="https://dummyimage.com/70x70/ccc/000" alt="College-image" width="30"></span>
+                                <span><p class="mb-0">Institute</p></span>
+                            </div>
+                        </div>
+                        <div class="data d-flex">
+                            <div class="image">
+                                <span><img src="https://dummyimage.com/70x70/ccc/000" alt="College-image" width="60"></span>
+                                <span><a href="#">Exam Expert Institute, New Delhi, India</a></span>                      
+                            </div>
+                            <div class="institute d-flex">
+                                <span><img src="https://dummyimage.com/70x70/ccc/000" alt="College-image" width="30"></span>
+                                <span><p class="mb-0">Institute</p></span>
+                            </div>
+                        </div>
+                        <div class="data d-flex">
+                            <div class="image">
+                                <span><img src="https://dummyimage.com/70x70/ccc/000" alt="College-image" width="60"></span>
+                                <span><a href="#">Exam Expert Institute, New Delhi, India</a></span>                      
+                            </div>
+                            <div class="institute d-flex">
+                                <span><img src="https://dummyimage.com/70x70/ccc/000" alt="College-image" width="30"></span>
+                                <span><p class="mb-0">Institute</p></span>
+                            </div>
+                        </div>
+                        <div class="data d-flex">
+                            <div class="image">
+                                <span><img src="https://dummyimage.com/70x70/ccc/000" alt="College-image" width="60"></span>
+                                <span><a href="#">Exam Expert Institute, New Delhi, India</a></span>                      
+                            </div>
+                            <div class="institute d-flex">
+                                <span><img src="https://dummyimage.com/70x70/ccc/000" alt="College-image" width="30"></span>
+                                <span><p class="mb-0">Institute</p></span>
+                            </div>
+                        </div>
+                        <div class="data d-flex">
+                            <div class="image">
+                                <span><img src="https://dummyimage.com/70x70/ccc/000" alt="College-image" width="60"></span>
+                                <span><a href="#">Exam Expert Institute, New Delhi, India</a></span>                      
+                            </div>
+                            <div class="institute d-flex">
+                                <span><img src="https://dummyimage.com/70x70/ccc/000" alt="College-image" width="30"></span>
+                                <span><p class="mb-0">Institute</p></span>
+                            </div>
+                        </div>
+                        <div class="badge-buttons mb-2">
+                            <h6>TOP LINKS</h6>
+                            <a href="#">TOP UNIVERSITIES </a>
+                            <a href="#">TOP COLLEGES </a>
+                            <a href="#">TOP EXAMS </a>
+                            <a href="#">LATEST NEWS </a>
+                            <a href="#">TOP COURSES </a>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        <!-- Searchbar End -->   
+            
+
+        <!-- Mobile bootom Icon Section -->
+            <section class="mobile-icon shadow-sm-lg hide-desktop fixed-bottom ">
+                <div class="container-fluid">
+                    <div class="icons d-flex gap-3 justify-content-evenly">
+                        <div class="exam">
+                            <a href="#"> <i class="fa fa-book" aria-hidden="true"></i> <br>Exams </a>
+                        </div>
+                        <div class="course">
+                            <a href="#"> <i class="fa fa-leanpub" aria-hidden="true"></i> <br>Courses </a>
+                        </div>
+                        <div class="home">
+                            <a href="#"> <i class="fa fa-home" aria-hidden="true"></i> <br>Home </a>
+                        </div>
+                        <div class="news">
+                            <a href="#"> <i class="fa fa-newspaper-o" aria-hidden="true"></i> <br>News </a>
+                        </div>
+                        <div class="colleges">
+                            <a href="#"> <i class="fa fa-graduation-cap" aria-hidden="true"></i> <br>Colleges </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <!-- Mobile bootom Icon Section -->
+        
+
+        <!-- Mobile Sidebar Start -->
+            <section class="mobile-sidebar">
+                <div class="sidebar first" data-menu-name="first">
+                    <div class="header bg-primary">
+
+                    </div>
+
+                    <div class="heading">
+                        <h6 class="mb-0"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Explore Category</h6>
+                    </div>
+                    <ul>
+                        <li class="has-submenu">
+                            <a href="#" data-submenu="engineering"> <img src="images/goals/engineering.png" alt="engineering" width="20"> <span>Engineering</span></a>
+
+                            <div id="engineering" class="submenu">
+                                <div class="submenu-header">
+                                    <a href="#" data-submenu-close="engineering">Back</a>
+                                </div>
+
+                                <label>Engineering</label>
+
+                                <ul>
+                                    <li class="has-submenu">
+                                        <a href="#" data-submenu="software">Software Engineering</a>
+                                        <div id="software" class="submenu">
+                                            <div class="submenu-header">
+                                                <a href="#" data-submenu-close="software">Back</a>
+                                            </div>
+                                            <label>Software Engineering</label>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+
+                                    <li class="has-submenu">
+                                        <a href="#" data-submenu="mechenical">Mechenical Engineering</a>
+                                        <div id="mechenical" class="submenu">
+                                            <div class="submenu-header">
+                                                <a href="#" data-submenu-close="mechenical">Back</a>
+                                            </div>
+                                            <label>Mechenical Engineering</label>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+
+                                    <li class="has-submenu">
+                                        <a href="#" data-submenu="civil">Civil Engineering</a>
+                                        <div id="civil" class="submenu">
+                                            <div class="submenu-header">
+                                                <a href="#" data-submenu-close="civil">Back</a>
+                                            </div>
+                                            <label>Civil Engineering</label>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="has-submenu">
+                            <a href="#" data-submenu="medical"><img src="images/goals/medical.png" alt="medical" width="20"> <span>Medical</span></a>
+                            <div id="medical" class="submenu">
+                                <div class="submenu-header">
+                                    <a href="#" data-submenu-close="medical">Back</a>
+                                </div>
+                                <label>Medical</label>
+                                <ul>
+                                    <li class="has-submenu">
+                                        <a href="#" data-submenu="mbbs">MBBS</a>
+                                        <div id="mbbs" class="submenu">
+                                            <div class="submenu-header">
+                                                <a href="#" data-submenu-close="mbbs">Back</a>
+                                            </div>
+                                            <label>MBBS</label>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+
+                                    <li class="has-submenu">
+                                        <a href="#" data-submenu="pharma">Pharma</a>
+                                        <div id="pharma" class="submenu">
+                                            <div class="submenu-header">
+                                                <a href="#" data-submenu-close="pharma">Back</a>
+                                            </div>
+                                            <label>Pharma</label>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="has-submenu">
+                            <a href="#" data-submenu="managemet"><img src="images/goals/management.png" alt="management" width="20"> <span>Management</span></a>
+                            <div id="managemet" class="submenu">
+                                <div class="submenu-header">
+                                    <a href="#" data-submenu-close="managemet">Back</a>
+                                </div>
+                                <label>Management</label>
+                                <ul>
+                                    <li class="has-submenu">
+                                        <a href="#" data-submenu="bba">BBA</a>
+                                        <div id="bba" class="submenu">
+                                            <div class="submenu-header">
+                                                <a href="#" data-submenu-close="bba">Back</a>
+                                            </div>
+                                            <label>BBA</label>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+
+                                    <li class="has-submenu">
+                                        <a href="#" data-submenu="mba">MBA</a>
+                                        <div id="mba" class="submenu">
+                                            <div class="submenu-header">
+                                                <a href="#" data-submenu-close="mba">Back</a>
+                                            </div>
+                                            <label>MBA</label>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>      
+
+                        <li class="has-submenu">
+                            <a href="#" data-submenu="commerce"><img src="images/goals/commerce.png" alt="commerce" width="20"> <span>Commerce</span></a>
+                            <div id="commerce" class="submenu">
+                                <div class="submenu-header">
+                                    <a href="#" data-submenu-close="commerce">Back</a>
+                                </div>
+                                <label>Commerce</label>
+                                <ul>
+                                    <li class="has-submenu">
+                                        <a href="#" data-submenu="ca">CA</a>
+                                        <div id="ca" class="submenu">
+                                            <div class="submenu-header">
+                                                <a href="#" data-submenu-close="ca">Back</a>
+                                            </div>
+                                            <label>CA</label>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+
+                                    <li class="has-submenu">
+                                        <a href="#" data-submenu="cfa">CFA</a>
+                                        <div id="cfa" class="submenu">
+                                            <div class="submenu-header">
+                                                <a href="#" data-submenu-close="cfa">Back</a>
+                                            </div>
+                                            <label>CFA</label>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>        
+
+                        <li class="has-submenu">
+                            <a href="#" data-submenu="design"><img src="images/goals/design.png" alt="design" width="20"> <span>Design</span></a>
+                            <div id="design" class="submenu">
+                                <div class="submenu-header">
+                                    <a href="#" data-submenu-close="design">Back</a>
+                                </div>
+                                <label>Design</label>
+                                <ul>
+                                    <li class="has-submenu">
+                                        <a href="#" data-submenu="graphics">Graphics</a>
+                                        <div id="graphics" class="submenu">
+                                            <div class="submenu-header">
+                                                <a href="#" data-submenu-close="graphics">Back</a>
+                                            </div>
+                                            <label>Graphics</label>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+
+                                    <li class="has-submenu">
+                                        <a href="#" data-submenu="fashion">Fashion</a>
+                                        <div id="fashion" class="submenu">
+                                            <div class="submenu-header">
+                                                <a href="#" data-submenu-close="fashion">Back</a>
+                                            </div>
+                                            <label>Fashion</label>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>     
+                        
+                        <li class="has-submenu">
+                            <a href="#" data-submenu="arts"><img src="images/goals/arts.png" alt="arts" width="20"> <span>Arts</span></a>
+                            <div id="arts" class="submenu">
+                                <div class="submenu-header">
+                                    <a href="#" data-submenu-close="arts">Back</a>
+                                </div>
+                                <label>Arts</label>
+                                <ul>
+                                    <li class="has-submenu">
+                                        <a href="#" data-submenu="ba">BA</a>
+                                        <div id="ba" class="submenu">
+                                            <div class="submenu-header">
+                                                <a href="#" data-submenu-close="ba">Back</a>
+                                            </div>
+                                            <label>BA</label>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+
+                                    <li class="has-submenu">
+                                        <a href="#" data-submenu="ma">MA</a>
+                                        <div id="ma" class="submenu">
+                                            <div class="submenu-header">
+                                                <a href="#" data-submenu-close="ma">Back</a>
+                                            </div>
+                                            <label>MA</label>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Course Name</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>                           
+                    </ul>
+
+                    <div class="heading">
+                        <h6 class="mb-0"><i class="fa fa-link" aria-hidden="true"></i> Useful Links</h6>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#">About Searchyourcollege</a>
+                        </li>  
+                        <li>
+                            <a href="#">Top Universities & Colleges</a>
+                        </li>
+                        <li>
+                            <a href="#">Top Courses</a>
+                        </li>  
+                        <li>
+                            <a href="#">Exam</a>
+                        </li>  
+                        <li>
+                            <a href="#">Study Abroad</a>
+                        </li>                          
+                        <li>
+                            <a href="#">Reviews</a>
+                        </li>  
+                        <li>
+                            <a href="#">News</a>
+                        </li>  
+                        <li>
+                            <a href="#">Admission 2023</a>
+                        </li>  
+                        <li>
+                            <a href="#">Advertising</a>
+                        </li> 
+                        <li>
+                            <a href="#">Careers</a>
+                        </li> 
+                        <li>
+                            <a href="#">Ask a question</a>
+                        </li>  
+                        <li>
+                            <a href="#">Terms & Condition</a>
+                        </li>  
+                        <li>
+                            <a href="#">Privacy Policy</a>
+                        </li> 
+                        <li>
+                            <a href="#">Contact Us</a>
+                        </li>   
+                    </ul>                    
+                </div>
+            </section>
+            <div class="sidebar-overlay"></div>
+        <!-- Mobile Sidebar End -->                     
         
 
         <!-- Bootstrap JavaScript Libraries -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
+        <!-- Jquery CDN -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>    
+
+        <!-- Script Js -->
+        <script src="js/script.js"></script>   
+
+        <!-- Desktop Searchbar Script -->
+        <script>
+            function openSearch() {
+            document.getElementById("mySearchbar").style.display = "block";
+            }
+            
+            function closeSearch() {
+            document.getElementById("mySearchbar").style.display = "none";
+            }
+        </script>   
+
+        <!-- ------------------ -->
+
+        <!-- Notification Script -->
+        <script>
+            function opennotication() {
+            document.getElementById("notificationOpen").style.display = "block";
+            }
+            
+            function closenotifcation() {
+            document.getElementById("notificationOpen").style.display = "none";
+            }
+        </script>          
+
+        <!-- ------------------ -->
+
+        <!-- Mobile Searchbar Script -->
+        <script>
+            function mobileSearch() {
+            document.getElementById("mobileSearchOpen").style.display = "block";
+            }
+            
+            function closeMobile() {
+            document.getElementById("mobileSearchOpen").style.display = "none";
+            }
+        </script>   
+
+        <!-- ------------------ -->
+
+        <!-- Goal / City Script -->
+        <script>
+            function citygoalsearch() {
+            document.getElementById("goalcity").style.display = "block";
+            document.getElementById("goalcity_desktop").style.display = "block";            
+            }
+            
+            function closeMcitygoalsearch() {
+            document.getElementById("goalcity").style.display = "none";
+            document.getElementById("goalcity_desktop").style.display = "none";            
+            }
+        </script> 
+
+        <!-- ------------------ -->
+
+        <!-- Mobile Sidebar -->
+        <script>
+            $(function() {
+            $('.sidebar').each(function () {
+                $(this).sidebar({
+                opened: function (el) {
+                    console.log(el.attr('data-menu-name') + ' side menu opened')
+                },
+                closed: function (el) {
+                    console.log(el.attr('data-menu-name') + ' side menu closed')
+                }
+                })
+            })
+
+            $('.sidebar-overlay').on('click', function () {
+                $('.sidebar.opened').each(function () {
+                $(this).data('sidebar').close()
+                })
+            });
+
+            $('.btn-open.first').on('click', function () {
+                $('.sidebar.first').data('sidebar').open();
+            });
+
+            $('.btn-open.second').on('click', function () {
+                $('.sidebar.second').data('sidebar').open();
+            });
+            });
+        </script>
     </body>
 
 </html>
