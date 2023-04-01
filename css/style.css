@@ -327,25 +327,31 @@ ul{
     height: 100%;
     background: var(--white-primary);
 }
-.mobile-goal-city-section .box{
+.mobile-goal-city-section .box,
+.mobile-filter-section .box{
     align-items: center;
     padding: 10px;
 }
-.mobile-goal-city-section .goal-header-section{
+.mobile-goal-city-section .goal-header-section,
+.mobile-filter-section .fliter-header-section{
     background: var(--primary-color);
 }
-.mobile-goal-city-section .back-btn{
+.mobile-goal-city-section .back-btn,
+.mobile-filter-section .back-btn{
     margin-right: 10px;
     margin-left: 10px;
 }
-.mobile-goal-city-section .back-btn a{
+.mobile-goal-city-section .back-btn a,
+.mobile-filter-section .back-btn a{
     color: var(--white-primary);
     font-size: 20px;
 }
-.mobile-goal-city-section .text{
+.mobile-goal-city-section .text,
+.mobile-filter-section .text{
     width: 100%;
 }        
-.mobile-goal-city-section .text p{
+.mobile-goal-city-section .text p,
+.mobile-filter-section .text p{
     color: var(--white-primary);
     margin-left: 10px;
     font-weight: 700;
@@ -427,7 +433,8 @@ ul{
 .place-section,
 .exam-section,
 .study-section,
-.exam-category{
+.exam-category,
+.courses-page-section{
     padding: 0.5em 0 2em;
 }
 .goal-section .visit-record img{
@@ -1426,107 +1433,136 @@ ul{
 .list-section {
     padding-bottom: 1em;
 }
-.list-section .filter{
+.list-section .filter,
+.mobile-filter-section .filter{
     background: var(--white-primary);
 }
 .list-section .filter .header{
     padding: 10px;
     align-items: center;
 }
-.list-section .filter .title{
+.list-section .filter .title,
+.mobile-filter-section .filter .title{
     margin-top: 0;
     margin-bottom: 0;
 }
-.list-section .filter .title h6{
+.list-section .filter .title h6,
+.mobile-filter-section .filter .title h6{
     font-size: 12px;
 }
-.list-section .filter .default{
+.list-section .filter .default,
+.mobile-filter-section .filter .default{
     margin-left: auto;
 }
-.list-section .filter .default a{
+.list-section .filter .default a,
+.mobile-filter-section .filter .default a{
     font-size: 12px;
     color: var(--secondary-color);
 }
 .list-section .filter .accordion-item,
-.list-section .filter .accordion-button{
+.mobile-filter-section .filter .accordion-item,
+.list-section .filter .accordion-button,
+.mobile-filter-section .filter .accordion-button{
     border: none;
     border-radius: 0;
 }
-.list-section .filter .accordion-button{
+.list-section .filter .accordion-button,
+.mobile-filter-section .filter .accordion-button{
     background: var(--gray-light);
     color: var(--black-primary);
     font-size: 13px;
     padding: 12px;
 }
-.list-section .filter .accordion-body{
+.list-section .filter .accordion-body,
+.mobile-filter-section .filter .accordion-body{
     padding: 10px;
 }
-.list-section .filter .accordion {
+.list-section .filter .accordion,
+.mobile-filter-section .filter .accordion {
     --bs-accordion-btn-icon-width: .75rem;
     color: var(--black-primary);
 }
-.list-section .filter .form-control{
+.list-section .filter .form-control,
+.mobile-filter-section .filter .form-control{
     border-radius: 0%;
     font-size: 12px;
     border-color: var(--gray-light);
 }
-.list-section .filter .form-control::placeholder{
+.list-section .filter .form-control::placeholder,
+.mobile-filter-section .filter .form-control::placeholder{
     font-size: 12px;
     text-transform: uppercase;
 }
-.list-section .filter .checkbox-data{
+.list-section .filter .checkbox-data,
+.mobile-filter-section .filter .checkbox-data{
     height: 15ch;
     overflow: auto;
 }
-.list-section .filter .h-none{
+.list-section .filter .h-none,
+.mobile-filter-section .filter .h-none{
     height: auto !important;
 }
 .list-section .filter .checkbox-data::-webkit-scrollbar,
-.list-section .header-filter .sort .buttons .dropdown-menu::-webkit-scrollbar {
+.mobile-filter-section .filter .checkbox-data::-webkit-scrollbar,
+.list-section .header-filter .sort .buttons .dropdown-menu::-webkit-scrollbar,
+.mobile-filter-section .header-filter .sort .buttons .dropdown-menu::-webkit-scrollbar {
     width: 3px;
 }
 .list-section .filter .checkbox-data::-webkit-scrollbar-thumb,
-.list-section .header-filter .sort .buttons .dropdown-menu::-webkit-scrollbar-thumb {
+.mobile-filter-section .filter .checkbox-data::-webkit-scrollbar-thumb,
+.list-section .header-filter .sort .buttons .dropdown-menu::-webkit-scrollbar-thumb,
+.mobile-filter-section .header-filter .sort .buttons .dropdown-menu::-webkit-scrollbar-thumb {
     background-color: var(--official-gray);
 }
-.list-section .filter .checkbox-data .form-check{
+.list-section .filter .checkbox-data .form-check,
+.mobile-filter-section .filter .checkbox-data .form-check{
     font-size: 11px;
     min-height: 0.2rem;
 }
-.list-section .filter .checkbox-data .form-check-label{
+.list-section .filter .checkbox-data .form-check-label,
+.mobile-filter-section .filter .checkbox-data .form-check-label{
     cursor: pointer;
     transition: 0.2s ease-in-out;
 }
-.list-section .filter .checkbox-data .form-check-label:hover{
+.list-section .filter .checkbox-data .form-check-label:hover,
+.mobile-filter-section .filter .checkbox-data .form-check-label:hover{
     color: var(--secondary-color);
     font-weight: 500;
 }
-.list-section .header-filter .sort{
+.list-section .header-filter .sort,
+.mobile-filter-section .header-filter .sort{
     padding: 8px;
     background: var(--white-primary);
     align-items: center;
 }
-.list-section .header-filter .sort .sorting{
+.list-section .header-filter .sort .sorting,
+.mobile-filter-section .header-filter .sort .sorting{
     margin-left: auto;
 }
-.list-section .header-filter .sort .sorting span{
+.list-section .header-filter .sort .sorting span,
+.mobile-filter-section .header-filter .sort .sorting span{
     font-size: 13px;
     padding-right: 15px;
 }
-.list-section .header-filter .sort .sorting a{
+.list-section .header-filter .sort .sorting a,
+.mobile-filter-section .header-filter .sort .sorting a{
     transition: 0.3s ease-in-out;
     color: var(--black-primary);
 }
-.list-section .header-filter .sort .sorting a:hover{
+.list-section .header-filter .sort .sorting a:hover,
+.mobile-filter-section .header-filter .sort .sorting a:hover{
     color: var(--secondary-color);
 }
-.list-section .header-filter .sort .sorting a .fa{
+.list-section .header-filter .sort .sorting a .fa,
+.mobile-filter-section .header-filter .sort .sorting a .fa{
     font-size: xx-small ;
 }
-.list-section .header-filter .sort .sorting .view .fa{
+.list-section .header-filter .sort .sorting .view .fa,
+.mobile-filter-section .header-filter .sort .sorting .view .fa{
     font-size: 13px !important;
 }
-.list-section .header-filter .sort .sorting .active{
+.list-section .header-filter .sort .sorting .active,
+.mobile-filter-section .header-filter .sort .sorting .active{
     color: var(--secondary-color);
     font-size: 14px;
     font-weight: 600;
@@ -2173,4 +2209,89 @@ ul{
 .news-section .news-para p{
     font-size: 13px;
     margin-bottom: 0 !important;
+}
+
+
+/* ================================================  COURSES PAGES  ================================================ */
+.courses-page-section .title{
+    margin-top: 0;
+}
+.courses-page-section .search-section{
+    background: var(--white-primary);
+    padding: 20px;
+}
+.courses-page-section .search-section .form-section{
+    position: relative;
+}
+.courses-page-section .search-section .form-control{
+    border-radius: 0;
+    margin-bottom: 1em;
+    padding: 10px;
+    padding-left: 50px;
+    width: 50%;
+}
+.courses-page-section .search-section .fa{
+    position: absolute;
+    top: 14px;
+    left: 15px;
+}
+.courses-page-section .courses-detail{
+    padding-top: 30px;
+}
+.courses-page-section .courses-detail .title{
+    text-align: center;
+}
+.courses-page-section .courses-detail .title h4{
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--primary-color);
+}
+.courses-page-section .courses-detail .course-data{
+    background: var(--white-primary);
+    padding: 10px;
+    margin-bottom: 1em;
+    border-radius: 5px;
+}
+.courses-page-section .courses-detail .course-data .image{
+    height: 20ch;
+    width: 100%;
+}
+.courses-page-section .courses-detail .course-data .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.courses-page-section .courses-detail .course-data .course-name{
+    margin-top: 1em;
+}
+.courses-page-section .courses-detail .course-data .course-name a{
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--primary-color);
+}
+.courses-page-section .courses-detail .course-data .buttons{
+    margin-top: 10px;
+}
+.courses-page-section .courses-detail .course-data .buttons a{
+    width: 40%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 12px;
+    white-space: nowrap ;
+}
+.courses-page-section .courses-detail .course-data .more-button{
+    margin-top: 1em;
+}
+.courses-page-section .courses-detail .course-data .more-button a{
+    width: 100%;
+    background: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    box-shadow: none;
+    border-radius: 0;
+    transition: 0.3s ease-in-out;
+}
+.courses-page-section .courses-detail .course-data .more-button a:hover{
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    background: var(--white-primary);
 }

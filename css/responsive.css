@@ -33,9 +33,9 @@
             background: var(--secondary-color);
             padding: 0px 3px 0px 3px;
         }
-        .mobile-header-section .row{
+        /* .mobile-header-section .row{
             align-items: center;
-        }
+        } */
         .mobile-header-section{
             position: absolute;
             width: 100%;
@@ -43,21 +43,17 @@
             padding: 15px 0;
             z-index: 2;
         }
-        .mobile-header-section .logo{
-            text-align: center;
+        .mobile-header-section .header{
+            align-items: center;
         }
-        .mobile-header-section .toggle-button{
-            margin-right: 20px;
-        }
-        .mobile-header-section .search-button,
-        .mobile-header-section .login-button{
-            text-align: center;
+        .mobile-header-section .right-side{
+            margin-left: auto;
         }
         .mobile-header-section .login-button a,
         .mobile-header-section .toggle-button a,
         .mobile-header-section .search-button a{
             color: var(--white-primary);
-            font-size: 20px;
+            font-size: 15px;
         }
     /* Mobile Header */
 
@@ -375,8 +371,46 @@
             padding: 2px;
             font-size: 10px;
         }
-
-
+        .mobile-filter-section{
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            top: 0;
+            height: 100%;
+            background: var(--white-primary);
+            width: 100%;
+        }
+        .mobile-filter-section .filter{
+            padding: 10px;
+            height: 80ch;
+            padding-bottom: 6em;
+            overflow: auto;
+        }
+        .mobile-filter-section .header{
+            padding: 10px;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .mobile-filter{
+            width: 100%;
+            margin-bottom: 5px;
+        }
+        .mobile-filter .filter{
+            border-right: 1px solid var(--primary-color);
+        }
+        .mobile-filter .filter,
+        .mobile-filter .sorting{
+            width: 100%;
+        }
+        .mobile-filter h6{
+            margin-bottom: 0;
+            color: var(--primary-color);
+        }
+        .mobile-filter .box{
+            padding: 10px;
+            background: var(--white-primary);
+        }
+        
     /* ================================================  EXAM PAGE  ================================================ */
 
         .exam-category .category .box,
@@ -467,7 +501,17 @@
         .news-section .news-details .author a,
         .news-section .news-details .author p{
             font-size: 10px;
-        }             
+        }       
+        
+        /* ================================================  COURSES PAGES  ================================================ */        
+        
+        .courses-page-section .search-section .form-control{
+            width: 100%;
+            font-size: 13px;
+        }
+        .courses-page-section .search-section .fa{
+            top: 12px;
+        }
 }
 
 
@@ -634,6 +678,22 @@
         display: none !important;
     }    
    
+
+    /* ================================================  COURSES PAGES  ================================================ */        
+
+    .courses-page-section .search-section .form-control{
+        width: 60%;
+        font-size: 13px;
+    }
+    .courses-page-section .search-section .fa{
+        top: 12px;
+    }  
+    .courses-page-section .courses-detail .course-data .image {
+        height: 15ch;
+    }  
+    .courses-page-section .courses-detail .course-data .buttons a{
+        width: 35%;
+    }
 }
 
 /* IPAD LANDSCAPE */
@@ -835,6 +895,22 @@
     .news-section .news-side .author{
         display: none !important;
     }
+
+    /* ================================================  COURSES PAGES  ================================================ */        
+
+    .courses-page-section .search-section .form-control{
+        width: 60%;
+        font-size: 13px;
+    }
+    .courses-page-section .search-section .fa{
+        top: 12px;
+    }  
+    .courses-page-section .courses-detail .course-data .image {
+        height: 15ch;
+    }  
+    .courses-page-section .courses-detail .course-data .buttons a{
+        width: 35%;
+    }    
 }
 
 /* IPAD PORTRAIT */
@@ -1074,6 +1150,23 @@
     .news-section .news-side .image{
         height: 8ch ;
     }  
+
+
+    /* ================================================  COURSES PAGES  ================================================ */        
+    
+    .courses-page-section .search-section .form-control{
+        width: 60%;
+        font-size: 13px;
+    }
+    .courses-page-section .search-section .fa{
+        top: 12px;
+    }  
+    .courses-page-section .courses-detail .course-data .image {
+        height: 15ch;
+    }  
+    .courses-page-section .courses-detail .course-data .buttons a{
+        width: 35%;
+    }
 }
 
 /* IPAD AIR */
