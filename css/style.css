@@ -2053,6 +2053,11 @@ ul{
 .exam-category .box .para ul li {
     list-style: square !important;
     margin-top: 5px;
+    font-size: 13px
+}
+.exam-category .badge-buttons .active{
+    background: var(--secondary-color);
+    color: var(--white-primary);
 }
 
 
