@@ -364,10 +364,12 @@
         .list-section .infromation-data .links{
             margin-top: 0.5em;
         }
-        .list-section .infromation-data .links a{
+        .list-section .infromation-data .links a,
+        .exam-category .college-list .links a{
             font-size: 8px;
         }
-        .list-section .infromation-data .main-buttons .btn{
+        .list-section .infromation-data .main-buttons .btn,
+        .exam-category .college-list .main-buttons .btn{
             padding: 2px;
             font-size: 10px;
         }
@@ -595,10 +597,12 @@
     .list-section .filter .header a{
         font-size: 10px !important;
     }
-    .list-section .infromation-data .links a{
+    .list-section .infromation-data .links a,
+        .exam-category .college-list .links a{
         font-size: 9px;
     }
-    .list-section .infromation-data .main-buttons .btn{
+    .list-section .infromation-data .main-buttons .btn,
+        .exam-category .college-list .main-buttons .btn{
         padding: 2px;
         font-size: 9px;
     }
@@ -803,10 +807,12 @@
     .list-section .infromation-data .links{
         margin-top: 10px;
     }
-    .list-section .infromation-data .links a{
+    .list-section .infromation-data .links a,
+        .exam-category .college-list .links a{
         font-size: 9px;
     }
-    .list-section .infromation-data .main-buttons .btn{
+    .list-section .infromation-data .main-buttons .btn,
+        .exam-category .college-list .main-buttons .btn{
         padding: 2px;
         font-size: 9px;
     }
@@ -1058,10 +1064,12 @@
     .list-section .infromation-data .links{
         margin-top: 10px;
     }
-    .list-section .infromation-data .links a{
+    .list-section .infromation-data .links a,
+        .exam-category .college-list .links a{
         font-size: 9px;
     }
-    .list-section .infromation-data .main-buttons .btn{
+    .list-section .infromation-data .main-buttons .btn,
+        .exam-category .college-list .main-buttons .btn{
         padding: 2px;
         font-size: 9px;
     }
@@ -1313,10 +1321,12 @@
     .list-section .infromation-data .links{
         margin-top: 10px;
     }
-    .list-section .infromation-data .links a{
+    .list-section .infromation-data .links a,
+        .exam-category .college-list .links a{
         font-size: 9px;
     }
-    .list-section .infromation-data .main-buttons .btn{
+    .list-section .infromation-data .main-buttons .btn,
+        .exam-category .college-list .main-buttons .btn{
         padding: 2px;
         font-size: 9px;
     }

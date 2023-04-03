@@ -294,6 +294,7 @@ ul{
 }
 .caption-section .searchbox{
     height: 50px;
+    background: var(--white-primary);
     text-align: start ;
     padding-left: 20px;
     border: 1px solid var(--white-primary);
@@ -1142,6 +1143,29 @@ ul{
 /* Footer Section */
 
 
+/* Top to Bottom Start */
+.top-button-section{
+    position: fixed;
+    z-index: 999;
+    right: 1em;
+    bottom: 5em;
+}
+.top-button-section .top-button{
+    padding: 7px;
+    height: 40px;
+    color: var(--white-primary);
+    text-align: center;
+    width: 40px;
+    border-radius: 50%;
+    background: var(--secondary-color);
+}
+.top-button-section .top-button .fa{
+    font-size: 20px;
+    font-weight: 700;
+}
+/* Top to Bottom End */
+
+
 /* Desktop Searchbar Section */
 .overlay-searchbox .searchbar {
     height: 100%;
@@ -1572,7 +1596,8 @@ ul{
     padding: 10px;
     background: var(--white-primary);
 }
-.list-section .infromation-data .college-data .row{
+.list-section .infromation-data .college-data .row,
+.exam-category .college-list .row{
     align-items: center;
 }
 .list-section .infromation-data .main-image{
@@ -1585,11 +1610,14 @@ ul{
     object-fit: cover;
 }
 .list-section .infromation-data .details .college-name,
-.list-section .infromation-data .details .fees-structure{
+.exam-category .college-list .details .course-name,
+.list-section .infromation-data .details .fees-structure,
+.exam-category .college-list .details .fees-structure{
     align-items: center;
     justify-content: start;
 }
-.list-section .infromation-data .details .name a{
+.list-section .infromation-data .details .name a,
+.exam-category .college-list .details .course-name .name a{
     font-size: 13px;
     color: var(--primary-color);
     transition: 0.3s ease-in-out;
@@ -1599,16 +1627,19 @@ ul{
     -webkit-box-orient: vertical;  
     overflow: hidden;    
 }
-.list-section .infromation-data .details .name a:hover{
+.list-section .infromation-data .details .name a:hover,
+.exam-category .college-list .details .course-name .name a:hover{
     color: var(--secondary-color);
 }
 .list-section .infromation-data .details .name p{
     font-size: 11px;
 }
-.list-section .infromation-data .details .fees-structure a{
+.list-section .infromation-data .details .fees-structure a,
+.exam-category .college-list .details .fees-structure a{
     color: var(--secondary-color);
 }
-.list-section .infromation-data .details .fees-structure p{
+.list-section .infromation-data .details .fees-structure p,
+.exam-category .college-list .details .fees-structure p{
     font-size: 8px;
 }
 .list-section .infromation-data .details .fees-structure .fees-1,
@@ -1619,7 +1650,8 @@ ul{
 .list-section .infromation-data .links a:first-child{
     margin-left: 0;
 }
-.list-section .infromation-data .links a{
+.list-section .infromation-data .links a,
+.exam-category .college-list .links a{
     font-size: 12px;
     text-align: center;
     width: 100%;
@@ -1627,7 +1659,8 @@ ul{
     background: var(--gray-light);
     padding: 5px;
 }
-.list-section .infromation-data .main-buttons .btn{
+.list-section .infromation-data .main-buttons .btn,
+.exam-category .college-list .main-buttons .btn{
     width: 100%;
     margin-top: 10px;
     background: var(--secondary-color);
@@ -1638,7 +1671,8 @@ ul{
     border-radius: 0;
     transition: 0.3s ease-in-out;
 }
-.list-section .infromation-data .main-buttons .btn:hover{
+.list-section .infromation-data .main-buttons .btn:hover,
+.exam-category .college-list .main-buttons .btn:hover{
     background: var(--white-primary);
     color: var(--secondary-color);
     border-color: var(--secondary-color);
@@ -1666,9 +1700,6 @@ ul{
 .exam-category .news .title h6{
     font-size: 0.8em;
     color: var(--black-primary);
-}
-.exam-category .badge-buttons{
-    margin-bottom: 1em;
 }
 .exam-category .badge-buttons .btn{
     background: var(--gray-light);
@@ -1914,6 +1945,9 @@ ul{
 .exam-category .box .scroll{
     overflow: auto;
     white-space: nowrap;
+}
+.exam-category .box .scroll a{
+    margin: 0 3px 0 !important;
 }
 .exam-category .box .scroll::-webkit-scrollbar,
 .exam-category .tab-section .v-height::-webkit-scrollbar{
@@ -2299,4 +2333,20 @@ ul{
     color: var(--primary-color);
     border: 2px solid var(--primary-color);
     background: var(--white-primary);
+}
+.exam-category .college-list .row{
+    padding-left: inherit !important;
+    padding-right: inherit !important;
+}
+.exam-category .college-list .details .fees-structure{
+    padding: 20px 0 20px 0;
+}
+.exam-category .college-list .links a{
+    font-size: 10px;
+}
+.exam-category .college-list .details .course-name .name a{
+    font-size: 20px;
+}
+.exam-category .college-list .details .fees-structure p{
+    font-size: 12px;
 }
