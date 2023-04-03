@@ -514,8 +514,35 @@
         .courses-page-section .search-section .fa{
             top: 12px;
         }
-}
 
+
+        /* ================================================  COLLEGE PROFILE PAGE  ================================================ */
+        .college-profile .college-bg .user {
+            display: block !important;
+        }
+        .college-profile .college-bg .profile-data img,
+        .college-profile .college-bg .user img{
+            height: 30px;
+            width: 30px;
+        }
+        .college-profile .college-bg h4 a{
+            font-size: 12px;
+        }
+        .college-profile .college-bg h6{
+            font-size: 7px;
+            margin-top: -10px;
+        }
+        .college-profile .college-bg .user .text p{
+            font-size: 8px;
+            margin-top: 4px;
+            margin-bottom: 4px;
+        }
+        .college-profile .college-bg .user .alert-btn .btn{
+            font-size: 7px;
+            padding: 5px;
+        }
+
+    }
 
 /* ANY DESKTOP DEVICE */
 @media only screen and (min-width : 767px){
@@ -697,6 +724,11 @@
     }  
     .courses-page-section .courses-detail .course-data .buttons a{
         width: 35%;
+    }
+
+    /* ================================================  COLLEGE PROFILE PAGE  ================================================ */
+    .exam-category .gallery .image{
+        height: 13ch !important;
     }
 }
 

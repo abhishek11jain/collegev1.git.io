@@ -2,7 +2,7 @@
     --font-theme : 'PT Sans', sans-serif;
     --primary-color : #234e70;
     --black-primary : #000000;
-    --black-secondary : #000000a1;
+    --black-secondary : #000000cc;
     --black-transparent : #00000057;
     --white-primary : #ffffff;
     --official-gray : #aeaeae;
@@ -2349,4 +2349,94 @@ ul{
 }
 .exam-category .college-list .details .fees-structure p{
     font-size: 12px;
+}
+
+
+/* ================================================  COLLEGE PROFILE PAGE  ================================================ */
+.college-profile {
+    padding-bottom: 1em;
+}
+.college-profile .college-bg{
+    background-image: url(https://www.uncf.org/wp-content/uploads/heroes/2018LaneCollege1440.jpg);
+    height: 20ch;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+.college-profile .college-bg .overlay{
+    height: 100%;
+    width: 100%;
+    top: 0;
+    padding: 10px;
+    position: absolute;
+    background: var(--black-secondary);
+}
+.college-profile .college-bg h4 a{
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    width: 70%;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+.college-profile .college-bg h4 a,
+.college-profile .college-bg h6,
+.college-profile .college-bg h6 a{
+    color: var(--white-primary);
+}
+.college-profile .college-bg .profile-data{
+    align-items: center;
+}
+.college-profile .college-bg .profile-data .college-image{
+    padding: 2px;
+    background: var(--white-primary);
+}
+.college-profile .college-bg .profile-data img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+.college-profile .college-bg .profile-data .rating .fa{
+    color: var(--secondary-color);
+}
+.college-profile .college-bg .user{
+    background: var(--white-primary);
+    padding: 10px;
+    align-items: center;
+}
+.college-profile .college-bg .user img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.college-profile .college-bg .user a{
+    color: var(--secondary-color);
+}
+.college-profile .college-bg .user .alert-btn{
+    margin-left: auto;
+}
+.college-profile .college-bg .user .alert-btn .btn{
+    border-radius: 0%;
+    background: var(--secondary-color);
+    color: var(--white-primary);
+    border: 1px solid var(--secondary-color);
+    transition: 0.3s ease-in-out;
+}
+.college-profile .college-bg .user .alert-btn .btn:hover{
+    color: var(--secondary-color);
+    background: var(--white-primary);
+}
+.exam-category .gallery .title{
+    background: var(--gray-light);
+    padding: 10px;
+    margin-bottom: 0.5em;
+}
+.exam-category .gallery .image{
+    width: 100%;
+    height: 18ch;
+    margin-bottom: 0.5em;
+}
+.exam-category .gallery .image img{
+    width: 100%;
+    height: 100%;
 }
