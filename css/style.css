@@ -29,9 +29,9 @@ ul{
 .dropdown:hover .dropdown-menu{
     display: block ;
 }
-.dropdown-toggle::after{ 
+/* .dropdown-toggle::after{ 
     display: none ;
-}
+} */
 .container-fluid{
     max-width : 1800px;
 }
@@ -110,7 +110,7 @@ ul{
     color: var(--white-primary);
     font-weight: 700;
     padding-left: 10px;
-    font-size: 11px;
+    font-size: 13px;
     transition: 0.3s ease-in-out;
     font-family: var(--font-theme);
 }
@@ -176,7 +176,7 @@ ul{
 .navbar-menu .menu-name{
     color: var(--white-primary);
     font-weight: 500;
-    font-size: 12px;
+    font-size: 14px;
 }
 .navbar-menu .nav-pills{
     background: var(--gray-light);
@@ -253,7 +253,7 @@ ul{
 }
 .slider-section .carousel-caption {
     text-align: right;
-    bottom: 0;
+    bottom: 1em;
     z-index: 999;
 }
 .slider-section .carousel-caption a{
@@ -1427,6 +1427,149 @@ ul{
     font-weight: 600;
     font-size: 12px;
 }
+
+/* Onload Popup */
+.onload-popup .modal-content{
+    border-radius: 0%;
+}
+.onload-popup .modal-header{
+    background: var(--primary-color);
+    border-radius: 0;
+}
+.onload-popup .modal-body{
+    padding: 0%;
+}
+.onload-popup .modal-body .side-content .title p{
+    font-weight: 500;
+    font-size: 13px;
+}
+.onload-popup .modal-body .box{
+    margin-top: 10px;
+}
+.onload-popup .title{
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.onload-popup .modal-body .box h6{
+    font-size: 11px ;
+}
+.onload-popup .register .row{
+    align-items: center;
+}
+.onload-popup .register .image{
+    border-radius: 50%;
+}
+.onload-popup .register .image img{
+    border-radius: 50%;
+}
+.onload-popup .register .text h6{
+    font-size: 30px;
+    color: var(--secondary-color);
+}
+.onload-popup .form-item {
+    position: relative;
+    margin-bottom: 15px;
+}  
+.onload-popup .form-item p{
+    font-size: 10px;
+}
+.onload-popup .form-input, .form-select {
+    font-size: 12px;
+    padding: 7px 15px;
+    display: block;
+    width: 100%;
+    height: 45px;
+    background-color: transparent;
+    border: 1px solid var(--official-gray);
+    line-height: 30px;
+    border-radius: 3px;
+    letter-spacing: 0.06em;
+    color: var(--official-gray);
+} 
+.onload-popup .form-input, .form-select:focus{
+    border-color: var(--official-gray);
+}
+.onload-popup label {
+    font-size: 12px;
+    color: var(--official-gray);
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 15px;
+    top: 13px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+.onload-popup .form-control{
+    border-radius: 3px;
+}
+.onload-popup .form-input:focus ~ label {
+    top: -10px;
+    font-size: 0.85em;
+    color: var(--secondary-color);
+    background-color: var(--white-primary);
+    padding: 0 4px;
+    letter-spacing: 0.08em;
+}
+.onload-popup .form-input:not(:placeholder-shown) ~ label {
+    top: -10px;
+    font-size: 0.85em;
+    color: var(--official-gray);
+    background-color:  var(--white-primary);
+    padding: 0 4px;
+    letter-spacing: 0.08em;
+}
+.onload-popup .form-select:focus ~ label, .form-select:not([value=""]):valid ~ label {
+    top: -10px;
+    font-size: 0.8em;
+    color: var(--secondary-color);
+    background-color: var(--white-primary);
+}
+.onload-popup .content h6{
+    font-size: 12px;
+}
+.onload-popup .content h6 a{
+    color: var(--secondary-color);
+}
+.onload-popup .content .text-button{
+    align-items: center;
+}
+.onload-popup .content .text-button a{
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--secondary-color);
+}
+.onload-popup .content .text-button .btn-submit{
+    margin-left: auto;
+}
+.onload-popup .content .text-button .btn-submit .btn,
+.onload-popup #login .content .btn-submit .btn{
+    color: var(--white-primary);
+    background: var(--secondary-color);
+    border: none !important;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    border-radius: 0;
+}
+.onload-popup #login .content h6{
+    color: var(--secondary-color);
+    font-weight: 500;
+    font-size: 15px !important;
+}
+.onload-popup #login .content p{
+    font-size: 11px; 
+    margin-top: 10px;
+}
+.onload-popup #login .content .fs{
+    color: var(--black-primary) !important;
+    font-size: 11px !important;
+}
+/* Onload Popup */
 
 
 

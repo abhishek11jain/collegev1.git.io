@@ -353,6 +353,45 @@
     /* Mobile bootom Icon Section */
 
 
+    /* Onload Popup */
+        .onload-popup .content h6{
+            font-size: 9px !important;
+            margin-bottom: 0 !important;
+        }
+        .onload-popup .content .text{
+            text-align: center !important;
+        }
+        .onload-popup .content .text p{
+            font-size: 10px;
+            text-align: left;
+        }
+        .onload-popup .content .text-button{
+        display: block !important;
+        }
+        .onload-popup .content .text-button a{
+            font-size: 12px !important;
+        }
+        .onload-popup .content .text-button .btn-submit .btn{
+            width: 100% !important;
+            margin-top: 10px;
+            font-size: 12px !important;
+            text-transform: capitalize !important;
+            font-weight: 400 !important;
+            letter-spacing: normal !important;        
+        }
+        .onload-popup .mt-4{
+            margin-top: 0 !important;
+        }
+        .onload-popup .register .text h6{
+            font-size: 15px !important;
+            text-align: left !important;
+        }
+        .onload-popup #login .p-5{
+            padding: 1.8rem !important;
+        }
+    /* Onload Popup */
+
+
     /* ================================================  TOP UNIVERSITIES & COLLEGES ================================================ */
 
         .notification-section p{
