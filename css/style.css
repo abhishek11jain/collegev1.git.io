@@ -688,12 +688,14 @@ ul{
     font-size: 13px;
     font-weight: bold
 }
-.university-section #UniversitySection .data .mid-data p{
-    text-overflow: ellipsis;
+.university-section #UniversitySection .data .mid-data{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
     overflow: hidden;
-    font-size: 12px;
-    width: 100%;
-    white-space: nowrap ;
+}
+.university-section #UniversitySection .data .mid-data p{
+    font-size: 11px;
 }
 .university-section #UniversitySection .data .bottom-data a{
     font-weight: 600;
@@ -710,6 +712,19 @@ ul{
 }
 .university-section #UniversitySection .data .bottom-data p:last-child{
     border-bottom: none !important;
+}
+.university-section #UniversitySection .btn{
+    background: var(--secondary-color);
+    padding: 3px 10px 3px 10px;
+    border-color: var(--secondary-color);
+    font-size: 11px;
+    transition: 0.3s ease-in-out;
+    border-radius: 0;
+    color: var(--white-primary) !important;
+}
+.university-section #UniversitySection .btn:hover{
+    background: var(--white-primary);
+    color: var(--secondary-color) !important;
 }
 /* university section */
 
@@ -2431,17 +2446,19 @@ ul{
 .courses-page-section .courses-detail .course-data{
     background: var(--white-primary);
     padding: 10px;
+    margin-top: 3em;
     margin-bottom: 1em;
     border-radius: 5px;
 }
 .courses-page-section .courses-detail .course-data .image{
-    height: 20ch;
-    width: 100%;
+    text-align: center;
+    margin-top: -3.5em;
 }
 .courses-page-section .courses-detail .course-data .image img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+    height: 10ch;
+    width: 10ch;
+    padding: 3px;
+    border-radius: 50%;
 }
 .courses-page-section .courses-detail .course-data .course-name{
     margin-top: 1em;
