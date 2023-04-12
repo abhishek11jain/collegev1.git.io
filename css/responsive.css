@@ -18,8 +18,11 @@
     }
 
     .badge{
-        font-size: 10px !important;
+        font-size: 11px !important;
         margin: 4px 5px !important;
+    }
+    .title h6{
+        font-size: 14px;
     }
     /* Mobile Header */
         .header-design{
@@ -594,7 +597,10 @@
 @media only screen and (device-height : 1366px) and (device-width : 1024px) and (orientation: portrait) {
 
     .topbar-section .topbar-menus ul li a{
-        font-size: 9px !important;
+        font-size: 12px !important;
+    }
+    .topbar-section .topbar-menus ul li a{
+        padding-left: 0 ;
     }
 
     /* ------------------ */
@@ -632,7 +638,7 @@
         font-size: 12px !important;
     }
     .footer-section .links p {
-        font-size: 9px !important;
+        font-size: 13px !important;
     }
     .footer-section .mid-footer span {
         font-size: 12px !important;
@@ -647,7 +653,7 @@
         padding-bottom: 1em !important;
     }    
     .bottom-footer .text p {
-        font-size: 12px !important;
+        font-size: 15px !important;
     }
 
     /* ================================================  UNIVERSITY & COLLEGES PAGE  ================================================ */
@@ -771,7 +777,10 @@
 /* IPAD LANDSCAPE */
 @media only screen and (device-width : 1024px) and (device-height : 768px) and (orientation: landscape) {
     .topbar-section .topbar-menus ul li a{
-        font-size: 9px !important;
+        font-size: 12px !important;
+    }
+    .topbar-section .topbar-menus ul li a{
+        padding-left: 0;
     }
 
     /* ------------------ */
@@ -832,7 +841,7 @@
         font-size: 12px !important;
     }
     .footer-section .links p {
-        font-size: 9px !important;
+        font-size: 12px !important;
     }
     .footer-section .mid-footer span {
         font-size: 12px !important;
@@ -847,7 +856,7 @@
         padding-bottom: 1em !important;
     }    
     .bottom-footer .text p {
-        font-size: 12px !important;
+        font-size: 14px !important;
     }
 
     /* ================================================  UNIVERSITY & COLLEGES PAGE  ================================================ */
@@ -994,8 +1003,7 @@
         margin: 0 !important;
     }
     .topbar-section .topbar-menus ul li a{
-        font-size: 7px !important;
-        padding-left: 15px !important;
+        font-size: 9px !important;
     }
 
     /* ------------------ */
@@ -1029,13 +1037,18 @@
         height: 44ch !important;
     }
     .caption-section {
-        padding: 4em !important;
+        padding: 2em !important;
         margin-top: -19em !important;
     }
     .caption-section .text {
         font-size: 3.5ch;
     }
-
+    .slider-section .carousel-caption{
+        bottom: 2em;
+    }
+    .carousel-caption{
+        right: 6%;
+    }
     /* -------------------------- */
 
 
@@ -1082,13 +1095,13 @@
     /* -------------------------- */
 
     .footer-section .title h6 {
-        font-size: 12px !important;
+        font-size: 10px !important;
     }
     .footer-section .links p {
-        font-size: 6px !important;
+        font-size: 10px !important;
     }
     .footer-section .mid-footer span {
-        font-size: 8px !important;
+        font-size: 10px !important;
     }
     .bottom-footer .buttons,
     .bottom-footer .copyright {
@@ -1100,7 +1113,7 @@
         padding-bottom: 1em !important;
     }    
     .bottom-footer .text p {
-        font-size: 12px !important;
+        font-size: 14px !important;
     }
 
 
