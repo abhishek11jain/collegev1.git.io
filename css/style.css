@@ -168,7 +168,7 @@ table{
     padding: 0%;
 }
 .navbar-menu .megamenu {
-    padding: 0 0 1em 0;
+    padding: 1em;
     left: 0;
     right: 0;
     border-radius: 0;
@@ -203,18 +203,25 @@ table{
     border-left: 4px solid var(--primary-color);
     border-radius: 0%;
 }
-.navbar-menu .tab-content h6{
+.navbar-menu .tab-content h6,
+.navbar-menu .heading h6{
     text-transform: uppercase;
     padding-bottom: 10px;
     font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 0;
 }
-.navbar-menu .tab-content h6 a{
-    color: var(--black-primary);
+.navbar-menu .tab-content h6 a,
+.navbar-menu ul li a{
+    color: var(--black-secondary);
+    font-size: 12px;
 }
 .navbar-menu .tab-content{
     padding: 1em 0 0 0 ;
 }
-.navbar-menu .tab-content ul{
+
+.navbar-menu .tab-content ul,
+.navbar-menu ul {
     padding-left: 0;
 }
 .navbar-menu .tab-content .sub-menu{
@@ -541,6 +548,7 @@ table{
     width: 60px;
     height: 60px;
     border-radius: 50%;
+    background: var(--white-primary);
     border: 1px solid var(--gray-light);
     padding: 2px;
 }
@@ -549,7 +557,7 @@ table{
     height: 100%;
     border: 1px solid var(--gray-light);
     border-radius: 50%;
-    object-fit: cover;
+    object-fit: contain;
 }
 .infromation-section .indicate{
     align-items: center;
@@ -626,13 +634,14 @@ table{
     border-radius: 50%;
     border: 1px solid var(--gray-light);
     padding: 2px;
+    background: var(--white-primary);
 }
 .university-section  #UniversitySection .image img{
     width: 100%;
     height: 100%;
     border: 1px solid var(--gray-light);
     border-radius: 50%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .university-section  #UniversitySection .card{
@@ -662,6 +671,10 @@ table{
 .university-section  #UniversitySection .text a{
     font-size: 11px;
     color: var(--gray-light);
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 .university-section  #UniversitySection .carousel-inner .carousel-item-end,
 .university-section  #UniversitySection .carousel-inner .carousel-item-start { 
@@ -846,7 +859,10 @@ table{
     transition: 0.3s ease-in-out;
 } 
 .place-section  #PlaceSection .image img{
-    object-fit: cover;
+    object-fit: revert;
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
 }
 .place-section  #PlaceSection h5{
     font-size: 13px;
@@ -918,12 +934,13 @@ table{
     border-radius: 50%;
     border: 1px solid var(--official-gray);
     padding: 2px;
+    background: var(--white-primary);
 }
 .exam-section  #ExamSection .image img{
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    object-fit: cover;
+    object-fit: contain;
 }
 .exam-section  #ExamSection .data .badge{
     background: var(--official-gray);
@@ -1024,12 +1041,13 @@ table{
     border-radius: 50%;
     border: 1px solid var(--official-gray);
     padding: 2px;
+    background: var(--white-primary);
 }
 .study-section  #StudySection .main-information .image img{
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    object-fit: cover;
+    object-fit: contain;
 }
 .study-section  #StudySection .data .main-information {
     padding-left: 2px;
@@ -1599,7 +1617,9 @@ table{
 
 /* ================================================  UNIVERSITY & COLLEGES PAGE  ================================================ */
 
-
+.mobile-filter-section{
+    display: none ;
+}
 .notification-section{
     padding-bottom: 1em;
 }
@@ -1684,6 +1704,18 @@ table{
     font-size: 12px;
     text-transform: uppercase;
 }
+.list-section .infromation-data .college-name .image{
+    border-radius: 50%;
+}
+.list-section .infromation-data .college-name .image img{
+    border-radius: 50%;
+    padding: 4px;
+    background: var(--white-primary);
+    height: 40px !important;
+    object-fit: contain;
+    margin-right: 10px;
+    width: 40px !important;
+}
 .list-section .filter .checkbox-data,
 .mobile-filter-section .filter .checkbox-data{
     height: 15ch;
@@ -1707,7 +1739,7 @@ table{
 }
 .list-section .filter .checkbox-data .form-check,
 .mobile-filter-section .filter .checkbox-data .form-check{
-    font-size: 11px;
+    font-size: 14px;
     min-height: 0.2rem;
 }
 .list-section .filter .checkbox-data .form-check-label,
@@ -1850,6 +1882,20 @@ table{
 .exam-category .college-list .main-buttons .btn:hover{
     background: var(--white-primary);
     color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+.page-item:last-child .page-link,
+.page-item:first-child .page-link{
+    border-radius: 0 !important;
+}
+.page-link{
+    color: var(--secondary-color);
+}
+.page-link:hover{
+    color: var(--primary-color);
+}
+.active>.page-link, .page-link.active{
+    background: var(--secondary-color);
     border-color: var(--secondary-color);
 }
 
@@ -2078,7 +2124,8 @@ table{
 .exam-category .news .image img{
     height: 3em;
     width: 3em;
-    object-fit: cover;
+    background: var(--white-primary);
+    object-fit: contain;
     border-radius: 5px;
 }
 .exam-category .news .news-detail {
@@ -2555,7 +2602,7 @@ table{
 .college-profile .college-bg h4 a{
     display: -webkit-box;
     -webkit-line-clamp: 1;
-    width: 70%;
+    width: 100%;
     -webkit-box-orient: vertical;  
     overflow: hidden;
 }

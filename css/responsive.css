@@ -24,6 +24,11 @@
     .title h6{
         font-size: 14px;
     }
+
+    .breadcrumb-item.active{
+        font-size: 10px;
+    }
+
     /* Mobile Header */
         .header-design{
             position: inherit !important;
@@ -396,7 +401,9 @@
 
 
     /* ================================================  TOP UNIVERSITIES & COLLEGES ================================================ */
-
+        .list-section .infromation-data .details .college-name{
+            margin-top: 1em;
+        }
         .notification-section p{
             font-size: 12px;
         }
@@ -570,18 +577,22 @@
         .college-profile .college-bg h4 a{
             font-size: 12px;
         }
+        .college-profile .college-bg{
+            height: 21ch;
+        }
         .college-profile .college-bg h6{
             font-size: 7px;
             margin-top: -10px;
         }
         .college-profile .college-bg .user .text p{
-            font-size: 8px;
+            font-size: 11px;
             margin-top: 4px;
             margin-bottom: 4px;
         }
         .college-profile .college-bg .user .alert-btn .btn{
-            font-size: 7px;
-            padding: 5px;
+            margin-top: 5px;
+            font-size: 10px;
+            padding: 4px;
         }
 
     }
@@ -608,7 +619,9 @@
     .navbar-menu .nav-pills a{
         font-size: 12px !important;
     }
-    .navbar-menu .tab-content h6{
+    
+    .navbar-menu .tab-content h6, 
+    .navbar-menu .heading h6{
         font-size: 11px !important;
     }
     .navbar-menu .tab-content .sub-menu{
@@ -791,11 +804,11 @@
     .navbar-menu .menu-name{
         font-size: 11px !important;
     }
-    .navbar-menu .nav-pills a{
-        font-size: 12px !important;
+    .navbar-menu .tab-content h6 a, .navbar-menu ul li a{
+        font-size: 10px !important;
     }
-    .navbar-menu .tab-content h6{
-        font-size: 11px !important;
+    .navbar-menu .tab-content h6, .navbar-menu .heading h6{
+        font-size: 10px !important;
     }
     .navbar-menu .tab-content .sub-menu{
         font-size: 10px !important;
@@ -892,10 +905,6 @@
         .exam-category .college-list .main-buttons .btn{
         padding: 2px;
         font-size: 9px;
-    }
-    .list-section .infromation-data .details .college-name, 
-    .list-section .infromation-data .details .fees-structure{
-        justify-content: center;
     }
     .list-section .infromation-data .details .fees-structure .fees-1, 
     .list-section .infromation-data .details .fees-structure .fees-2, 
@@ -1020,10 +1029,15 @@
     .navbar-menu .menu-name{
         font-size: 11px !important;
     }
-    .navbar-menu .nav-pills a{
-        font-size: 12px !important;
+    .navbar-menu .nav-pills a,
+    .navbar-menu ul li a{
+        font-size: 10px !important;
     }
-    .navbar-menu .tab-content h6{
+    .navbar-menu .col-megamenu{
+        margin-bottom: 1.5em;
+    }
+    .navbar-menu .tab-content h6, 
+    .navbar-menu .heading h6{
         font-size: 11px !important;
     }
     .navbar-menu .tab-content .sub-menu{
@@ -1153,7 +1167,7 @@
     }
     .list-section .infromation-data .details .college-name, 
     .list-section .infromation-data .details .fees-structure{
-        justify-content: center;
+        justify-content: start;
     }
     .list-section .infromation-data .details .fees-structure .fees-1, 
     .list-section .infromation-data .details .fees-structure .fees-2, 
@@ -1165,13 +1179,13 @@
     .list-section .infromation-data .details .fees-structure .fees-2 a h6, 
     .list-section .infromation-data .details .fees-structure .rating a h6
     {
-        font-size: 10px !important;
+        font-size: 15px !important;
     }
     .list-section .infromation-data .details .fees-structure .fees-1 p, 
     .list-section .infromation-data .details .fees-structure .fees-2 p, 
     .list-section .infromation-data .details .fees-structure .rating p
     {
-        font-size: 6px !important;
+        font-size: 10px !important;
     }
 
     /* ================================================  EXAM & EXAM DETAIL  ================================================ */
