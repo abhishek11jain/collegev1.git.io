@@ -13,6 +13,14 @@
 /* ALL MOBILE DEVICE */
 @media only screen and (max-width : 767px){
 
+    /* Editor Code */
+    .detail-overview .table-responsive{
+        width: 100% !important;
+        white-space: nowrap;
+        overflow: auto;
+    }
+    /* Editor Code */
+
     .hide-mobile{
         display: none;
     }
@@ -23,10 +31,6 @@
     }
     .title h6{
         font-size: 14px;
-    }
-
-    .breadcrumb-item.active{
-        font-size: 10px;
     }
 
     /* Mobile Header */
@@ -501,7 +505,7 @@
         .exam-category .title h4,
         .exam-category .exam h6{
             font-size: 13px;
-            font-weight: 600;
+            font-weight: 500;
         }
         .exam-category .box .user{
             display: block !important;
@@ -1099,12 +1103,6 @@
 
     /* -------------------------- */
 
-    .place-section #PlaceSection .card {
-        height: 110px !important;
-        width: 100px !important;
-        padding: 9px !important;
-    }
-
 
     /* -------------------------- */
 
@@ -1240,6 +1238,7 @@
     }  
     .news-section .news-side .text h6{
         margin-bottom: 0;
+        line-height: 0.7;
     }
     .news-section .news-side .text a{
         font-size: 8px;
@@ -1354,11 +1353,6 @@
 
     /* -------------------------- */
 
-    .place-section #PlaceSection .card {
-        height: 110px !important;
-        width: 100px !important;
-        padding: 9px !important;
-    }
 
 
     /* -------------------------- */
