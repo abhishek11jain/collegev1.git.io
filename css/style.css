@@ -2804,9 +2804,11 @@ table{
 }
 .company-section ul li{
     list-style: square !important;
+    text-align: justify;
 }
 .company-section ol li{
     list-style: lower-roman !important;
+    text-align: justify;
 }
 .company-section table{
     text-align: center;
