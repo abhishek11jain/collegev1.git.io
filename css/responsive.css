@@ -404,6 +404,13 @@
     /* Onload Popup */
 
 
+    /* Company Detail Page */
+    .company-section ul li,
+    .company-section ol li{
+        margin-bottom: 10px;
+    }
+
+
     /* ================================================  TOP UNIVERSITIES & COLLEGES ================================================ */
         .list-section .infromation-data .details .college-name{
             margin-top: 1em;
