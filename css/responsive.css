@@ -13,13 +13,13 @@
 /* ALL MOBILE DEVICE */
 @media only screen and (max-width : 767px){
 
-    /* Editor Code */
-    .detail-overview .table-responsive{
+    /* Table Code */
+    .table-responsive{
         width: 100% !important;
         white-space: nowrap;
         overflow: auto;
     }
-    /* Editor Code */
+    /* Table Code */
 
     .hide-mobile{
         display: none;
