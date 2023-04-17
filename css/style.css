@@ -1918,6 +1918,12 @@ table{
 .exam-category .title{
     margin: 0;
 }
+.exam-category .data .main-data .title p{
+    white-space: nowrap !important;
+    text-overflow: ellipsis !important;
+    width: 200px !important;
+    overflow: hidden !important;
+}
 .exam-category hr{
     color: var(--official-gray);
 }
@@ -2363,9 +2369,9 @@ table{
 }
 .news-section .slider-side .carousel-item img,
 .news-section .news-details .image img{
-    height: 100%;
+    height: auto;
     width: 100%;
-    object-fit: cover;
+    object-fit: fill;
 }
 .news-section .slider-side .carousel-caption {
     right: 2em;
@@ -2461,9 +2467,8 @@ table{
     width: 100%;
 }
 .news-section .news-side .image img{
-    height: 100%;
+    height: auto;
     width: 100%;
-    object-fit: cover;
 }
 .news-section .news-side .text a{
     color: var(--primary-color);
@@ -2695,8 +2700,18 @@ table{
 .exam-category .gallery .image img{
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
-
+.exam-category .gallery .video{
+    padding: 3px;
+    margin-bottom: 0.5rem;
+    border: 1px solid var(--border-gray);
+}
+.exam-category .gallery iframe{
+    height: 25ch;
+    width: 100%;
+    background-position: initial !important;
+}
 
 
 
@@ -2704,8 +2719,10 @@ table{
 .detail-overview{
     text-align: justify !important;
 }
-.detail-overview .table{
+.detail-overview table{
     width: 100% !important;
+    margin-top: 15px !important;
+    margin-bottom: 1em !important;
     text-align: center !important;
 }
 .detail-overview thead{
@@ -2746,4 +2763,72 @@ table{
 }
 .detail-overview h6{
     font-weight: 600 !important;
+}
+
+
+/* Add Section Design */
+.add-section .add-image{
+    height: auto;
+    width: 100%;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+.add-section .add-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+/* Company Section Page */
+.company-section{
+    padding: 0 0.5em 2em;
+}
+.company-section .title{
+    background: var(--gray-light);
+    padding: 10px;
+}
+.company-section .title h5{
+    margin-bottom: 0;
+    font-weight: 500;
+}
+.company-section h6{
+    font-weight: 600;
+    color: var(--primary-color);
+}
+.company-section p{
+    text-align: justify;
+}
+.company-section ul,
+.company-section ol{
+    margin-bottom: 10px;
+}
+.company-section ul li{
+    list-style: square !important;
+}
+.company-section ol li{
+    list-style: lower-roman !important;
+}
+.company-section table{
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+}
+.company-section thead{
+    background: var(--gray-light);
+}
+.company-section table thead th,
+.company-section table td{
+    text-align: center;
+}
+.company-section table td{
+    font-size: 15px;
+    padding: 15px;
+    border: 1px solid var(--border-gray);
+}
+.company-section table thead th{
+    font-weight: 600;
+    font-size: 15px;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid var(--border-gray);
 }
