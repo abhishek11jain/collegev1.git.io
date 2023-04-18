@@ -13,6 +13,14 @@
 /* ALL MOBILE DEVICE */
 @media only screen and (max-width : 767px){
 
+    .advertice-section .text h4{
+        font-size: 15px;
+    }
+    .advertice-section .text a{
+        font-size: 15px;
+        padding: 5px 20px 5px 20px;
+    }
+
     /* Table Code */
     .table-responsive{
         width: 100% !important;
@@ -612,6 +620,28 @@
             font-size: 10px;
             padding: 4px;
         }
+
+
+
+        /* Newsletter Section */
+            .newsletter-section h4{
+                font-size: 15px;
+            }
+            .newsletter-section p{
+                font-size: 10px;
+            }
+            .newsletter-section hr{
+                width: 70%;
+            }
+            .newsletter-section .content .form-control, 
+            .newsletter-section .content .subscribe-btn a{
+                padding: 8px;
+                font-size: 12px;
+            }
+            .newsletter-section .content .subscribe-btn a{
+                padding: 8px 15px 8px 15px;
+            }
+        /* Newsletter Section */
 
     }
 
