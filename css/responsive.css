@@ -13,11 +13,21 @@
 /* ALL MOBILE DEVICE */
 @media only screen and (max-width : 767px){
 
+    .bread-crumb{
+        display: none;
+    }
+    .newsletter-section .d-flex{
+        display: block !important;
+    }
+    .newsletter-section .content .form-control, .newsletter-section .content .subscribe-btn a{
+        margin-bottom: 10px;
+    }
+
     .advertice-section .text h4{
-        font-size: 15px;
+        font-size: 13px !important;
     }
     .advertice-section .text a{
-        font-size: 15px;
+        font-size: 13px !important;
         padding: 5px 20px 5px 20px;
     }
 
@@ -44,6 +54,7 @@
     /* Mobile Header */
         .header-design{
             position: inherit !important;
+            margin-bottom: 1em;
             background: var(--primary-color) !important;
         }
         .mobile-header-section .notification{
@@ -73,7 +84,7 @@
         .mobile-header-section .toggle-button a,
         .mobile-header-section .search-button a{
             color: var(--white-primary);
-            font-size: 15px;
+            font-size: 13px !important;
         }
     /* Mobile Header */
 
@@ -137,7 +148,7 @@
         }
         .mobile-searchbar-section .not-found b,
         .mobile-searchbar-section .search-result b{
-            font-size: 15px;
+            font-size: 13px !important;
         }
         .mobile-searchbar-section .result a{
             color: var(--black-primary);
@@ -173,7 +184,7 @@
             font-size: 20px;
         }
         .mobile-notication-section .notification h6{
-            font-size: 15px;
+            font-size: 13px !important;
             margin-left: 1em;
             color: var(--white-primary);
         }
@@ -276,7 +287,7 @@
         }
         .mobile-caption-section .text a{
             color: var(--white-primary);
-            font-size: 13px;
+            font-size: 12px !important;
         }
         .mobile-caption-section .button-section{
             margin-left: auto;
@@ -330,7 +341,7 @@
         }
         .footer-section .mid-footer .links{
             text-align: center !important;
-            font-size: 13px;
+            font-size: 12px !important;
             margin-top: 10px;
         }
         .footer-section hr{
@@ -350,6 +361,9 @@
         .bottom-footer .text p{
             font-size: 12px;
             color: var(--black-primary) !important;
+        }
+        .footer-section .mid-footer span a{
+            font-size: 12px;
         }
     /* Footer Section */
 
@@ -434,12 +448,18 @@
         }
         .list-section .infromation-data .links a,
         .exam-category .college-list .links a{
-            font-size: 8px;
+            font-size: 10px;
         }
         .list-section .infromation-data .main-buttons .btn,
         .exam-category .college-list .main-buttons .btn{
-            padding: 2px;
+            padding: 5px;
             font-size: 10px;
+        }
+        .list-section .infromation-data .details .fees-structure a h6{
+            font-size: 12px;
+        }
+        .list-section .infromation-data .details .name p{
+            font-size: 8px;
         }
         .mobile-filter-section{
             display: none;
@@ -474,6 +494,7 @@
         }
         .mobile-filter h6{
             margin-bottom: 0;
+            font-size: 12px;
             color: var(--primary-color);
         }
         .mobile-filter .box{
@@ -502,7 +523,7 @@
             margin: 10px;
         }
         .exam-category .data .main-data .title h6{
-            font-size: 13px;
+            font-size: 12px !important;
             white-space: nowrap !important;
             text-overflow: ellipsis !important;
             width: 100px !important;
@@ -522,12 +543,18 @@
             font-size: 11px;
         }
         .exam-category .accordion-body p{
-            font-size: 13px;
+            font-size: 12px !important;
         }      
         .exam-category .title h4,
         .exam-category .exam h6{
-            font-size: 13px;
-            font-weight: 500;
+            font-size: 12px !important;
+            font-weight: 400;
+        }
+        .exam-category .college-list .course-detail .course-name .name a{
+            font-size: 13px !important;
+        }
+        .exam-category .college-list .details .fees-structure h6{
+            font-size: 13px !important;
         }
         .exam-category .box .user{
             display: block !important;
@@ -538,7 +565,7 @@
             margin-bottom: 10px;
         }
         .exam-category .box .text p{
-            font-size: 13px;
+            font-size: 12px !important;
         }
         .exam-category .box .user .alert-btn .btn{
             font-size: 10px;
@@ -584,7 +611,7 @@
         
         .courses-page-section .search-section .form-control{
             width: 100%;
-            font-size: 13px;
+            font-size: 12px !important;
         }
         .courses-page-section .search-section .fa{
             top: 12px;
@@ -625,7 +652,7 @@
 
         /* Newsletter Section */
             .newsletter-section h4{
-                font-size: 15px;
+                font-size: 13px !important;
             }
             .newsletter-section p{
                 font-size: 10px;
@@ -715,6 +742,10 @@
     }    
     .bottom-footer .text p {
         font-size: 15px !important;
+    }
+    .footer-section .links p a,
+    .footer-section .mid-footer span a{
+        font-size: 10px;
     }
 
     /* ================================================  UNIVERSITY & COLLEGES PAGE  ================================================ */
@@ -820,7 +851,7 @@
 
     .courses-page-section .search-section .form-control{
         width: 60%;
-        font-size: 13px;
+        font-size: 12px !important;
     }
     .courses-page-section .search-section .fa{
         top: 12px;
@@ -918,6 +949,10 @@
     }    
     .bottom-footer .text p {
         font-size: 14px !important;
+    }
+    .footer-section .links p a,
+    .footer-section .mid-footer span a{
+        font-size: 10px;
     }
 
     /* ================================================  UNIVERSITY & COLLEGES PAGE  ================================================ */
@@ -1040,7 +1075,7 @@
 
     .courses-page-section .search-section .form-control{
         width: 60%;
-        font-size: 13px;
+        font-size: 12px !important;
     }
     .courses-page-section .search-section .fa{
         top: 12px;
@@ -1159,6 +1194,10 @@
     .footer-section .mid-footer span {
         font-size: 10px !important;
     }
+    .footer-section .links p a,
+    .footer-section .mid-footer span a{
+        font-size: 10px;
+    }
     .bottom-footer .buttons,
     .bottom-footer .copyright {
         text-align: center !important;
@@ -1233,7 +1272,7 @@
     /* ================================================  EXAM & EXAM DETAIL  ================================================ */
 
     .exam-category .data .main-data .title h6{
-        font-size: 13px;
+        font-size: 12px !important;
         white-space: nowrap !important;
         text-overflow: ellipsis !important;
         width: 80px !important;
@@ -1299,13 +1338,18 @@
     
     .courses-page-section .search-section .form-control{
         width: 60%;
-        font-size: 13px;
+        font-size: 12px !important;
     }
     .courses-page-section .search-section .fa{
         top: 12px;
     }  
     .courses-page-section .courses-detail .course-data .buttons a{
         width: 35%;
+    }
+    
+
+    .newsletter-section .content .form-control, .newsletter-section .content .subscribe-btn button{
+        font-size: 10px;
     }
 }
 
@@ -1421,6 +1465,10 @@
     }    
     .bottom-footer .text p {
         font-size: 12px !important;
+    }
+    .footer-section .links p a,
+    .footer-section .mid-footer span a{
+        font-size: 10px;
     }
 
     /* ================================================  UNIVERSITY & COLLEGES PAGE  ================================================ */

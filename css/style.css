@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
+
 :root{
-    --font-theme : 'PT Sans', sans-serif;
     --primary-color : #234e70;
     --black-primary : #000000;
     --black-secondary : #000000cc;
@@ -10,20 +11,28 @@
     --border-gray : #e6e6e6 ;
     --secondary-color : #ec7c1c;
     --primary-transparent : #9cccf123;
+    --link : #0000EE;
+    --link-hover : #551A8B;
 }
 html{
     height: auto;
+    font-family: 'Open Sans', sans-serif;
 }
 body{
     height: 100%;
     width: 100%;
+    font-family: 'Open Sans', sans-serif;
 }
 *{
     list-style: none !important;
     box-shadow: none !important;
     outline: none !important;
-    text-decoration: none !important;
-    font-family: 'PT Sans', sans-serif;    
+    text-decoration: none !important; 
+    font-family: 'Open Sans', sans-serif;
+}
+b,
+strong{
+    font-weight: 500 !important;
 }
 ul{
     margin-bottom: 0;
@@ -46,10 +55,10 @@ table{
 .badge{
     background: var(--gray-light);
     color: var(--black-primary);
-    font-weight: lighter;
+    font-weight: 400;
     padding: 10px;
+    text-transform: capitalize !important;
     margin: 5px 10px;
-    font-size: 16px;
     transition: 0.3s ease-in-out;
 }
 .badge:hover{
@@ -61,7 +70,7 @@ table{
     margin-top: 1em;
 }
 .title h6{
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 500;
     text-transform: capitalize;
 }
@@ -113,7 +122,7 @@ table{
 }
 .topbar-section .topbar-menus ul li a{
     color: var(--white-primary);
-    font-weight: 600;
+    font-weight: 500;
     padding-left: 10px;
     font-size: 13px;
     transition: 0.3s ease-in-out;
@@ -209,7 +218,7 @@ table{
     text-transform: uppercase;
     padding-bottom: 10px;
     font-size: 13px;
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 0;
 }
 .navbar-menu .tab-content h6 a,
@@ -226,7 +235,7 @@ table{
     padding-left: 0;
 }
 .navbar-menu .tab-content .sub-menu{
-    font-size: 14px;
+    font-size: 12px;
     color: var(--official-gray);
     transition: 0.3s ease-in-out;
 }
@@ -270,7 +279,10 @@ table{
 }
 .slider-section .carousel-caption a{
     color: var(--white-primary);
-    font-weight: 700;
+    font-weight: 400;
+    padding: 5px 10px 5px 10px;
+    font-size: 12px;
+    background: var(--black-secondary);
     transition: 0.3s ease-in-out;
 }
 .slider-section .carousel-caption a:hover{
@@ -297,7 +309,7 @@ table{
     left: 0;
     right: 0;
     font-size: 4ch;
-    font-weight: 600;
+    font-weight: 500;
     color: var(--white-primary);
     margin-bottom: 0.5em;
 }
@@ -479,9 +491,19 @@ table{
 }
 .collection-section p{
     font-size: 12px;
+    font-weight: 300;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    padding-bottom: 5px;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
 }
 .collection-section a{
-    font-size: 14px;
+    font-size: 12px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
     color: var(--primary-color);
     transition: 0.3s ease-in-out;
 }
@@ -573,11 +595,21 @@ table{
     -webkit-box-orient: vertical;  
     overflow: hidden;
 }
+.infromation-section  #InformationSection .text h6{
+    font-size: 12px;
+    font-weight: 400;
+    display: -webkit-inline-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    border: none;
+}
 .infromation-section  #InformationSection .paragraph p{
     display: -webkit-box;
-    -webkit-line-clamp: 4;
+    -webkit-line-clamp: 3;
     margin-top: 10px;
-    font-size: 13px;
+    font-weight: 300;
+    font-size: 12px;
     -webkit-box-orient: vertical;  
     overflow: hidden;
 }
@@ -592,6 +624,8 @@ table{
 }
 .infromation-section  #InformationSection .read-more a{
     width: 90%;
+    font-size: 12px;
+    font-weight: 400;
     color: var(--black-primary);
 }
 /* Infromation section */
@@ -623,7 +657,6 @@ table{
     color: var(--white-primary);
 }
 .university-section #UniversitySection .bg-image{
-    background-image: url(../images/slider/slider2.jpg);
     height: 19ch;
     width: 100%;
     background-position: center;
@@ -661,16 +694,21 @@ table{
     padding: 8px;
     position: absolute;
 }
+.university-section #UniversitySection .content .row{
+    align-items: center;
+}
 .university-section  #UniversitySection .text h6 a{
     color: var(--white-primary);
-    font-size: 15px;
+    font-size: 12px;
+    font-weight: 400;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
 .university-section  #UniversitySection .text a{
-    font-size: 11px;
+    font-size: 10px;
+    font-weight: 400;
     color: var(--gray-light);
     display: -webkit-box;
     -webkit-line-clamp: 1;
@@ -705,10 +743,13 @@ table{
     padding: 1px;
     font-size: 12px;
 }
+.university-section #UniversitySection .data table td  h6{
+    font-size: 12px;
+}
 .university-section #UniversitySection .data table td a{
     color: var(--primary-color);
     font-size: 13px;
-    font-weight: bold
+    font-weight: 400;
 }
 .university-section #UniversitySection .data .mid-data{
     display: -webkit-box;
@@ -717,11 +758,11 @@ table{
     overflow: hidden;
 }
 .university-section #UniversitySection .data .mid-data p{
-    font-size: 14px;
+    font-size: 12px;
 }
 .university-section #UniversitySection .data .bottom-data a{
-    font-weight: 500;
-    font-size: 14px;
+    font-weight: 400;
+    font-size: 12px;
     color: var(--primary-color);
     transition: 0.3s ease-in-out;
 }
@@ -780,11 +821,16 @@ table{
     margin: 0 10px;
 }    
 .courses-section  #CoursesSection .data table td{
-    padding: 1px;
+    font-size: 12px !important;
+    display: -webkit-inline-box;
+    -webkit-line-clamp: 1;
+    width: 50%;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
     border: none;
 }
 .courses-section  #CoursesSection .data .badge{
-    background: var(--official-gray);
+    background: var(--gray-light);
     color: var(--black-primary);
     margin: 0;
     font-weight: 100;
@@ -792,16 +838,27 @@ table{
 }
 .courses-section  #CoursesSection .data a{
     padding-left: 2px;
-    font-weight: 500;
+    font-weight: 400;
+    font-size: 14px !important;
     color: var(--primary-color);
     transition: 0.3s ease-in-out;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+.courses-section .table>:not(caption)>*>*{
+    padding: 3px !important;
 }
 .courses-section  #CoursesSection .data a:hover,
 .courses-section  #CoursesSection .read-more a:hover{
     color: var(--secondary-color);
 }
-.courses-section  #CoursesSection .data table h6{
-    font-size: 16px;
+.courses-section  #CoursesSection .data table{
+    margin-bottom: 0 !important;
+}
+.courses-section  #CoursesSection .data table td h6{
+    font-size: 12px !important;
 }
 .courses-section  #CoursesSection .carousel-inner .carousel-item-end,
 .courses-section  #CoursesSection .carousel-inner .carousel-item-start { 
@@ -818,6 +875,8 @@ table{
 }
 .courses-section  #CoursesSection .read-more a{
     transition: 0.3s ease-in-out;
+    font-size: 12px;
+    font-weight: 400;
 }
 /* Courses section */
 
@@ -858,7 +917,6 @@ table{
     transition: 0.3s ease-in-out;
 } 
 .place-section  #PlaceSection .image{
-    background-image: url(../images/slider/slider1.jpg);
     height: 10ch;
     background-size: cover;
     background-position: center;
@@ -897,6 +955,7 @@ table{
 }
 .advertice-section .text h4{
     color: var(--white-primary);
+    font-weight: 400;
 }
 .advertice-section .text a{
     border: none !important;
@@ -955,18 +1014,18 @@ table{
     object-fit: contain;
 }
 .exam-section  #ExamSection .data .badge{
-    background: var(--official-gray);
+    background: var(--gray-light);
     margin: 0;
     padding: 5px 10px 5px 10px;
     border-radius: 0;
     color: var(--black-primary);
-    font-size: 13px !important;
-    font-weight: 300;
+    font-size: 12px !important;
+    font-weight: 400;
 }
 .exam-section  #ExamSection .data a{
     padding-left: 2px;
-    font-weight: 500;
-    font-size: 15px ;
+    font-weight: 400;
+    font-size: 13px ;
     color: var(--primary-color);
     transition: 0.3s ease-in-out;
 }
@@ -977,12 +1036,24 @@ table{
 .exam-section  #ExamSection .read-more a:hover{
     color: var(--secondary-color);
 }
+.exam-section  #ExamSection .data table{
+    margin-bottom: 0;
+}
 .exam-section  #ExamSection .data table td{
-    font-size: 15px;
+    font-size: 12px !important;
+    display: -webkit-inline-box;
+    -webkit-line-clamp: 1;
+    width: 50%;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    border: none;
+}
+.exam-section .table>:not(caption)>*>*{
+    padding: 3px !important;
 }
 .exam-section  #ExamSection .data table h6{
-    font-size: 15px;
-    font-weight: bold;
+    font-size: 12px;
+    font-weight: 500;
 }
 .exam-section  #ExamSection .carousel-inner .carousel-item-end,
 .exam-section  #ExamSection .carousel-inner .carousel-item-start { 
@@ -991,6 +1062,8 @@ table{
 .exam-section  #ExamSection .read-more{
     width: 100%;
     align-items: center;
+    font-size: 12px;
+    font-weight: 400;
     padding: 5px !important;
 }
 .exam-section  #ExamSection .read-more{
@@ -1047,6 +1120,10 @@ table{
 .study-section  #StudySection .main-information .text{
     padding-left: 10px;
 }
+.study-section  #StudySection .main-information .text h5{
+    font-size: 14px;
+    font-weight: 400;
+}
 .study-section  #StudySection .main-information .image {
     width: 80px;
     height: 80px;
@@ -1069,7 +1146,8 @@ table{
 .study-section  #StudySection .data .main-information a{
     color: var(--black-primary);
     transition: 0.3s ease-in-out;
-    font-weight: normal !important;
+    font-size: 14px;
+    font-weight: 400 !important;
 }
 .study-section  #StudySection .sub-information .image {
     width: 40px;
@@ -1139,7 +1217,8 @@ table{
     padding: 20px;
 }
 .footer-section .title h6{
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: 400;
     text-transform: capitalize;
     color: var(--white-primary);
     margin-bottom: 15px;
@@ -1154,6 +1233,8 @@ table{
 .footer-section .links p a{
     transition: 0.3s ease-in-out;
     color: var(--gray-light);
+    font-weight: 300 !important;
+    font-size: 13px;
 }
 .footer-section .links p a:hover{
     color: var(--secondary-color);
@@ -1175,6 +1256,8 @@ table{
 }
 .footer-section .mid-footer span a{
     color: var(--white-primary);
+    font-weight: 300;
+    font-size: 13px;
 }
 .bottom-footer p,
 .bottom-footer h6{
@@ -1308,7 +1391,7 @@ table{
     padding-left: 13px;
     font-size: 14px;
     color: var(--black-primary);
-    font-weight: 600;
+    font-weight: 500;
     text-decoration: none;
     border-right: 1px solid var(--black-primary);
 }
@@ -1399,8 +1482,8 @@ table{
 .mobile-sidebar .sidebar ul > li > a {
     color: inherit;
     display: block;
-    font-size: 14px;
-    font-weight: bold;
+    font-size: 12px;
+    font-weight: 400;
     padding: 10px 10px;
     text-decoration: none;
     transition: all 150ms;
@@ -1440,8 +1523,8 @@ table{
 .mobile-sidebar .sidebar .submenu-header > a {
     color: inherit;
     display: block;
-    font-size: 14px;
-    font-weight: bold;
+    font-size: 12px;
+    font-weight: 400;
     padding: 18px 20px;
     padding-left: 40px;
     text-decoration: none;
@@ -1463,7 +1546,7 @@ table{
     color: var(--secondary-color);
     display: block;
     font-size: 13px;
-    font-weight: bold;
+    font-weight: 400;
     opacity: .5;
     padding: 10px;
     width: 100%;
@@ -1478,7 +1561,7 @@ table{
 }
 .mobile-sidebar .heading h6{
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 12px;
 }
 
@@ -1632,8 +1715,15 @@ table{
 .mobile-filter-section{
     display: none ;
 }
+.make-me-sticky{
+    position: sticky;
+    top: 0;
+}
 .notification-section{
     padding-bottom: 1em;
+}
+.notification-section p{
+    font-size: 13px !important;
 }
 .notification-section .content{
     padding: 15px;
@@ -1647,7 +1737,8 @@ table{
 }
 .notification-section .sky-color{
     color: var(--primary-color);
-    font-weight: 500;
+    font-weight: 400;
+    font-size: 13px;
     transition: 0.3s ease-in-out;
 }
 .notification-section .sky-color:hover{
@@ -1751,7 +1842,7 @@ table{
 }
 .list-section .filter .checkbox-data .form-check,
 .mobile-filter-section .filter .checkbox-data .form-check{
-    font-size: 14px;
+    font-size: 12px;
     min-height: 0.2rem;
 }
 .list-section .filter .checkbox-data .form-check-label,
@@ -1800,7 +1891,7 @@ table{
 .mobile-filter-section .header-filter .sort .sorting .active{
     color: var(--secondary-color);
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 500;
 }
 .list-section .infromation-data .college-data {
     margin-bottom: 0.6em;
@@ -1837,7 +1928,7 @@ table{
     font-size: 13px;
     color: var(--primary-color);
     transition: 0.3s ease-in-out;
-    font-weight: 500;
+    font-weight: 400;
     display: -webkit-box;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;  
@@ -1849,6 +1940,10 @@ table{
 }
 .list-section .infromation-data .details .name p{
     font-size: 11px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;  
 }
 .list-section .infromation-data .details .fees-structure a,
 .exam-category .college-list .details .fees-structure a{
@@ -1865,6 +1960,11 @@ table{
 }
 .list-section .infromation-data .links a:first-child{
     margin-left: 0;
+}
+.list-section .infromation-data .links a{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 .list-section .infromation-data .links a,
 .exam-category .college-list .links a{
@@ -1924,6 +2024,7 @@ table{
     white-space: nowrap !important;
     text-overflow: ellipsis !important;
     width: 200px !important;
+    font-size: 12px;
     overflow: hidden !important;
 }
 .exam-category hr{
@@ -1937,6 +2038,8 @@ table{
 }
 .exam-category .box .title h4{
     font-size: 15px;
+    font-weight: 500;
+    color: var(--secondary-color);
 }
 .exam-category .tab-section .box .title h6,
 .exam-category .news .title h6{
@@ -1956,6 +2059,12 @@ table{
     font-size: 13px;
     margin: 0 8px 0;
     font-weight: 500;
+}
+.exam-category .details .exam h6 b{
+    font-size: 15px !important;
+}
+.exam-category .details .exam h6{
+    font-size: 13px;
 }
 .exam-category .data{
     background: var(--gray-light);
@@ -2154,7 +2263,6 @@ table{
     font-size: 12.5px;
     font-weight: 400;
     margin-bottom: 2px;
-    width: 180px;
     overflow: hidden;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -2177,8 +2285,11 @@ table{
 .exam-category .box .para a{
     color: var(--secondary-color);
     font-weight: 400;
-    font-size: 15px;
+    font-size: 12px;
     transition: 0.3s ease-in-out;
+}
+.exam-category .box .para .base h6{
+    font-size: 12px;
 }
 .exam-category .box .para a:hover{
     color: var(--primary-color);
@@ -2210,7 +2321,7 @@ table{
     font-size: 16px;
 }
 /* .exam-category .box .para span{
-    font-weight: 600;
+    font-weight: 500;
 } */
 .exam-category .box .user {
     align-items: center;
@@ -2258,7 +2369,7 @@ table{
     margin-bottom: 1em;
 }
 .exam-category .box .para .base h6{
-    font-weight: 600;
+    font-weight: 500;
 }
 .exam-category .tab-section .nav-tabs .nav-item {
     width: 50%;
@@ -2295,10 +2406,10 @@ table{
 }
 .exam-category .tab-section .content a{
     color: var(--black-color);
-    font-weight: 500;
-    font-size: 14px;
+    font-weight: 400;
+    font-size: 13px;
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;  
     overflow: hidden;
 }
@@ -2315,7 +2426,7 @@ table{
     font-size: 13px;
 }
 .exam-category .box .para .table-content table thead th{
-    font-weight: 600;
+    font-weight: 500;
     border: 1px solid var(--gray-light);
 }
 .exam-category .box .para .table-content table td{
@@ -2371,9 +2482,8 @@ table{
 }
 .news-section .slider-side .carousel-item img,
 .news-section .news-details .image img{
-    height: auto;
+    height: 100%;
     width: 100%;
-    object-fit: fill;
 }
 .news-section .slider-side .carousel-caption {
     right: 2em;
@@ -2469,7 +2579,7 @@ table{
     width: 100%;
 }
 .news-section .news-side .image img{
-    height: auto;
+    height: 100%;
     width: 100%;
 }
 .news-section .news-side .text a{
@@ -2530,7 +2640,7 @@ table{
     text-align: center;
 }
 .courses-page-section .courses-detail .title h4{
-    font-weight: 600;
+    font-weight: 500;
     text-transform: uppercase;
     color: var(--primary-color);
 }
@@ -2556,7 +2666,7 @@ table{
     margin-top: 1em;
 }
 .courses-page-section .courses-detail .course-data .course-name a{
-    font-weight: 600;
+    font-weight: 500;
     text-transform: uppercase;
     color: var(--primary-color);
 }
@@ -2620,7 +2730,6 @@ table{
     padding-bottom: 1em;
 }
 .college-profile .college-bg{
-    background-image: url(https://www.uncf.org/wp-content/uploads/heroes/2018LaneCollege1440.jpg);
     height: 20ch;
     position: relative;
     background-size: cover;
@@ -2638,6 +2747,7 @@ table{
     display: -webkit-box;
     -webkit-line-clamp: 1;
     width: 100%;
+    font-size: 1.2rem;
     -webkit-box-orient: vertical;  
     overflow: hidden;
 }
@@ -2645,6 +2755,7 @@ table{
 .college-profile .college-bg h6,
 .college-profile .college-bg h6 a{
     color: var(--white-primary);
+    font-weight: 400;
 }
 .college-profile .college-bg .profile-data{
     align-items: center;
@@ -2655,6 +2766,7 @@ table{
 }
 .college-profile .college-bg .profile-data img{
     width: 60px;
+    border-radius: 50%;
     height: 60px;
     object-fit: cover;
 }
@@ -2736,19 +2848,24 @@ table{
 }
 .detail-overview p{
     color: var(--black-secondary) !important;
-    font-size: 14px !important;
+    font-size: 13px !important;
 }
 .detail-overview a{
-    color: var(--primary-color) !important;
+    color: var(--link) !important;
+    transition: 0.3s ease-in-out;
+    font-size: 13px !important;
+}
+.detail-overview a:hover{
+    color: var(--link-hover) !important;
 }
 .detail-overview table td{
-    font-size: 15px !important;
+    font-size: 12px !important;
     padding: 15px !important;
     border: 1px solid var(--border-gray) !important;
 }
 .detail-overview table thead th{
-    font-weight: 600 !important;
-    font-size: 15px !important;
+    font-weight: 500 !important;
+    font-size: 13px !important;
     padding: 15px !important;
     text-align: center !important;
     border: 1px solid var(--border-gray) !important;
@@ -2758,13 +2875,15 @@ table{
     padding-left: 2rem !important;
 }
 .detail-overview  ol li,
-.detail-overview ul li{
+.detail-overview ul li,
+.exam-category .box .para ul li{
     list-style: square !important;
     margin-top: 5px !important;
-    font-size: 16px !important;
+    font-size: 13px !important;
+    color: var(--black-secondary) !important;
 }
 .detail-overview h6{
-    font-weight: 600 !important;
+    font-weight: 500 !important;
 }
 
 
@@ -2785,20 +2904,16 @@ table{
 .company-section{
     padding: 0 0.5em 2em;
 }
-.company-section .title{
-    background: var(--gray-light);
-    padding: 10px;
-}
-.company-section .title h5{
-    margin-bottom: 0;
-    font-weight: 500;
-}
 .company-section h6{
-    font-weight: 600;
+    font-weight: 500;
+    padding: 10px 0 0 10px ;
     color: var(--primary-color);
 }
 .company-section p{
     text-align: justify;
+    font-size: 14px;
+    padding: 10px;
+    margin-bottom: 0;
 }
 .company-section ul,
 .company-section ol{
@@ -2807,10 +2922,12 @@ table{
 .company-section ul li{
     list-style: square !important;
     text-align: justify;
+    font-size: 14px;
 }
 .company-section ol li{
     list-style: lower-roman !important;
     text-align: justify;
+    font-size: 14px;
 }
 .company-section table{
     text-align: center;
@@ -2830,7 +2947,7 @@ table{
     border: 1px solid var(--border-gray);
 }
 .company-section table thead th{
-    font-weight: 600;
+    font-weight: 500;
     font-size: 15px;
     padding: 15px;
     text-align: center;
@@ -2880,19 +2997,15 @@ table{
 .newsletter-section h4{
     margin-bottom: 1em;
 }
-.newsletter-section .content .form-box{
-    width: 60%;
-}
 .newsletter-section .content .form-control,
-.newsletter-section .content .subscribe-btn a{
+.newsletter-section .content .subscribe-btn button{
     border-radius: 0;
-    padding: 10px;
-    font-size: 14px;
-    border-color: #234e70;
+    padding: 8px;
+    font-size: 12px;
+    border-color: var(--gray-light);
 }
-.newsletter-section .content .subscribe-btn a{
+.newsletter-section .content .subscribe-btn button {
     background: var(--primary-color);
     width: 100%;
-    padding: 10px 30px 10px 30px;
 }
 /* newsletter Section */
