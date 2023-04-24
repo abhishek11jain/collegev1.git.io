@@ -1589,6 +1589,12 @@ table{
 }
 .onload-popup .modal-body .box h6{
     font-size: 11px ;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    white-space: normal; 
 }
 .onload-popup .register .row{
     align-items: center;
@@ -1600,7 +1606,13 @@ table{
     border-radius: 50%;
 }
 .onload-popup .register .text h6{
-    font-size: 30px;
+    font-size: 25px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    white-space: normal; 
     color: var(--secondary-color);
 }
 .onload-popup .form-item {
@@ -2017,13 +2029,13 @@ table{
 .exam-category{
     background: var(--gray-light);
 }
-.exam-category .title{
+.exam-category .data .title{
     margin: 0;
+    width: 100px;
 }
 .exam-category .data .main-data .title p{
     white-space: nowrap !important;
     text-overflow: ellipsis !important;
-    width: 200px !important;
     font-size: 12px;
     overflow: hidden !important;
 }
@@ -2095,12 +2107,29 @@ table{
     align-items: center;
     justify-content: space-around;
 }
+.exam-category .data .date,
+.exam-category .data .application,
+.exam-category .data .result{ 
+    width: 100px;
+}
 .exam-category .data  .text h6{
     font-size: 12px;
     font-weight: 500;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    white-space: normal; 
 }
 .exam-category .data  .text p{
-    font-size: 12px;
+    font-size: 12px;  
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    white-space: normal; 
 }
 .exam-category .data  .bottom-text{
     padding: 20px 10px 5px 10px;
@@ -2263,7 +2292,6 @@ table{
     font-size: 12.5px;
     font-weight: 400;
     margin-bottom: 2px;
-    overflow: hidden;
     text-overflow: ellipsis;
     overflow: hidden;
     display: -webkit-box !important;
@@ -3009,3 +3037,94 @@ table{
     width: 100%;
 }
 /* newsletter Section */
+
+
+
+/* Marquee Section */
+.marquee-section{
+    padding: 2em 1em 2em 1em;
+    background: var(--primary-transparent);
+}
+.marquee-section .card{
+    width: 100%;
+    min-width: auto;
+    cursor: pointer;
+    animation: scrolling var(--marquee-animation-duration) linear infinite;
+}
+.marquee-section .header p{
+    font-size: 14px;
+}
+.marquee-section .card .company-image{
+    height: 20px;
+}
+.marquee-section .card .company-image img{
+    height: 100%;
+    object-fit: contain;
+    width: 100%;
+}
+.marquee-section .marquee {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    padding-bottom: 1rem;
+    grid-column-gap: 1rem;
+}
+.marquee-section .marquee-content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    min-width: 100%;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    grid-column-gap: 1rem;
+}
+.marquee-section .scroll{
+  animation: scroll 3s linear infinite;
+}
+.marquee-section .rscroll{
+  animation: scroll 3s linear infinite reverse;
+}
+.marquee-section .msmall{
+    min-width: fit-content;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 1rem));
+  }
+}
+@keyframes rscroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(+100% + 1rem));
+  }
+}
+.modal-marquee .modal p{
+    font-size: 12px;
+    text-align: justify;
+}
+.modal-marquee .modal .btn{
+    background: var(--secondary-color);
+    color: var(--white-primary);
+    border-color: var(--secondary-color);
+    transition: 0.5s ease-in-out;
+}
+.modal-marquee .modal .btn:hover{
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+}
+/* Marquee Section */

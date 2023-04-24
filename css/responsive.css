@@ -803,7 +803,6 @@
     } 
     .exam-category .news .news-detail h6{
         font-size: 11px;
-        width: 130px;
     }
     .exam-category .data .bottom-text h6 a, 
     .exam-category .data .button-text h6 a{
@@ -1022,8 +1021,7 @@
     } 
     .exam-category .news .news-detail h6{
         font-size: 11px;
-        width: 130px;
-    }
+        width: 130px;}
     .exam-category .data .bottom-text h6 a, 
     .exam-category .data .button-text h6 a{
         font-size: 10px;
@@ -1542,7 +1540,6 @@
     } 
     .exam-category .news .news-detail h6{
         font-size: 11px;
-        width: 130px;
     }
     .exam-category .data .bottom-text h6 a, 
     .exam-category .data .button-text h6 a{
