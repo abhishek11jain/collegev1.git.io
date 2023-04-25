@@ -13,6 +13,9 @@
 /* ALL MOBILE DEVICE */
 @media only screen and (max-width : 767px){
 
+    .form-box{
+        margin-bottom: 2em;
+    }
     .bread-crumb{
         display: none;
     }
@@ -427,10 +430,10 @@
 
 
     /* Company Detail Page */
-    .company-section ul li,
-    .company-section ol li{
-        margin-bottom: 10px;
-    }
+        .company-section ul li,
+        .company-section ol li{
+            margin-bottom: 10px;
+        }
 
 
     /* ================================================  TOP UNIVERSITIES & COLLEGES ================================================ */
@@ -459,7 +462,13 @@
             font-size: 12px;
         }
         .list-section .infromation-data .details .name p{
-            font-size: 8px;
+            font-size: 10px;
+        }
+        .list-section .infromation-data .details .fees-structure p, 
+        .exam-category .college-list .details .fees-structure p{
+            width: auto;
+            white-space: normal;
+            font-size: 9px;
         }
         .mobile-filter-section{
             display: none;
@@ -511,6 +520,9 @@
         .exam-category .row>*{
             padding-left: 0%;
             padding-right: 0%;
+        }
+        .exam-category .box .para .base h6{
+            font-size: 13px !important;
         }
         .exam-category .gallery .row>*{
             padding-left: 12px !important;
@@ -677,6 +689,15 @@
     .hide-desktop{
         display: none !important;
     }
+    .notification-section p{
+        margin-bottom: 0.5em !important;
+    }
+    .navbar-menu .nav-pills a{
+        font-size: 10px;
+    }
+    .navbar-menu .tab-content h6, .navbar-menu .heading h6{
+        font-size: 9px;
+    }
 }
 
 /* IPAD PRO PORTRAIT */
@@ -688,6 +709,7 @@
     .topbar-section .topbar-menus ul li a{
         padding-left: 0 ;
     }
+    
 
     /* ------------------ */
 
@@ -701,6 +723,10 @@
     }
     .navbar-menu .tab-content .sub-menu{
         font-size: 10px !important;
+    }
+
+    .navbar-menu .menu-name{
+        font-size: 10px;
     }
 
     /* ------------------ */    
@@ -780,13 +806,14 @@
     .list-section .infromation-data .details .fees-structure .fees-2 a h6, 
     .list-section .infromation-data .details .fees-structure .rating a h6
     {
-        font-size: 10px !important;
+        font-size: 13px !important;
     }
     .list-section .infromation-data .details .fees-structure .fees-1 p, 
     .list-section .infromation-data .details .fees-structure .fees-2 p, 
     .list-section .infromation-data .details .fees-structure .rating p
     {
-        font-size: 6px !important;
+        font-size: 10px !important;
+        width: 60px;
     }
 
     /* ================================================  EXAM & EXAM DETAIL  ================================================ */
@@ -998,13 +1025,14 @@
     .list-section .infromation-data .details .fees-structure .fees-2 a h6, 
     .list-section .infromation-data .details .fees-structure .rating a h6
     {
-        font-size: 10px !important;
+        font-size: 13px !important;
     }
     .list-section .infromation-data .details .fees-structure .fees-1 p, 
     .list-section .infromation-data .details .fees-structure .fees-2 p, 
     .list-section .infromation-data .details .fees-structure .rating p
     {
-        font-size: 6px !important;
+        font-size: 10px !important;
+        width: 60px;
     }
 
     /* ================================================  EXAM & EXAM DETAIL  ================================================ */
@@ -1108,7 +1136,7 @@
         padding: 0 !important;
     }
     .navbar-menu .menu-name{
-        font-size: 11px !important;
+        font-size: 9px !important;
     }
     .navbar-menu .nav-pills a,
     .navbar-menu ul li a{
