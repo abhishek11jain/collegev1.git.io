@@ -38,130 +38,108 @@ _INTERVAL_VAL = setInterval(Type, 100);
 
 
 // -----------------------------
-
-let carouselinfromation = document.querySelectorAll('#InformationSection .carousel .carousel-item');
-carouselinfromation.forEach((el) => {
-  const minPerSlide = 4
-  let next = el.nextElementSibling
-  for (var i=1; i<minPerSlide; i++) {
-    if (!next) {
-      next = carouselinfromation[0]
-    }
-    let cloneChild = next.cloneNode(true)
-    el.appendChild(cloneChild.children[0])
-    next = next.nextElementSibling
-  }
-})
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-LLWL5N9CSM');
-
-
-// -----------------------------
-
-let carouseluniversity = document.querySelectorAll('#UniversitySection .carousel .carousel-item');
-carouseluniversity.forEach((el) => {
-  const minPerSlide = 4
-  let next = el.nextElementSibling
-  for (var i=1; i<minPerSlide; i++) {
-    if (!next) {
-      next = carouseluniversity[0]
-    }
-    let cloneChild = next.cloneNode(true)
-    el.appendChild(cloneChild.children[0])
-    next = next.nextElementSibling
-  }
-})
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-LLWL5N9CSM');
+// Latest Information
+$(document).ready(function () {
+	var owl = $("#owl-information");
+	owl.owlCarousel({
+		autoPlay: 4000,
+		items: 4,
+		itemsDesktop: [1000, 4],
+		itemsDesktopSmall: [900, 3],
+		itemsTablet: [600, 1],
+		itemsMobile: false,
+		pagination: false
+	});
+	$(".next_information").click(function () {
+		owl.trigger('owl.next');
+	})
+	$(".prev_information").click(function () {
+		owl.trigger('owl.prev');
+	})
+});
 
 
-// -----------------------------
-
-let carouselcourses = document.querySelectorAll('#CoursesSection .carousel .carousel-item');
-carouselcourses.forEach((el) => {
-  const minPerSlide = 4
-  let next = el.nextElementSibling
-  for (var i=1; i<minPerSlide; i++) {
-    if (!next) {
-      next = carouselcourses[0]
-    }
-    let cloneChild = next.cloneNode(true)
-    el.appendChild(cloneChild.children[0])
-    next = next.nextElementSibling
-  }
-})
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-LLWL5N9CSM');
-
-
-// -----------------------------
-
-let carouselexam = document.querySelectorAll('#ExamSection .carousel .carousel-item');
-carouselexam.forEach((el) => {
-  const minPerSlide = 4
-  let next = el.nextElementSibling
-  for (var i=1; i<minPerSlide; i++) {
-    if (!next) {
-      next = carouselexam[0]
-    }
-    let cloneChild = next.cloneNode(true)
-    el.appendChild(cloneChild.children[0])
-    next = next.nextElementSibling
-  }
-})
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-LLWL5N9CSM');
+// Top Exam
+$(document).ready(function () {
+	var owl = $("#owl-exam");
+	owl.owlCarousel({
+		autoPlay: 5000,
+		items: 4,
+		itemsDesktop: [1000, 4],
+		itemsDesktopSmall: [900, 3],
+		itemsTablet: [600, 1],
+		itemsMobile: false,
+		pagination: false
+	});
+	$(".next_exam").click(function () {
+		owl.trigger('owl.next');
+	})
+	$(".prev_exam").click(function () {
+		owl.trigger('owl.prev');
+	})
+});
 
 
-// -----------------------------
+// Courses
+$(document).ready(function () {
+	var owl = $("#owl-courses");
+	owl.owlCarousel({
+		autoPlay: 4000,
+		items: 4,
+		itemsDesktop: [1000, 4],
+		itemsDesktopSmall: [900, 3],
+		itemsTablet: [600, 1],
+		itemsMobile: false,
+		pagination: false
+	});
+	$(".next_courses").click(function () {
+		owl.trigger('owl.next');
+	})
+	$(".prev_courses").click(function () {
+		owl.trigger('owl.prev');
+	})
+});
 
-let carouselstudy = document.querySelectorAll('#StudySection .carousel .carousel-item');
-carouselstudy.forEach((el) => {
-  const minPerSlide = 3
-  let next = el.nextElementSibling
-  for (var i=1; i<minPerSlide; i++) {
-    if (!next) {
-      next = carouselstudy[0]
-    }
-    let cloneChild = next.cloneNode(true)
-    el.appendChild(cloneChild.children[0])
-    next = next.nextElementSibling
-  }
-})
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-LLWL5N9CSM');
+// Place
+$(document).ready(function () {
+	var owl = $("#owl-place");
+	owl.owlCarousel({
+		autoPlay: 4000,
+		items: 8,
+		itemsDesktop: [1000, 4],
+		itemsDesktopSmall: [900, 4],
+		itemsTablet: [600, 2],
+		itemsMobile: false,
+		pagination: false
+	});
+	$(".next_place").click(function () {
+		owl.trigger('owl.next');
+	})
+	$(".prev_place").click(function () {
+		owl.trigger('owl.prev');
+	})
+});
 
 
-// -----------------------------
-
-let carouselplace = document.querySelectorAll('#PlaceSection .carousel .carousel-item');
-carouselplace.forEach((el) => {
-  const minPerSlide = 7
-  let next = el.nextElementSibling
-  for (var i=1; i<minPerSlide; i++) {
-    if (!next) {
-      next = carouselplace[0]
-    }
-    let cloneChild = next.cloneNode(true)
-    el.appendChild(cloneChild.children[0])
-    next = next.nextElementSibling
-  }
-})
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-LLWL5N9CSM');
-
+// University
+$(document).ready(function () {
+	var owl = $("#owl-university");
+	owl.owlCarousel({
+		autoPlay: 4000,
+		items: 4,
+		itemsDesktop: [1000, 3],
+		itemsDesktopSmall: [900, 3],
+		itemsTablet: [600, 1],
+		itemsMobile: false,
+		pagination: false
+	});
+	$(".next_university").click(function () {
+		owl.trigger('owl.next');
+	})
+	$(".prev_university").click(function () {
+		owl.trigger('owl.prev');
+	})
+});
 
 // -----------------------------
 

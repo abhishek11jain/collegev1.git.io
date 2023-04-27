@@ -12,6 +12,18 @@
 
 /* ALL MOBILE DEVICE */
 @media only screen and (max-width : 767px){
+    .customNavigation .badge-buttons{
+        overflow: scroll;
+        width: 70%;
+        white-space: nowrap;
+      }
+      .latest-information-section,
+      .top-exam-section,
+      .courses-section,
+      .place-section,
+      .university-section{
+        padding: 1em 0 1em 0;
+      }
 
     .form-box{
         margin-bottom: 2em;
@@ -305,13 +317,7 @@
     /* Mobile Caption Section */
 
 
-    /* Course Section */
-        .courses-section .badge-buttons{
-            width: 80%;
-            overflow: auto;
-            white-space: nowrap;
-        }
-    /* Course Section */
+
 
 
     /* Top Collection Section */
@@ -325,16 +331,10 @@
 
 
     /* Latest Information Section */
-        .infromation-section #InformationSection .card,
+
         .university-section #UniversitySection .card,
-        .courses-section #CoursesSection .card,
-        .place-section #PlaceSection .card,
-        .exam-section #ExamSection .card,
-        .study-section #StudySection .card{
+        .place-section #PlaceSection .card{
             margin: 0 !important;
-        }
-        .infromation-section #InformationSection .text{
-            margin-left: 10px;
         }
     /* Latest Information Section */
 
@@ -466,8 +466,6 @@
         }
         .list-section .infromation-data .details .fees-structure p, 
         .exam-category .college-list .details .fees-structure p{
-            width: auto;
-            white-space: normal;
             font-size: 9px;
         }
         .mobile-filter-section{
@@ -695,9 +693,6 @@
     .navbar-menu .nav-pills a{
         font-size: 10px;
     }
-    .navbar-menu .tab-content h6, .navbar-menu .heading h6{
-        font-size: 9px;
-    }
 }
 
 /* IPAD PRO PORTRAIT */
@@ -813,7 +808,6 @@
     .list-section .infromation-data .details .fees-structure .rating p
     {
         font-size: 10px !important;
-        width: 60px;
     }
 
     /* ================================================  EXAM & EXAM DETAIL  ================================================ */
@@ -1182,33 +1176,6 @@
     }
 
     /* -------------------------- */
-
-    .collection-section .absolute-box {
-        padding: 0 0px 0 47px !important;
-    }
-
-    /* -------------------------- */
-
-    .infromation-section .row{
-        align-items: center !important;
-    }
-    .infromation-section #InformationSection .image{
-        height: 40px !important;
-        width: 40px !important;
-    }
-    .infromation-section .text,
-    .university-section .text{
-        margin-top: 0 !important;
-        margin-left: 10px;
-    }
-    .infromation-section .text h6,
-    .university-section .text h6{
-        font-size: 11px !important;
-    }
-
-    /* -------------------------- */
-
-
     /* -------------------------- */
 
     .footer-section .title h6 {
@@ -1439,35 +1406,6 @@
         overflow: auto;
         white-space: nowrap;
     }
-
-    /* -------------------------- */
-
-    .collection-section .absolute-box {
-        padding: 0 0px 0 47px !important;
-    }
-
-    /* -------------------------- */
-
-    .infromation-section .row{
-        align-items: center !important;
-    }
-    .infromation-section #InformationSection .image{
-        height: 40px !important;
-        width: 40px !important;
-    }
-    .infromation-section .text,
-    .university-section .text{
-        margin-top: 0 !important;
-        margin-left: 10px;
-    }
-    .infromation-section .text h6,
-    .university-section .text h6{
-        font-size: 11px !important;
-    }
-
-    /* -------------------------- */
-
-
 
     /* -------------------------- */
 
