@@ -141,6 +141,27 @@ $(document).ready(function () {
 	})
 });
 
+
+
+// Media
+$(document).ready(function () {
+	var owl = $("#owl-media");
+	owl.owlCarousel({
+		autoPlay: 5000,
+		items: 4,
+		itemsDesktop: [1000, 3],
+		itemsDesktopSmall: [900, 3],
+		itemsTablet: [600, 1],
+		itemsMobile: false,
+		pagination: false
+	});
+	$(".next_media").click(function () {
+		owl.trigger('owl.next');
+	})
+	$(".prev_media").click(function () {
+		owl.trigger('owl.prev');
+	})
+});
 // -----------------------------
 
 // Less And More

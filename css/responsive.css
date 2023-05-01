@@ -21,7 +21,8 @@
     .top-exam-section,
     .courses-section,
     .place-section,
-    .university-section{
+    .university-section,
+    .media-spot-section{
         padding: 1em 0 1em 0;
     }
 
@@ -1107,6 +1108,10 @@
 
 /* IPAD PORTRAIT */
 @media only screen and (device-width : 768px) and (device-height : 1024px) and (orientation: portrait) {
+    .newsletter-section .content .form-control, 
+    .newsletter-section .content .subscribe-btn button{
+        padding: 0.5rem;
+    }
     .topbar-section{
         padding: 0 !important;
         padding-bottom: 10px !important;

@@ -562,7 +562,8 @@ table {
 .top-exam-section,
 .courses-section,
 .place-section,
-.university-section {
+.university-section,
+.media-spot-section {
     padding: 2em;
 }
 
@@ -609,7 +610,7 @@ table {
 
 .latest-information-section .data .image,
 .top-exam-section .data .image,
-.university-section .data-image .image {
+.university-section .data-image .image{
     border: .1rem solid var(--border-gray);
     border-radius: 50%;
 }
@@ -644,7 +645,9 @@ table {
 .latest-information-section #owl-information .item,
 .top-exam-section #owl-exam .item,
 .courses-section #owl-courses .item,
-.university-section #owl-university .item {
+.university-section #owl-university .item,
+.media-spot-section #owl-media .item
+ {
     margin: 1rem 0.3rem;
     color: var(--black-primary);
     padding: 0.6em;
@@ -666,7 +669,8 @@ table {
 .latest-information-section .heading h6,
 .top-exam-section .heading h6,
 .courses-section .heading h6,
-.university-section .more a {
+.university-section .more a,
+.media-spot-section .heading h6 {
     margin-bottom: 0;
     font-size: 0.875rem;
 }
@@ -674,7 +678,8 @@ table {
 .latest-information-section .more a,
 .top-exam-section .more a,
 .courses-section .more a,
-.university-section .more a {
+.university-section .more a,
+.media-spot-section .more a {
     align-items: center;
     padding: 0.3rem 0;
     border-bottom: 1px solid var(--border-gray);
@@ -686,20 +691,23 @@ table {
 .latest-information-section .more a:hover,
 .top-exam-section .more a:hover,
 .courses-section .more a:hover,
-.university-section .more a:hover {
+.university-section .more a:hover ,
+.media-spot-section .more a:hover{
     color: var(--secondary-color);
 }
 
 .latest-information-section .more a:last-child,
 .top-exam-section .more a:last-child,
-.university-section .more a:last-child {
+.university-section .more a:last-child ,
+.media-spot-section .more a:last-child {
     border: none;
 }
 
 .latest-information-section .more i,
 .top-exam-section .more i,
 .courses-section .more i,
-.university-section .more i {
+.university-section .more i,
+.media-spot-section .more i {
     margin-left: auto;
 }
 
@@ -1259,6 +1267,31 @@ table {
     font-weight: 500;
     font-size: 12px;
 }
+
+
+/* Media Spotlight */
+.media-spot-section .image{
+    padding: 0.3rem;
+}
+.media-spot-section .data-heading{
+    margin-top: 1em;
+}
+.media-spot-section .data-heading a{
+    font-size: 1.2rem;
+    margin-bottom: 1em;
+    color: var(--primary-color);
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+}
+.media-spot-section .item {
+    padding: 1em;
+}
+/* Media Spotlight */
+
+
 
 /* Onload Popup */
 .onload-popup .modal-content {
