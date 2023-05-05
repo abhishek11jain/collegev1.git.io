@@ -12,6 +12,39 @@
 
 /* ALL MOBILE DEVICE */
 @media only screen and (max-width : 767px){
+    .author-section{
+        padding: 0em 0 1em !important;
+    }
+    .achivement-section{
+        padding: 1em 0 1em 0;
+    }
+    .author-section .author-details{
+        display: block !important;
+        text-align: center;
+    }
+    #whatsapp-chat {
+        width: auto;
+        left: 5%;
+        right: 5%;
+        bottom: 20%;
+        font-size: 80%;
+    }
+    .chat-btn{
+        left: 10px !important;
+        right: inherit;
+        bottom: 80px;
+        height: 40px;
+        width: 40px;
+        padding: 5px;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+    .chat-btn i{
+        margin-right: 0;
+    }
+    .chat-btn span{
+        display: none;
+    }
     .customNavigation .badge-buttons{
         overflow: scroll;
         width: 70%;
@@ -433,12 +466,6 @@
     /* Onload Popup */
 
 
-    /* Company Detail Page */
-        .company-section ul li,
-        .company-section ol li{
-            margin-bottom: 10px;
-        }
-
 
     /* ================================================  TOP UNIVERSITIES & COLLEGES ================================================ */
         .list-section .infromation-data .details .college-name{
@@ -730,12 +757,6 @@
     /* ------------------ */    
 
 
-    .recent-visit-section .visit-record,
-    .goal-section .visit-record{
-        overflow: auto;
-        white-space: nowrap;
-    }
-
     /* -------------------------- */ 
     
     
@@ -936,11 +957,6 @@
     /* -------------------------- */
 
 
-    .recent-visit-section .visit-record,
-    .goal-section .visit-record{
-        overflow: auto;
-        white-space: nowrap;
-    }
 
     /* -------------------------- */ 
     
@@ -1174,11 +1190,6 @@
     /* -------------------------- */
 
 
-    .recent-visit-section .visit-record,
-    .goal-section .visit-record{
-        overflow: auto;
-        white-space: nowrap;
-    }
 
     /* -------------------------- */
     /* -------------------------- */
@@ -1404,11 +1415,6 @@
     /* -------------------------- */
 
 
-    .recent-visit-section .visit-record,
-    .goal-section .visit-record{
-        overflow: auto;
-        white-space: nowrap;
-    }
 
     /* -------------------------- */
 

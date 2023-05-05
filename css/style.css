@@ -9,6 +9,7 @@
     --official-gray: #aeaeae;
     --gray-light: #f5f8f9;
     --border-gray: #e6e6e6;
+    --secondary-transparent: #fff5ed;
     --secondary-color: #ec7c1c;
     --primary-transparent: #9cccf123;
     --link: #0000EE;
@@ -610,7 +611,7 @@ table {
 
 .latest-information-section .data .image,
 .top-exam-section .data .image,
-.university-section .data-image .image{
+.university-section .data-image .image {
     border: .1rem solid var(--border-gray);
     border-radius: 50%;
 }
@@ -646,8 +647,7 @@ table {
 .top-exam-section #owl-exam .item,
 .courses-section #owl-courses .item,
 .university-section #owl-university .item,
-.media-spot-section #owl-media .item
- {
+.media-spot-section #owl-media .item {
     margin: 1rem 0.3rem;
     color: var(--black-primary);
     padding: 0.6em;
@@ -691,14 +691,14 @@ table {
 .latest-information-section .more a:hover,
 .top-exam-section .more a:hover,
 .courses-section .more a:hover,
-.university-section .more a:hover ,
-.media-spot-section .more a:hover{
+.university-section .more a:hover,
+.media-spot-section .more a:hover {
     color: var(--secondary-color);
 }
 
 .latest-information-section .more a:last-child,
 .top-exam-section .more a:last-child,
-.university-section .more a:last-child ,
+.university-section .more a:last-child,
 .media-spot-section .more a:last-child {
     border: none;
 }
@@ -772,6 +772,7 @@ table {
 
 .university-section .data-image {
     align-items: center;
+    padding: 0 10px;
 }
 
 .university-section .data-image a {
@@ -1270,13 +1271,15 @@ table {
 
 
 /* Media Spotlight */
-.media-spot-section .image{
+.media-spot-section .image {
     padding: 0.3rem;
 }
-.media-spot-section .data-heading{
+
+.media-spot-section .data-heading {
     margin-top: 1em;
 }
-.media-spot-section .data-heading a{
+
+.media-spot-section .data-heading a {
     font-size: 1.2rem;
     margin-bottom: 1em;
     color: var(--primary-color);
@@ -1286,14 +1289,20 @@ table {
     -webkit-box-orient: vertical;
     white-space: normal;
 }
+
 .media-spot-section .item {
     padding: 1em;
 }
+
 /* Media Spotlight */
 
 
 
 /* Onload Popup */
+.onload-popup .modal {
+    z-index: 99999;
+}
+
 .onload-popup .modal-content {
     border-radius: 0%;
 }
@@ -3012,12 +3021,15 @@ table {
 .about-page-section .list-group h6 {
     text-transform: uppercase;
 }
-.about-page-section .list-group ul{
+
+.about-page-section .list-group ul {
     padding-left: 0.2rem;
 }
-.about-page-section .list-group ul i{
+
+.about-page-section .list-group ul i {
     padding-right: 0.5rem;
 }
+
 .about-page-section .list-group a {
     text-decoration: none;
     color: var(--black-secondary);
@@ -3036,6 +3048,18 @@ table {
     text-align: justify;
     font-size: 0.875rem;
     padding: 0 10px 0 10px;
+}
+
+.about-page-section ul {
+    margin-bottom: 1em;
+}
+
+.about-page-section ul li {
+    list-style: square !important;
+    text-align: justify;
+    font-size: 0.875rem;
+    padding: 0 10px 0 10px;
+    margin-bottom: 10px;
 }
 
 /* About Page Section */
@@ -3293,3 +3317,189 @@ table {
 }
 
 /* Contact Page */
+
+
+/* Whatsapp Code */
+.show {
+    display: block;
+    animation-name: showhide;
+    animation-duration: 0.5s;
+    transform: scale(1);
+    opacity: 1;
+}
+
+.hide {
+    display: none;
+    animation-name: showhide;
+    animation-duration: 0.5s;
+    transform: scale(1);
+    opacity: 1;
+}
+
+.chat-btn {
+    text-decoration: none;
+    align-items: baseline;
+    background: var(--primary-color);
+    color: var(--white-primary) !important;
+    position: fixed;
+    font-weight: 400;
+    bottom: 80px;
+    right: 65px;
+    z-index: 9999;
+    font-size: 0.875rem;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 1px solid var(--border-gray);
+}
+
+.chat-btn i {
+    margin-right: 10px;
+}
+
+#whatsapp-chat {
+    border: 1px solid var(--border-gray);
+    position: fixed;
+    z-index: 99;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 1px 15px var(--primary-color);
+    bottom: 130px;
+    right: 30px;
+    overflow: hidden;
+}
+
+.whatsapp-header {
+    background: var(--primary-color);
+    color: var(--white-primary);
+    padding: 10px;
+}
+
+.whatsapp-header h3 {
+    margin: 0 0 10px;
+}
+
+.whatsapp-header p {
+    font-size: 0.875rem;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.whatsapp-header .image img {
+    border-radius: 100%;
+    width: 50px;
+    float: left;
+    margin: 0 10px 0 0;
+}
+
+.close-chat {
+    text-decoration: none;
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    color: var(--white-primary) !important;
+    font-size: 30px;
+}
+
+.whatsapp-chat-body {
+    padding: 10px;
+    background-color: var(--primary-transparent);
+    background: var(--white-primary);
+    position: relative;
+}
+
+.whatsapp-chat-body .message-box p {
+    margin-top: 10px;
+}
+
+.whatsapp-chat-body .message-box span {
+    font-size: 0.7rem;
+    font-weight: 500;
+    padding: 8px;
+    border-radius: 0 10px 10px 10px;
+    background: var(--primary-color);
+    color: var(--white-primary);
+}
+
+.whatsapp-chat-body .message-box p:last-child {
+    margin-bottom: 0;
+}
+
+.send-button {
+    text-align: end;
+}
+
+.send-button a {
+    border-radius: 5px;
+    font-size: 0.875rem;
+    margin-top: 10px;
+    background: var(--secondary-color) !important;
+    outline: none !important;
+    color: var(--white-primary) !important;
+}
+
+/* Whatsapp Code */
+
+
+/* Author Page */
+.author-section{
+    padding: 1em;
+}
+.author-section .author-details{
+    padding: 1em;
+    align-items: center;
+    background: var(--gray-light);
+}
+.author-section .author-details .author-image img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.author-section .author-details h4{
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+.author-section .author-details h6{
+    font-size: 0.875rem;
+    font-weight: normal;
+    text-transform: capitalize;
+}
+
+.author-section .author-details p{
+    text-align: justify;
+    font-size: 0.875rem;
+}
+.author-section .author-details h6{
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.author-section .details p{
+    font-size: 0.775rem;
+    margin-bottom: 5px;
+}
+.achivement-section{
+    padding: 1em;
+}
+.achivement-section .title h4{
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+.achivement-section .card{
+    padding: 10px;
+    margin-bottom: 1em;
+}
+.achivement-section .image{
+    height: 20ch;
+    width: 100%;
+    margin-bottom: 0.5em;
+}
+.achivement-section .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.achivement-section .text a{
+    color: var(--primary-color);
+    font-size: 0.875rem;
+}

@@ -104,3 +104,51 @@
         </div>
     </section>
 <!-- Media Spot Section End -->
+
+
+
+    <!-- Whatsapp Chat Start -->
+        <div id='whatsapp-chat' class='hide'>
+            <div class='whatsapp-header'>
+                <div class='image'>
+                    <img src='images/resources/favicon.png' />
+                </div>
+                <p>
+                    <span class="whatsapp-name">Searchyourcollege</span> <br>
+                    <small>Online</small>
+                </p>
+            </div>
+            <div class='start-chat'>
+                <div class="whatsapp-chat-body">
+                    <div class="message-box ">
+                        <p><span>Welcome To Searchyourcollege</span></p>
+                        <p><span>I'm your assistance, How can I help you ?</span></p>
+                    </div>
+                    <div class="send-button">
+                        <a class="btn btn-sm" href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i> Chat With Us</a>
+                    </div>
+                </div>
+            </div>
+            <a class='close-chat' href='javascript:void'>×</a>
+        </div>
+        <!-- Button -->
+            <a class='chat-btn' href='javascript:void' title='Show Chat'>
+                <i class="fa fa-whatsapp" aria-hidden="true"></i> <span>Chat with Us</span>
+            </a>
+        <!-- Button -->
+    <!-- Whatsapp Chat End -->
+
+
+    <!-- Whatsapp Code -->
+    <script>
+        $(document).on("click", ".close-chat", function() {
+            $("#whatsapp-chat")
+            .addClass("hide")
+            .removeClass("show");
+        }),
+        $(document).on("click", ".chat-btn", function() {
+            $("#whatsapp-chat")
+            .addClass("show")
+            .removeClass("hide");
+        });
+    </script>

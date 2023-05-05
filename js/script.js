@@ -1,7 +1,7 @@
 
 // typing animation
 
-var _CONTENT = [ "Find Over 25000+ Colleges in India", "Find Over 250+ Exams in India", "Find Over 11000+ Courses in India" ];
+var _CONTENT = [ "Find Over 5000+ Colleges in India & Abroad", "Find Over 200+ Exams in India", "Find Over 1000+ Courses in India & Abroad" ];
 var _PART = 0;
 var _PART_INDEX = 0;
 var _INTERVAL_VAL;
