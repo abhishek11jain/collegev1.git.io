@@ -2937,6 +2937,7 @@ table {
 .detail-overview p a,
 .detail-overview span{
     font-family: 'Open Sans', sans-serif !important;
+    font-style: normal !important;
 }
 .detail-overview table {
     width: 100% !important;
