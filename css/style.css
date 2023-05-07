@@ -14,6 +14,9 @@
     --primary-transparent: #9cccf123;
     --link: #0000EE;
     --link-hover: #551A8B;
+    --whatsapp-bg: #075E54;
+    --whatsapp-chat: #25D366;
+    --whatsapp-chat-bg: #ECE5DD;
 }
 
 html {
@@ -967,7 +970,7 @@ table {
     position: fixed;
     width: 100%;
     display: none;
-    z-index: 9999;
+    z-index: 99999;
     top: 0;
     bottom: 0%;
     left: 0;
@@ -1012,17 +1015,17 @@ table {
 }
 
 .overlay-searchbox .searchbar input[type=text] {
-    padding: 15px;
+    padding: 20px;
     font-size: 17px;
     border: none;
     width: 100%;
-    font-size: 23px;
+    font-size: 0.9rem;
     outline: none;
     background: var(--white-primary);
 }
 
 .overlay-searchbox .searchbar input[type=text]::placeholder {
-    font-size: 23px;
+    font-size: 0.9rem;
     font-weight: 500;
 }
 
@@ -1034,49 +1037,40 @@ table {
     padding: 1em 1em 5em 1em;
 }
 
+.overlay-searchbox .searchbar .search-data .data .image {
+    height: 60px;
+    width: 60px;
+}
+
+.overlay-searchbox .searchbar .search-data .data .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
 .overlay-searchbox .searchbar .search-data .data {
     align-items: center;
+    padding: 10px;
     margin-bottom: 10px;
+    background: var(--white-primary);
+}
+
+.overlay-searchbox .searchbar .search-data .data p {
+    margin-bottom: 0;
+    color: var(--primary-color);
+    font-size: 0.775rem;
 }
 
 .overlay-searchbox .searchbar .search-data .data a {
     text-decoration: none;
+    font-size: 0.975rem;
     color: var(--black-primary);
-}
-
-.overlay-searchbox .searchbar .search-data .institute {
-    margin-left: auto;
-}
-
-.overlay-searchbox .searchbar .search-data .institute img {
-    border-radius: 50%;
-}
-
-.overlay-searchbox .searchbar .search-data .institute {
-    align-items: center;
-}
-
-.overlay-searchbox .searchbar .search-data .institute p {
-    padding-left: 5px;
-}
-
-.overlay-searchbox .searchbar .search-data .badge-buttons a {
-    padding-right: 13px;
-    padding-left: 13px;
-    font-size: 14px;
-    color: var(--black-primary);
-    font-weight: 500;
-    text-decoration: none;
-    border-right: 1px solid var(--black-primary);
-}
-
-.overlay-searchbox .searchbar .search-data .badge-buttons a:first-child {
-    padding-left: 0;
-    padding-right: 0;
-}
-
-.overlay-searchbox .searchbar .search-data .badge-buttons a:last-child {
-    border-right: none;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 1;
+    color: var(--secondary-color);
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    white-space: normal;
 }
 
 /* Desktop Searchbar Section */
@@ -2375,11 +2369,16 @@ table {
     align-items: center;
     padding-top: 10px;
 }
-
+.exam-category .tab-section .image{
+    padding: 10px;
+    border: 1px solid var(--border-gray);
+    border-radius: 10px;
+}
 .exam-category .tab-section .image img {
     height: 50px;
     width: 80px;
     object-fit: contain;
+    border-radius: 10px;
     background: var(--white-primary);
 }
 
@@ -2927,7 +2926,14 @@ table {
 .detail-overview {
     text-align: justify !important;
 }
-
+.detail-overview p,
+.detail-overview p td,
+.detail-overview p th,
+.detail-overview p b,
+.detail-overview p a,
+.detail-overview span{
+    font-family: 'Open Sans', sans-serif !important;
+}
 .detail-overview table {
     width: 100% !important;
     margin-top: 15px !important;
@@ -2942,34 +2948,41 @@ table {
 .detail-overview table thead th,
 .detail-overview table td {
     text-align: center !important;
+    font-size: 0.875rem;
+}
+
+.detail-overview span {
+    font-size: 0.875rem;
+    color: var(--black-secondary);
 }
 
 .detail-overview p {
     color: var(--black-secondary) !important;
-    font-size: 13px !important;
+    font-size: 0.875rem !important;
 }
 
 .detail-overview a {
     color: var(--link) !important;
     transition: 0.3s ease-in-out;
-    font-size: 13px !important;
+    font-size: 0.875rem !important;
 }
-
 .detail-overview a:hover {
     color: var(--link-hover) !important;
 }
 
 .detail-overview table td {
-    font-size: 12px !important;
+    font-size: .875rem !important;
     padding: 15px !important;
     border: 1px solid var(--border-gray) !important;
+    color: var(--black-secondary);
 }
 
 .detail-overview table thead th {
     font-weight: 500 !important;
-    font-size: 13px !important;
+    font-size: .875rem !important;
     padding: 15px !important;
     text-align: center !important;
+    color: var(--black-secondary);
     border: 1px solid var(--border-gray) !important;
 }
 
@@ -2983,8 +2996,8 @@ table {
 .exam-category .box .para ul li {
     list-style: square !important;
     margin-top: 10px !important;
-    font-size: 13px !important;
-    color: var(--black-secondary) !important;
+    font-size: 0.875rem !important;
+    color: var(--black-secondary) ;
 }
 
 .detail-overview h6 {
@@ -3055,13 +3068,14 @@ table {
 }
 
 .about-page-section ul li {
-    list-style: square !important;
     text-align: justify;
     font-size: 0.875rem;
     padding: 0 10px 0 10px;
     margin-bottom: 10px;
 }
-
+.about-page-section .list-styles li{
+    list-style: square !important;
+}
 /* About Page Section */
 
 
@@ -3339,21 +3353,23 @@ table {
 .chat-btn {
     text-decoration: none;
     align-items: baseline;
-    background: var(--primary-color);
+    background: var(--whatsapp-chat);
     color: var(--white-primary) !important;
     position: fixed;
     font-weight: 400;
     bottom: 80px;
     right: 65px;
     z-index: 9999;
-    font-size: 0.875rem;
-    padding: 10px 20px;
-    border-radius: 30px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    border-radius: 50%;
     border: 1px solid var(--border-gray);
 }
 
-.chat-btn i {
-    margin-right: 10px;
+.chat-btn .fa {
+    font-size: 1.8rem;
+    padding: 8px;
 }
 
 #whatsapp-chat {
@@ -3369,7 +3385,7 @@ table {
 }
 
 .whatsapp-header {
-    background: var(--primary-color);
+    background: var(--whatsapp-bg);
     color: var(--white-primary);
     padding: 10px;
 }
@@ -3402,8 +3418,7 @@ table {
 
 .whatsapp-chat-body {
     padding: 10px;
-    background-color: var(--primary-transparent);
-    background: var(--white-primary);
+    background: var(--whatsapp-chat-bg);
     position: relative;
 }
 
@@ -3416,8 +3431,8 @@ table {
     font-weight: 500;
     padding: 8px;
     border-radius: 0 10px 10px 10px;
-    background: var(--primary-color);
-    color: var(--white-primary);
+    background: var(--white-primary);
+    color: var(--black-secondary);
 }
 
 .whatsapp-chat-body .message-box p:last-child {
@@ -3431,8 +3446,9 @@ table {
 .send-button a {
     border-radius: 5px;
     font-size: 0.875rem;
-    margin-top: 10px;
-    background: var(--secondary-color) !important;
+    margin-top: 2em;
+    padding: 10px;
+    background: var(--whatsapp-bg) !important;
     outline: none !important;
     color: var(--white-primary) !important;
 }
@@ -3441,65 +3457,77 @@ table {
 
 
 /* Author Page */
-.author-section{
+.author-section {
     padding: 1em;
 }
-.author-section .author-details{
+
+.author-section .author-details {
     padding: 1em;
     align-items: center;
     background: var(--gray-light);
 }
-.author-section .author-details .author-image img{
+
+.author-section .author-details .author-image img {
     height: 150px;
     width: 150px;
     border-radius: 50%;
     object-fit: cover;
 }
-.author-section .author-details h4{
+
+.author-section .author-details h4 {
     font-size: 1.2rem;
     text-transform: capitalize;
 }
-.author-section .author-details h6{
+
+.author-section .author-details h6 {
     font-size: 0.875rem;
     font-weight: normal;
     text-transform: capitalize;
 }
 
-.author-section .author-details p{
+.author-section .author-details p {
     text-align: justify;
     font-size: 0.875rem;
 }
-.author-section .author-details h6{
+
+.author-section .author-details h6 {
     font-size: 0.8rem;
     font-weight: 500;
     text-transform: capitalize;
 }
-.author-section .details p{
+
+.author-section .details p {
     font-size: 0.775rem;
     margin-bottom: 5px;
 }
-.achivement-section{
+
+.achivement-section {
     padding: 1em;
 }
-.achivement-section .title h4{
+
+.achivement-section .title h4 {
     font-size: 1rem;
     text-transform: uppercase;
 }
-.achivement-section .card{
+
+.achivement-section .card {
     padding: 10px;
     margin-bottom: 1em;
 }
-.achivement-section .image{
+
+.achivement-section .image {
     height: 20ch;
     width: 100%;
     margin-bottom: 0.5em;
 }
-.achivement-section .image img{
+
+.achivement-section .image img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
-.achivement-section .text a{
+
+.achivement-section .text a {
     color: var(--primary-color);
     font-size: 0.875rem;
 }

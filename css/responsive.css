@@ -29,6 +29,9 @@
         bottom: 20%;
         font-size: 80%;
     }
+    .chat-btn .fa{
+        padding: 0%;
+    }
     .chat-btn{
         left: 10px !important;
         right: inherit;
@@ -161,7 +164,7 @@
         .mobile-searchbar-section{
             display: none;
             position: fixed;
-            z-index: 9999;
+            z-index: 99999;
             top: 0;
             height: 100%;
             background: var(--white-primary);
@@ -169,6 +172,7 @@
         }
         .mobile-searchbar-section .box{
             align-items: center;
+            background: var(--gray-light);
             padding: 10px;
         }
         .mobile-searchbar-section .back-btn{
@@ -185,6 +189,7 @@
         .mobile-searchbar-section .form-control{
             width: 100%;
             border: none;
+            border-radius: 0%;
             box-shadow: none;
         }
         .mobile-searchbar-section .search-data{
@@ -192,22 +197,29 @@
             overflow: auto;
             background: var(--white-primary);
         }
+        .mobile-searchbar-section img{
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
         .mobile-searchbar-section .result,
-        .mobile-searchbar-section .not-found,
-        .mobile-searchbar-section .search-result{
+        .mobile-searchbar-section .not-found{
             align-items: center;
             padding: 10px;
         }
-        .mobile-searchbar-section .not-found b,
-        .mobile-searchbar-section .search-result b{
+        .mobile-searchbar-section .not-found b{
             font-size: 13px !important;
         }
-        .mobile-searchbar-section .result a{
+        .mobile-searchbar-section .result .text a{
             color: var(--black-primary);
             text-decoration: none;
-        }
-        .mobile-searchbar-section .result p{
-            margin-left: auto;
+            font-size: 0.875rem;
+            display: -webkit-box !important;
+            -webkit-line-clamp: 1;
+            overflow: hidden;
+            -webkit-box-orient: vertical;
+            white-space: normal;
         }
     /* Mobile Search Bar Section */
 

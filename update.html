@@ -1,154 +1,228 @@
-    <!-- Media Spot Section Start -->
-    <section class="media-spot-section bg-gray">
-        <div id="demo">
-            <div class="container">
-                <div class="row">
-                    <div class="customNavigation d-flex"> 
-                        <div class="heading">
-                            <h6>Media Spotlight</h6>
+<!-- Whatsapp Chat Start -->
+    <div id='whatsapp-chat' class='hide'>
+        <div class='whatsapp-header'>
+            <div class='image'>
+                <img src='images/resources/favicon.png' />
+            </div>
+            <p>
+                <span class="whatsapp-name">Searchyourcollege</span> <br>
+                <small>Online</small>
+            </p>
+        </div>
+        <div class='start-chat'>
+            <div class="whatsapp-chat-body">
+                <div class="message-box ">
+                    <p><span>Welcome To Searchyourcollege</span></p>
+                    <p><span>I'm your assistance, How can I help you ?</span></p>
+                </div>
+                <div class="send-button">
+                    <div class="query-btn">
+                        <a class="btn btn-sm" href="#"><i class="fa fa-info-circle" aria-hidden="true"></i> Ask Your Query</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class='close-chat' href='javascript:void'>×</a>
+    </div>
+    <!-- Button -->
+        <a class='chat-btn' href='javascript:void' title='Show Chat'>
+            <i class="fa fa-whatsapp" aria-hidden="true"></i>
+        </a>
+    <!-- Button -->
+<!-- Whatsapp Chat End -->
+
+
+
+<!-- Mobile Search Bar -->
+    <section class="mobile-searchbar-section hide-desktop" id="mobileSearchOpen">
+        <div class="row gx-0">
+            <div class="col-lg-12 col-sm-12 col-12">
+                <div class="box d-flex">
+                    <div class="back-btn" class="closebtn" onclick="closeMobile()">
+                        <a href="#"> <i class="fa fa-angle-left" aria-hidden="true"></i> </a>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="" id="" class="form-control" placeholder="Search..." aria-describedby="helpId">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12 col-sm-12 col-12">
+                <div class="search-data">
+                    <div class="not-found">
+                        <b class="text-danger">No results found</b>
+                    </div>
+                    <div class="result d-flex gap-3 mb-2 border-bottom">
+                        <div class="image">
+                            <a href="#">
+                                <img src="https://dummyimage.com/30x30/ccc/000" alt="">
+                            </a>
                         </div>
-                        <div class="control-btn">
-                            <a class="btn btn-sm shadow-sm prev_media"><i class="fa fa-caret-left"></i></a> 
-                            <a class="btn btn-sm shadow-sm next_media"><i class="fa fa-caret-right"></i></a> 
+                        <div class="text">
+                            <a href="#">Indian Institute of Technology - [IIT]</a>
                         </div>
                     </div>
-                    <div id="owl-media" class="owl-carousel">
-                        <div class="item card">
-                            <div class="data">
-                                <div class="image">
-                                    <a href="#">
-                                        <img src="https://collegevidya.com/_next/image/?url=https%3A%2F%2Fd1aeya7jd2fyco.cloudfront.net%2Fpages%2Fthe-hindustantimes-logo-cv.jpg&w=384&q=75" class="img-responsive img-thumbnail border-0" width="150">
-                                    </a>
-                                </div>
-                                <div class="data-heading">
-                                    <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut voluptates neque quos a quo ea quod</a>
-                                </div>
-                            </div>
-                            <div class="more">
-                                <a href="#" class="d-flex">
-                                    <span>Read More </span> <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                </a>
-                            </div>
+                    <div class="result d-flex gap-3 mb-2 border-bottom">
+                        <div class="image">
+                            <a href="#">
+                                <img src="https://dummyimage.com/30x30/ccc/000" alt="">
+                            </a>
                         </div>
-                        <div class="item card">
-                            <div class="data">
-                                <div class="image">
-                                    <a href="#">
-                                        <img src="https://collegevidya.com/_next/image/?url=https%3A%2F%2Fd1aeya7jd2fyco.cloudfront.net%2Fpages%2Fasian-community-news-logo.jpg&w=384&q=75" class="img-responsive img-thumbnail border-0" width="150">
-                                    </a>
-                                </div>
-                                <div class="data-heading">
-                                    <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut voluptates neque quos a quo ea quod</a>
-                                </div>
-                            </div>
-                            <div class="more">
-                                <a href="#" class="d-flex">
-                                    <span>Read More </span> <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="item card">
-                            <div class="data">
-                                <div class="image">
-                                    <a href="#">
-                                        <img src="https://collegevidya.com/_next/image/?url=https%3A%2F%2Fd1aeya7jd2fyco.cloudfront.net%2Fpages%2Fforbes-india-logo.jpg&w=384&q=75" class="img-responsive img-thumbnail border-0" width="150">
-                                    </a>
-                                </div>
-                                <div class="data-heading">
-                                    <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut voluptates neque quos a quo ea quod</a>
-                                </div>
-                            </div>
-                            <div class="more">
-                                <a href="#" class="d-flex">
-                                    <span>Read More </span> <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="item card">
-                            <div class="data">
-                                <div class="image">
-                                    <a href="#">
-                                        <img src="https://collegevidya.com/_next/image/?url=https%3A%2F%2Fd1aeya7jd2fyco.cloudfront.net%2Fpages%2Fthe-hindustantimes-logo-cv.jpg&w=384&q=75" class="img-responsive img-thumbnail border-0" width="150">
-                                    </a>
-                                </div>
-                                <div class="data-heading">
-                                    <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut voluptates neque quos a quo ea quod</a>
-                                </div>
-                            </div>
-                            <div class="more">
-                                <a href="#" class="d-flex">
-                                    <span>Read More </span> <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="item card">
-                            <div class="data">
-                                <div class="image">
-                                    <a href="#">
-                                        <img src="https://collegevidya.com/_next/image/?url=https%3A%2F%2Fd1aeya7jd2fyco.cloudfront.net%2Fpages%2Fthe-hindustantimes-logo-cv.jpg&w=384&q=75" class="img-responsive img-thumbnail border-0" width="150">
-                                    </a>
-                                </div>
-                                <div class="data-heading">
-                                    <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut voluptates neque quos a quo ea quod</a>
-                                </div>
-                            </div>
-                            <div class="more">
-                                <a href="#" class="d-flex">
-                                    <span>Read More </span> <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                </a>
-                            </div>
+                        <div class="text">
+                            <a href="#">Indian Institute of Technology - [IIT]</a>
                         </div>
                     </div>
+                    <div class="result d-flex gap-3 mb-2 border-bottom">
+                        <div class="image">
+                            <a href="#">
+                                <img src="https://dummyimage.com/30x30/ccc/000" alt="">
+                            </a>
+                        </div>
+                        <div class="text">
+                            <a href="#">Indian Institute of Technology - [IIT]</a>
+                        </div>
+                    </div>
+                    <div class="result d-flex gap-3 mb-2 border-bottom">
+                        <div class="image">
+                            <a href="#">
+                                <img src="https://dummyimage.com/30x30/ccc/000" alt="">
+                            </a>
+                        </div>
+                        <div class="text">
+                            <a href="#">Indian Institute of Technology - [IIT]</a>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
     </section>
-<!-- Media Spot Section End -->
+<!-- Mobile Search Bar --> 
 
 
-
-    <!-- Whatsapp Chat Start -->
-        <div id='whatsapp-chat' class='hide'>
-            <div class='whatsapp-header'>
-                <div class='image'>
-                    <img src='images/resources/favicon.png' />
-                </div>
-                <p>
-                    <span class="whatsapp-name">Searchyourcollege</span> <br>
-                    <small>Online</small>
-                </p>
+<!-- Searchbar Start -->
+    <div class="overlay-searchbox">
+        <div id="mySearchbar" class="searchbar">
+            <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+            <div class="searchbar-content">
+                <form action="#">
+                    <input type="text" placeholder="Search for Colleges, Exams, News and more" name="search">
+                </form>
             </div>
-            <div class='start-chat'>
-                <div class="whatsapp-chat-body">
-                    <div class="message-box ">
-                        <p><span>Welcome To Searchyourcollege</span></p>
-                        <p><span>I'm your assistance, How can I help you ?</span></p>
-                    </div>
-                    <div class="send-button">
-                        <a class="btn btn-sm" href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i> Chat With Us</a>
+            <div class="search-data">
+                <div class="data shadow-sm d-flex gap-3">
+                    <div class="text">
+                        <h6 class="mb-0 text-danger">Sorry your Data Not Found 😔</h6>
                     </div>
                 </div>
+                <div class="data shadow-sm d-flex gap-3">
+                    <div class="image">
+                        <a href="#"><img src="https://dummyimage.com/70x70/ccc/000" alt="College-image" width="60"></a>
+                    </div>
+                    <div class="text">
+                        <a href="#"> Amity University - Amity University </a>
+                        <p> Noida - Uttar Pradesh | UGC, COA, BCI, PCI, AIU, ACU </p>
+                    </div>
+                </div>
+                <div class="data shadow-sm d-flex gap-3">
+                    <div class="image">
+                        <a href="#"><img src="https://dummyimage.com/70x70/ccc/000" alt="College-image" width="60"></a>
+                    </div>
+                    <div class="text">
+                        <a href="#"> Amity University - Amity University </a>
+                        <p> Noida - Uttar Pradesh | UGC, COA, BCI, PCI, AIU, ACU </p>
+                    </div>
+                </div>
+                <div class="data shadow-sm d-flex gap-3">
+                    <div class="image">
+                        <a href="#"><img src="https://dummyimage.com/70x70/ccc/000" alt="College-image" width="60"></a>
+                    </div>
+                    <div class="text">
+                        <a href="#"> Amity University - Amity University </a>
+                        <p> Noida - Uttar Pradesh | UGC, COA, BCI, PCI, AIU, ACU </p>
+                    </div>
+                </div>
+                <div class="data shadow-sm d-flex gap-3">
+                    <div class="image">
+                        <a href="#"><img src="https://dummyimage.com/70x70/ccc/000" alt="College-image" width="60"></a>
+                    </div>
+                    <div class="text">
+                        <a href="#"> Amity University - Amity University </a>
+                        <p> Noida - Uttar Pradesh | UGC, COA, BCI, PCI, AIU, ACU </p>
+                    </div>
+                </div>
+                <div class="data shadow-sm d-flex gap-3">
+                    <div class="image">
+                        <a href="#"><img src="https://dummyimage.com/70x70/ccc/000" alt="College-image" width="60"></a>
+                    </div>
+                    <div class="text">
+                        <a href="#"> Amity University - Amity University </a>
+                        <p> Noida - Uttar Pradesh | UGC, COA, BCI, PCI, AIU, ACU </p>
+                    </div>
+                </div>
+                <div class="data shadow-sm d-flex gap-3">
+                    <div class="image">
+                        <a href="#"><img src="https://dummyimage.com/70x70/ccc/000" alt="College-image" width="60"></a>
+                    </div>
+                    <div class="text">
+                        <a href="#"> Amity University - Amity University </a>
+                        <p> Noida - Uttar Pradesh | UGC, COA, BCI, PCI, AIU, ACU </p>
+                    </div>
+                </div>
+                <div class="data shadow-sm d-flex gap-3">
+                    <div class="image">
+                        <a href="#"><img src="https://dummyimage.com/70x70/ccc/000" alt="College-image" width="60"></a>
+                    </div>
+                    <div class="text">
+                        <a href="#"> Amity University - Amity University </a>
+                        <p> Noida - Uttar Pradesh | UGC, COA, BCI, PCI, AIU, ACU </p>
+                    </div>
+                </div>
+                <div class="data shadow-sm d-flex gap-3">
+                    <div class="image">
+                        <a href="#"><img src="https://dummyimage.com/70x70/ccc/000" alt="College-image" width="60"></a>
+                    </div>
+                    <div class="text">
+                        <a href="#"> Amity University - Amity University </a>
+                        <p> Noida - Uttar Pradesh | UGC, COA, BCI, PCI, AIU, ACU </p>
+                    </div>
+                </div>
+                <div class="data shadow-sm d-flex gap-3">
+                    <div class="image">
+                        <a href="#"><img src="https://dummyimage.com/70x70/ccc/000" alt="College-image" width="60"></a>
+                    </div>
+                    <div class="text">
+                        <a href="#"> Amity University - Amity University </a>
+                        <p> Noida - Uttar Pradesh | UGC, COA, BCI, PCI, AIU, ACU </p>
+                    </div>
+                </div>
+                <div class="data shadow-sm d-flex gap-3">
+                    <div class="image">
+                        <a href="#"><img src="https://dummyimage.com/70x70/ccc/000" alt="College-image" width="60"></a>
+                    </div>
+                    <div class="text">
+                        <a href="#"> Amity University - Amity University </a>
+                        <p> Noida - Uttar Pradesh | UGC, COA, BCI, PCI, AIU, ACU </p>
+                    </div>
+                </div>
+                <div class="data shadow-sm d-flex gap-3">
+                    <div class="image">
+                        <a href="#"><img src="https://dummyimage.com/70x70/ccc/000" alt="College-image" width="60"></a>
+                    </div>
+                    <div class="text">
+                        <a href="#"> Amity University - Amity University </a>
+                        <p> Noida - Uttar Pradesh | UGC, COA, BCI, PCI, AIU, ACU </p>
+                    </div>
+                </div>
+                <div class="data shadow-sm d-flex gap-3">
+                    <div class="image">
+                        <a href="#"><img src="https://dummyimage.com/70x70/ccc/000" alt="College-image" width="60"></a>
+                    </div>
+                    <div class="text">
+                        <a href="#"> Amity University - Amity University </a>
+                        <p> Noida - Uttar Pradesh | UGC, COA, BCI, PCI, AIU, ACU </p>
+                    </div>
+                </div>
             </div>
-            <a class='close-chat' href='javascript:void'>×</a>
         </div>
-        <!-- Button -->
-            <a class='chat-btn' href='javascript:void' title='Show Chat'>
-                <i class="fa fa-whatsapp" aria-hidden="true"></i> <span>Chat with Us</span>
-            </a>
-        <!-- Button -->
-    <!-- Whatsapp Chat End -->
-
-
-    <!-- Whatsapp Code -->
-    <script>
-        $(document).on("click", ".close-chat", function() {
-            $("#whatsapp-chat")
-            .addClass("hide")
-            .removeClass("show");
-        }),
-        $(document).on("click", ".chat-btn", function() {
-            $("#whatsapp-chat")
-            .addClass("show")
-            .removeClass("hide");
-        });
-    </script>
+    </div>
+<!-- Searchbar End --> 
