@@ -2638,10 +2638,14 @@ table {
 }
 
 .news-section .news-para p {
-    font-size: 13px;
-    margin-bottom: 0 !important;
+    font-size: 0.875rem;
+    color: var(--black-secondary);
+    margin-bottom: 10px !important;
 }
-
+.news-section .news-para p strong{
+    color: var(--black-primary);
+    font-weight: 500;
+}
 
 /* ================================================  COURSES PAGES  ================================================ */
 .courses-page-section .title {
