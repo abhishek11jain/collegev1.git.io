@@ -977,34 +977,7 @@ table {
     background: var(--black-secondary);
 }
 
-.overlay-searchbox .content {
-    background: var(--gray-light);
-    width: 100%;
-    z-index: 999;
-    padding: 1em;
-}
-
-.overlay-searchbox .content h6 {
-    font-size: 20px;
-    color: var(--secondary-color);
-}
-
-.overlay-searchbox .content a {
-    font-size: 14px;
-    color: var(--black-primary);
-    text-decoration: none;
-}
-
-.overlay-searchbox .content ul li {
-    list-style: disc !important;
-}
-
-.overlay-searchbox .content p {
-    font-weight: 500;
-    font-size: 18px;
-}
-
-.overlay-searchbox .searchbar .closebtn {
+.overlay-searchbox .closebtn {
     position: absolute;
     top: 5px;
     right: 15px;
@@ -1014,7 +987,7 @@ table {
     color: var(--black-primary);
 }
 
-.overlay-searchbox .searchbar input[type=text] {
+.overlay-searchbox input[type=text] {
     padding: 20px;
     font-size: 17px;
     border: none;
@@ -1024,12 +997,12 @@ table {
     background: var(--white-primary);
 }
 
-.overlay-searchbox .searchbar input[type=text]::placeholder {
+.overlay-searchbox input[type=text]::placeholder {
     font-size: 0.9rem;
     font-weight: 500;
 }
 
-.overlay-searchbox .searchbar .search-data {
+.overlay-searchbox .search-data {
     overflow-x: auto;
     height: 100%;
     position: relative;
@@ -1037,43 +1010,101 @@ table {
     padding: 1em 1em 5em 1em;
 }
 
-.overlay-searchbox .searchbar .search-data .data .image {
-    height: 60px;
-    width: 60px;
-}
-
-.overlay-searchbox .searchbar .search-data .data .image img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-.overlay-searchbox .searchbar .search-data .data {
-    align-items: center;
-    padding: 10px;
-    margin-bottom: 10px;
+.overlay-searchbox .category-data .badge,
+.mobile-searchbar-section .category-data .badge {
+    margin: 5px;
     background: var(--white-primary);
 }
 
-.overlay-searchbox .searchbar .search-data .data p {
-    margin-bottom: 0;
-    color: var(--primary-color);
-    font-size: 0.775rem;
+.overlay-searchbox .searching-data,
+.mobile-searchbar-section .searching-data {
+    background: var(--white-primary);
+    padding: 5px;
+    border: 1px solid var(--border-gray);
+    border-radius: 5px;
+    align-items: center;
+    margin-top: 5px;
+}
+.overlay-searchbox .image img,
+.mobile-searchbar-section .image img {
+    height: 50px;
+    width: 50px;
+    background: var(--white-primary);
+    padding: 5px;
+    object-fit: contain;
 }
 
-.overlay-searchbox .searchbar .search-data .data a {
-    text-decoration: none;
-    font-size: 0.975rem;
-    color: var(--black-primary);
+.overlay-searchbox .searching-data .text a,
+.mobile-searchbar-section .searching-data .text a {
+    color: var(--primary-color);
+    font-size: 0.9rem;
     display: -webkit-box !important;
     -webkit-line-clamp: 1;
-    color: var(--secondary-color);
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+}
+
+.overlay-searchbox .searching-data .text p,
+.mobile-searchbar-section .searching-data .text p {
+    color: var(--balck-color);
+    font-size: 0.7rem;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 1;
     overflow: hidden;
     -webkit-box-orient: vertical;
     white-space: normal;
 }
 
 /* Desktop Searchbar Section */
+
+
+/* Mobile Search Bar Section */
+.mobile-searchbar-section {
+    display: none;
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    height: 100%;
+    background: var(--white-primary);
+    width: 100%;
+}
+
+.mobile-searchbar-section .box {
+    align-items: center;
+    background: var(--white-primary);
+    padding: 10px;
+}
+
+.mobile-searchbar-section .back-btn {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.mobile-searchbar-section .back-btn a {
+    color: var(--black-primary);
+    font-size: 20px;
+}
+
+.mobile-searchbar-section .form-group {
+    width: 100%;
+}
+
+.mobile-searchbar-section .form-control {
+    width: 100%;
+    border: none;
+    border-radius: 0%;
+    box-shadow: none;
+}
+.mobile-searchbar-section .search-data {
+    overflow-x: auto;
+    height: 65ch;
+    position: relative;
+    background: var(--gray-light);
+    padding: 1em 1em 5em 1em;
+}
+
+/* Mobile Search Bar Section */
 
 
 /* Sidebar Section */
@@ -2369,11 +2400,13 @@ table {
     align-items: center;
     padding-top: 10px;
 }
-.exam-category .tab-section .image{
+
+.exam-category .tab-section .image {
     padding: 10px;
     border: 1px solid var(--border-gray);
     border-radius: 10px;
 }
+
 .exam-category .tab-section .image img {
     height: 50px;
     width: 80px;
@@ -2642,7 +2675,8 @@ table {
     color: var(--black-secondary);
     margin-bottom: 10px !important;
 }
-.news-section .news-para p strong{
+
+.news-section .news-para p strong {
     color: var(--black-primary);
     font-weight: 500;
 }
@@ -2930,15 +2964,17 @@ table {
 .detail-overview {
     text-align: justify !important;
 }
+
 .detail-overview p,
 .detail-overview p td,
 .detail-overview p th,
 .detail-overview p b,
 .detail-overview p a,
-.detail-overview span{
+.detail-overview span {
     font-family: 'Open Sans', sans-serif !important;
     font-style: normal !important;
 }
+
 .detail-overview table {
     width: 100% !important;
     margin-top: 15px !important;
@@ -2971,6 +3007,7 @@ table {
     transition: 0.3s ease-in-out;
     font-size: 0.875rem !important;
 }
+
 .detail-overview a:hover {
     color: var(--link-hover) !important;
 }
@@ -3002,7 +3039,7 @@ table {
     list-style: square !important;
     margin-top: 10px !important;
     font-size: 0.875rem !important;
-    color: var(--black-secondary) ;
+    color: var(--black-secondary);
 }
 
 .detail-overview h6 {
@@ -3078,9 +3115,11 @@ table {
     padding: 0 10px 0 10px;
     margin-bottom: 10px;
 }
-.about-page-section .list-styles li{
+
+.about-page-section .list-styles li {
     list-style: square !important;
 }
+
 /* About Page Section */
 
 

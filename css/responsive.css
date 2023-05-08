@@ -161,65 +161,14 @@
 
 
     /* Mobile Search Bar Section */
-        .mobile-searchbar-section{
-            display: none;
-            position: fixed;
-            z-index: 99999;
-            top: 0;
-            height: 100%;
-            background: var(--white-primary);
-            width: 100%;
+        .mobile-searchbar-section .title{
+            margin-top: 0;
         }
-        .mobile-searchbar-section .box{
-            align-items: center;
-            background: var(--gray-light);
-            padding: 10px;
+        .mobile-searchbar-section .searching-data .text a{
+            font-size: 0.8rem;
         }
-        .mobile-searchbar-section .back-btn{
-            margin-right: 10px;
-            margin-left: 10px;
-        }
-        .mobile-searchbar-section .back-btn a{
-            color: var(--black-primary);
-            font-size: 20px;
-        }
-        .mobile-searchbar-section .form-group{
-            width: 100%;
-        }
-        .mobile-searchbar-section .form-control{
-            width: 100%;
-            border: none;
-            border-radius: 0%;
-            box-shadow: none;
-        }
-        .mobile-searchbar-section .search-data{
-            height: 65ch;
-            overflow: auto;
-            background: var(--white-primary);
-        }
-        .mobile-searchbar-section img{
-            height: 30px;
-            width: 30px;
-            border-radius: 50%;
-            object-fit: cover;
-        }
-        .mobile-searchbar-section .result,
-        .mobile-searchbar-section .not-found{
-            align-items: center;
-            padding: 10px;
-        }
-        .mobile-searchbar-section .not-found b{
-            font-size: 13px !important;
-        }
-        .mobile-searchbar-section .result .text a{
-            color: var(--black-primary);
-            text-decoration: none;
-            font-size: 0.875rem;
-            display: -webkit-box !important;
-            -webkit-line-clamp: 1;
-            overflow: hidden;
-            -webkit-box-orient: vertical;
-            white-space: normal;
+        .mobile-searchbar-section .searching-data .text p{
+            font-size: 0.7rem;
         }
     /* Mobile Search Bar Section */
 
