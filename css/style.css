@@ -1059,54 +1059,6 @@ table {
 /* Desktop Searchbar Section */
 
 
-/* Mobile Search Bar Section */
-.mobile-searchbar-section {
-    display: none;
-    position: fixed;
-    z-index: 99999;
-    top: 0;
-    height: 100%;
-    background: var(--white-primary);
-    width: 100%;
-}
-
-.mobile-searchbar-section .box {
-    align-items: center;
-    background: var(--white-primary);
-    padding: 10px;
-}
-
-.mobile-searchbar-section .back-btn {
-    margin-right: 10px;
-    margin-left: 10px;
-}
-
-.mobile-searchbar-section .back-btn a {
-    color: var(--black-primary);
-    font-size: 20px;
-}
-
-.mobile-searchbar-section .form-group {
-    width: 100%;
-}
-
-.mobile-searchbar-section .form-control {
-    width: 100%;
-    border: none;
-    border-radius: 0%;
-    box-shadow: none;
-}
-.mobile-searchbar-section .search-data {
-    overflow-x: auto;
-    height: 65ch;
-    position: relative;
-    background: var(--gray-light);
-    padding: 1em 1em 5em 1em;
-}
-
-/* Mobile Search Bar Section */
-
-
 /* Sidebar Section */
 .mobile-sidebar .sidebar {
     bottom: 0;
@@ -3575,3 +3527,116 @@ table {
     color: var(--primary-color);
     font-size: 0.875rem;
 }
+
+
+/* Study Abrod Mbbs Profile */
+.study-profile-section .section-navbar{
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    background: var(--black-secondary);
+}
+.study-profile-section .section-navbar img{
+    width: 150px;
+}
+.study-profile-section .section-navbar li{
+    padding-right: 15px;
+}
+.study-profile-section .section-navbar li a{
+    color: var(--white-primary);
+    font-weight: 500;
+}
+.study-profile-section .section-navbar .navbar-toggler{
+    background: var(--white-primary);
+}
+.study-profile-section .banner-section .container{
+    max-width: 900px;
+}
+.study-profile-section .banner-section .overlay{
+    height: 50ch;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-image : linear-gradient(rgba(0, 0, 0, 0.667), rgba(255, 255, 255, 0.231));
+}
+.study-profile-section .banner-section{
+    height: 50ch;   
+    background-size: cover;
+    background-position: center;
+    padding: 1em;
+}
+.study-profile-section .banner-section .content{
+    position: relative;
+    top: 7.5em;
+}
+.study-profile-section .banner-section .content h3{
+    color: var(--white-primary);
+    font-size: 2rem;
+    text-shadow: 2px 2px 1px var(--primary-color);
+}
+.study-profile-section .banner-section .searchbox{
+    height: 50px;
+    background: var(--white-primary);
+    text-align: start;
+    padding-left: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    border: 1px solid var(--white-primary);
+    width: 100%;
+}
+.study-profile-section .banner-section .searchbtn{
+    width: 100px;
+    text-align: center;
+    padding: 13px;
+    height: 50px;
+    border: none;
+    background: var(--secondary-color);
+    color: var(--white-primary);
+}
+.study-profile-section .banner-section h6{
+    color: var(--white-primary);
+}
+.study-profile-section .banner-section .badge{
+    margin: 0 3px 10px;
+}
+.study-profile-section .countories-section{
+    padding: 1.5em;
+}
+.study-profile-section .countories-section .card{
+    height: auto;
+    padding: 1em;
+    margin-top: 4em;
+    border: none;
+    background: var(--gray-light);
+}
+.study-profile-section .countories-section .logo{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: -3em;
+    margin-bottom: 1em;
+}
+.study-profile-section .countories-section .logo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: contain;
+}
+.study-profile-section .countories-section .country-detail a{
+    color: var(--primary-color);
+    font-size: 0.9rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.study-profile-section .countories-section .country-detail p{
+    font-size: 0.75rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+/* Study Abrod Mbbs Profile */
