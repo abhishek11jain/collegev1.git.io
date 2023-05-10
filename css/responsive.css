@@ -823,6 +823,11 @@
             font-size: 0.875rem !important ;
             margin-bottom: 0;
         }
+        .study-profile-section .section-about, 
+        .study-profile-section .section-services, 
+        .study-profile-section .section-country{
+            padding: 0;
+        }
     /* Study Profile Section */
 
 }

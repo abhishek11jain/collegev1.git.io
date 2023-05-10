@@ -1025,6 +1025,7 @@ table {
     align-items: center;
     margin-top: 5px;
 }
+
 .overlay-searchbox .image img,
 .mobile-searchbar-section .image img {
     height: 50px;
@@ -3133,6 +3134,11 @@ table {
     border-color: var(--border-gray);
 }
 
+.newsletter-section .form-box,
+.newsletter-section .subscribe-btn {
+    width: 100%;
+}
+
 .newsletter-section .content .subscribe-btn button {
     background: var(--primary-color);
     width: 100%;
@@ -3530,52 +3536,86 @@ table {
 
 
 /* Study Abrod Mbbs Profile */
-.study-profile-section .section-navbar{
+.study-profile-section .section-navbar {
     position: fixed;
     z-index: 999;
     width: 100%;
     background: var(--black-secondary);
 }
-.study-profile-section .section-navbar img{
+
+.study-profile-section .section-navbar img {
     width: 150px;
 }
-.study-profile-section .section-navbar li{
+
+.study-profile-section .section-navbar li {
     padding-right: 15px;
 }
-.study-profile-section .section-navbar li a{
+
+.study-profile-section .section-navbar .nav-link {
     color: var(--white-primary);
     font-weight: 500;
 }
-.study-profile-section .section-navbar .navbar-toggler{
+
+.study-profile-section .section-navbar .dropdown-item {
+    color: var(--white-primary);
+}
+
+.study-profile-section .section-navbar .dropdown-item img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.study-profile-section .section-navbar .navbar-nav .dropdown-menu {
+    border-radius: 0 !important;
+    background: var(--black-secondary);
+    padding: 0.5em 0.5em 0.5em 0.5em;
+}
+
+.study-profile-section .section-navbar .dropdown-item:active,
+.study-profile-section .section-navbar .dropdown-item:hover {
+    background: var(--black-primary) !important;
+    color: var(--white-primary);
+}
+
+.study-profile-section .section-navbar .navbar-toggler {
     background: var(--white-primary);
 }
-.study-profile-section .banner-section .container{
+
+.study-profile-section .banner-section .container {
     max-width: 900px;
 }
-.study-profile-section .banner-section .overlay{
+
+.study-profile-section .banner-section .overlay {
     height: 50ch;
     width: 100%;
     top: 0;
     left: 0;
     position: absolute;
-    background-image : linear-gradient(rgba(0, 0, 0, 0.667), rgba(255, 255, 255, 0.231));
+    background-image: linear-gradient(rgba(0, 0, 0, 0.667), rgba(255, 255, 255, 0.231));
 }
-.study-profile-section .banner-section{
-    height: 50ch;   
+
+.study-profile-section .banner-section {
+    height: 50ch;
     background-size: cover;
     background-position: center;
     padding: 1em;
 }
-.study-profile-section .banner-section .content{
+
+.study-profile-section .banner-section .content {
     position: relative;
     top: 7.5em;
 }
-.study-profile-section .banner-section .content h3{
+
+.study-profile-section .banner-section .content h3 {
     color: var(--white-primary);
     font-size: 2rem;
     text-shadow: 2px 2px 1px var(--primary-color);
 }
-.study-profile-section .banner-section .searchbox{
+
+.study-profile-section .banner-section .searchbox {
     height: 50px;
     background: var(--white-primary);
     text-align: start;
@@ -3585,7 +3625,8 @@ table {
     border: 1px solid var(--white-primary);
     width: 100%;
 }
-.study-profile-section .banner-section .searchbtn{
+
+.study-profile-section .banner-section .searchbtn {
     width: 100px;
     text-align: center;
     padding: 13px;
@@ -3594,23 +3635,28 @@ table {
     background: var(--secondary-color);
     color: var(--white-primary);
 }
-.study-profile-section .banner-section h6{
+
+.study-profile-section .banner-section h6 {
     color: var(--white-primary);
 }
-.study-profile-section .banner-section .badge{
+
+.study-profile-section .banner-section .badge {
     margin: 0 3px 10px;
 }
-.study-profile-section .countories-section{
+
+.study-profile-section .countories-section {
     padding: 1.5em;
 }
-.study-profile-section .countories-section .card{
+
+.study-profile-section .countories-section .card {
     height: auto;
     padding: 1em;
     margin-top: 4em;
     border: none;
     background: var(--gray-light);
 }
-.study-profile-section .countories-section .logo{
+
+.study-profile-section .countories-section .logo {
     height: 70px;
     width: 70px;
     border-radius: 50%;
@@ -3618,13 +3664,15 @@ table {
     margin-top: -3em;
     margin-bottom: 1em;
 }
-.study-profile-section .countories-section .logo img{
+
+.study-profile-section .countories-section .logo img {
     width: 100%;
     height: 100%;
     border-radius: 50%;
     object-fit: contain;
 }
-.study-profile-section .countories-section .country-detail a{
+
+.study-profile-section .countories-section .country-detail a {
     color: var(--primary-color);
     font-size: 0.9rem;
     display: -webkit-box;
@@ -3632,11 +3680,101 @@ table {
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
-.study-profile-section .countories-section .country-detail p{
-    font-size: 0.75rem;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+
+.study-profile-section .countories-section .country-detail p,
+.study-profile-section a,
+.study-profile-section b{
+    font-size: 0.875rem;
 }
+
+.study-profile-section .section-about,
+.study-profile-section .section-services,
+.study-profile-section .section-country {
+    padding: 1em;
+}
+
+.study-profile-section .section-about h4,
+.study-profile-section .section-services h4,
+.study-profile-section .section-country h4 {
+    font-size: 1.3rem;
+    margin-bottom: 1em;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.study-profile-section .section-about b,
+.study-profile-section .section-about h6,
+.study-profile-section .section-services h6,
+.study-profile-section .section-country h6 {
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+.study-profile-section .section-about p,
+.study-profile-section .section-services p,
+.study-profile-section .section-country p {
+    text-align: justify;
+    font-size: 0.875rem;
+    margin-bottom: 2em;
+    color: var(--black-secondary);
+}
+
+.study-profile-section .section-about li,
+.study-profile-section .section-country li {
+    list-style: square !important;
+}
+
+.study-profile-section .section-services .card {
+    margin-bottom: 1em;
+}
+
+.study-profile-section .section-services img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
+
 /* Study Abrod Mbbs Profile */
+
+
+/* Cuntory Page */
+.study-profile-section .section-author{
+    align-items: center;
+}
+.study-profile-section .section-author img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.study-profile-section .section-author a{
+    font-size: 0.9rem;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+.study-profile-section .section-author p{
+    color: var(--black-secondary);
+    font-size: 0.7rem;
+}
+.study-profile-section .section-author span{
+    color: var(--secondary-color);
+}
+.study-profile-section table td,
+.study-profile-section table th{
+    padding: 0.8em;
+}
+.study-profile-section table p{
+    margin-bottom: 0 !important;
+    text-align: center !important;
+}
+.study-profile-section table thead p{
+    color: var(--white-primary) !important;
+    font-weight: normal;
+    text-align: center;
+}
+.study-profile-section .exam-category a {
+    display: inherit !important;
+}
+/* Cuntory Page */
